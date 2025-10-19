@@ -2,7 +2,10 @@ import React from "react";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../styles/global.css";
+import "@/styles/global.css";
+import Link from "next/link";
+
+import { Switch } from "@/components/Switch";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +30,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Switch />
+        <ul>
+          <li>
+            <Link href="/">Go to /</Link>
+          </li>
+          <li>
+            <Link href="/testx">Go to /testx</Link>
+          </li>
+          <li>
+            <Link href="/client">Go to /client</Link>
+          </li>
+        </ul>
         {children}
       </body>
     </html>
