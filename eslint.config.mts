@@ -10,6 +10,19 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   {
+    // 👇 ESLint will ignore these folders entirely
+    ignores: [
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "coverage/**",
+      "dist/**",
+      "public/**",
+      "next-env.d.ts",
+    ],
+  },
+  {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
     plugins: {
       js,
@@ -17,31 +30,25 @@ export default defineConfig([
       prettier: prettierPlugin,
       import: importPlugin,
       "react-hooks": reactHooksPlugin,
+      react: pluginReact,
     },
     extends: ["js/recommended"],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.jest,
+      },
       parser: tsparser,
       sourceType: "module",
     },
     rules: {
-      // Prettier enforcement
-      // "prettier/prettier": [
-      //   "error",
-      //   {
-      //     singleQuote: false,
-      //     printWidth: 90,
-      //     tabWidth: 2,
-      //     semi: true,
-      //     trailingComma: "none",
-      //     bracketSpacing: true,
-      //     jsxBracketSameLine: false,
-      //     arrowParens: "always",
-      //     endOfLine: "auto",
-      //     ignoreTemplateLiterals: true
-      //   }
-      // ],
-
+      "prettier/prettier": [
+        "error",
+        {
+          printWidth: 90, // same width limit
+        },
+      ],
       // Indentation
       indent: [
         "error",
@@ -63,16 +70,16 @@ export default defineConfig([
       // TypeScript: allow `any` where really needed
       "@typescript-eslint/no-explicit-any": "off",
 
-      // Line length
-      "max-len": [
-        "error",
-        {
-          code: 90,
-          ignoreUrls: true,
-          ignoreStrings: false,
-          ignoreRegExpLiterals: true,
-        },
-      ],
+      // // Line length
+      // "max-len": [
+      //   "error",
+      //   {
+      //     code: 90,
+      //     ignoreUrls: true,
+      //     ignoreStrings: false,
+      //     ignoreRegExpLiterals: true,
+      //   },
+      // ],
 
       // Import order (professional style)
       "import/order": [
@@ -101,5 +108,5 @@ export default defineConfig([
     },
   },
   // tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
+  // pluginReact.configs.flat.recommended,
 ]);

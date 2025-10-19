@@ -4,7 +4,8 @@ import { pathsToModuleNameMapper } from "ts-jest";
 
 import { compilerOptions } from "./tsconfig.json";
 
-// Provide the path to your Next.js app to load next.config.js and .env files in your test environment
+// Provide the path to your Next.js app to load next.config.js
+// and .env files in your test environment
 const createJestConfig = nextJest({
   dir: "./",
 });
