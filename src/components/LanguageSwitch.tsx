@@ -10,7 +10,7 @@ const LOCALES = [
 ];
 
 export function LanguageSwitch() {
-  const changeLocale = useChangeLocale(/* { preserveSearchParams: true } */);
+  const changeLocale = useChangeLocale();
   const current = useCurrentLocale();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
@@ -36,14 +36,17 @@ export function LanguageSwitch() {
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((s) => !s)}
-        className="hidden items-center gap-2 rounded-md bg-slate-50 px-3 py-1 text-sm font-medium text-slate-800 transition hover:opacity-90 sm:inline-flex dark:bg-slate-800 dark:text-slate-200"
+        className="flex w-full items-center justify-between gap-2 rounded-md bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 transition hover:opacity-90 lg:inline-flex lg:w-auto dark:bg-slate-800 dark:text-slate-200"
       >
         <span className="sr-only">Change language</span>
         <span className="uppercase">{(current || "en").slice(0, 2)}</span>
+        <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">
+          {open ? "▲" : "▼"}
+        </span>
       </button>
 
       {open && (
-        <div className="absolute right-0 z-20 mt-2 w-40 rounded-md border border-slate-100 bg-white py-1 shadow-lg dark:border-slate-800 dark:bg-slate-900">
+        <div className="z-20 w-full rounded-md border border-slate-100 bg-white py-1 shadow-lg sm:shadow-lg lg:absolute lg:right-0 lg:mt-2 lg:w-40 dark:border-slate-800 dark:bg-slate-900">
           {LOCALES.map((l) => (
             <button
               key={l.code}

@@ -17,8 +17,6 @@ const NAV_ITEMS: NavItem[] = [
   { name: "Settings", href: "/settings" },
 ];
 
-// icons are moved to `src/components/icons/*`
-
 const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // NavLink handles active state internally.
@@ -26,7 +24,6 @@ const Navbar: React.FC = () => {
     <header className="w-full border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* left: logo + nav */}
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2">
               <Logo />
@@ -36,10 +33,9 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
-          {/* right: actions */}
-          <div className="flex items-center gap-3">
-            {/* Desktop nav */}
-            <nav className="ml-6 hidden items-center space-x-2 lg:flex">
+          {/* Desktop nav */}
+          <div className="flex items-center gap-6">
+            <nav className="ml-6 hidden items-center gap-3 space-x-2 lg:flex">
               {NAV_ITEMS.map((item) => (
                 <NavLink
                   key={item.name}
@@ -49,8 +45,8 @@ const Navbar: React.FC = () => {
                   {item.name}
                 </NavLink>
               ))}
+              <LanguageSwitch />
             </nav>
-            <LanguageSwitch />
 
             {/* Mobile menu button */}
             <button

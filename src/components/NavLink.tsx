@@ -16,7 +16,7 @@ export default function NavLink({
   href,
   children,
   className = "",
-  activeClassName = "text-rose-600 dark:text-rose-400",
+  activeClassName = "text-indigo-600 dark:text-indigo-400 font-semibold bg-indigo-50 dark:bg-slate-800/50 rounded-md px-2 py-1",
   inactiveClassName = "text-slate-700 dark:text-slate-200",
   onClick,
 }: NavLinkProps) {
