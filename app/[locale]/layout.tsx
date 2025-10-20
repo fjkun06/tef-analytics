@@ -3,9 +3,9 @@ import React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/global.css";
-import Link from "next/link";
 
-import { Switch } from "@/components/Switch";
+import LanguageSwitch from "@/components/LanguageSwitch";
+import Navbar from "@/components/layouts/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Switch />
-        <ul>
+        <LanguageSwitch />
+        {/* <ul>
           <li>
             <Link href="/">Go to /</Link>
           </li>
@@ -41,8 +41,8 @@ export default function RootLayout({
           <li>
             <Link href="/client">Go to /client</Link>
           </li>
-        </ul>
-        <header className="bg-white">
+        </ul> */}
+        {/* <header className="bg-white">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -220,7 +220,8 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
+        <Navbar />
 
         {children}
       </body>

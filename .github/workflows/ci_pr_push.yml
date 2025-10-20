@@ -1,13 +1,12 @@
 # ---------------------------------------------
 # GitHub Actions Workflow: CI Checks (Lint + Test + Build) for Pushes or Pull Requests (merges)
 # Purpose: Lint, test and build main or staging branch after a merge or PR
-# Triggered automatically on push or PR to staging and main branches  
+# Triggered automatically on push or PR to staging and main branches
 # ---------------------------------------------
 
+# CI Checks (Lint + Test + Build) for Merge or Pull Requests
 
- # CI Checks (Lint + Test + Build) for Merge or Pull Requests
- 
-name:  Push/PR
+name: Push/PR
 
 on:
   push:
@@ -33,7 +32,7 @@ jobs:
   # 2️⃣ Testing job
   test:
     runs-on: ubuntu-latest
-    needs: lint  # optional: wait for lint to pass before testing
+    needs: lint # optional: wait for lint to pass before testing
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
@@ -48,7 +47,7 @@ jobs:
   # 3️⃣ Build job
   build:
     runs-on: ubuntu-latest
-    needs: [lint, test]  # optional: wait for lint & test to pass before building
+    needs: [lint, test] # optional: wait for lint & test to pass before building
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
