@@ -1,0 +1,70 @@
+# ---------------------------------------------
+# GitHub Actions Workflow: CI Checks (Lint + Test + Build) for Pushes or Pull Requests (merges)
+# Purpose: Lint, test and build main or staging branch after a merge or PR
+# Triggered automatically on push or PR to staging and main branches  
+# ---------------------------------------------
+
+
+ # CI Checks (Lint + Test + Build) for Merge or Pull Requests
+ 
+name:  Push/PR
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  # 1️⃣ Linting job
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Run ESLint
+        run: npm run lint:all:fix
+
+  # 2️⃣ Testing job
+  test:
+    runs-on: ubuntu-latest
+    needs: lint  # optional: wait for lint to pass before testing
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Run tests
+        run: npm run test
+
+  # 3️⃣ Build job
+  build:
+    runs-on: ubuntu-latest
+    needs: [lint, test]  # optional: wait for lint & test to pass before building
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+      - name: Cache dependencies & Next.js build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js','**/*.ts','**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Build Next.js
+        run: npm run build
