@@ -5,8 +5,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { useChangeLocale, useCurrentLocale } from "@/locales/client";
 
 const LOCALES = [
-  { code: "en" as const, label: "English" },
-  { code: "de" as const, label: "Deutsch" },
+  { code: "en" as const, label: "English", icon: "🇬🇧" },
+  { code: "de" as const, label: "Deutsch", icon: "🇩🇪" },
+  { code: "fr" as const, label: "Français", icon: "🇫🇷" },
 ];
 
 export function LanguageSwitch() {
@@ -29,6 +30,8 @@ export function LanguageSwitch() {
     setOpen(false);
   };
 
+  const currentIcon = LOCALES.find((l) => l.code === current)?.icon ?? "";
+
   return (
     <div className="relative" ref={ref}>
       <button
@@ -39,7 +42,10 @@ export function LanguageSwitch() {
         className="flex w-full items-center justify-between gap-2 rounded-md bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 transition hover:opacity-90 lg:inline-flex lg:w-auto dark:bg-slate-800 dark:text-slate-200"
       >
         <span className="sr-only">Change language</span>
-        <span className="uppercase">{(current || "en").slice(0, 2)}</span>
+        <span className="inline-flex items-center gap-2">
+          <span className="text-lg">{currentIcon}</span>
+          <span className="uppercase">{(current || "en").slice(0, 2)}</span>
+        </span>
         <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">
           {open ? "▲" : "▼"}
         </span>
@@ -58,6 +64,7 @@ export function LanguageSwitch() {
                   : "text-slate-700 dark:text-slate-200"
               }`}
             >
+              <span className="mr-2 inline-block text-lg">{(l as any).icon ?? ""}</span>
               {l.label}
             </button>
           ))}

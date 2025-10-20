@@ -12,9 +12,9 @@ import type { NavItem } from "@/interfaces/navbar.interface";
 
 const NAV_ITEMS: NavItem[] = [
   { name: "Home", href: "/" },
-  { name: "Client", href: "/client" },
-  { name: "Testx", href: "/testx" },
-  { name: "Settings", href: "/settings" },
+  { name: "About", href: "/client" },
+  { name: "Projects", href: "/testx" },
+  { name: "Contact", href: "/settings" },
 ];
 
 const Navbar: React.FC = () => {
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop nav */}
           <div className="flex items-center gap-6">
-            <nav className="ml-6 hidden items-center gap-3 space-x-2 lg:flex">
+            <nav className="ml-6 hidden items-center gap-6 space-x-2 lg:flex">
               {NAV_ITEMS.map((item) => (
                 <NavLink
                   key={item.name}
