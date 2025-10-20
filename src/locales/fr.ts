@@ -6,4 +6,15 @@ export default {
       translations: "Traductions",
     },
   },
+  nav: {
+    home: "Accueil",
+    about: "À propos",
+    projects: "Projets",
+    contact: "Contact",
+  },
+  lang: {
+    en: "Anglais",
+    de: "Allemand",
+    fr: "Français",
+  },
 } as const;

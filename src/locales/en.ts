@@ -1,5 +1,3 @@
-console.log("Loaded EN");
-
 export default {
   hello: {
     world: "Hello {param}!",
@@ -7,5 +5,16 @@ export default {
     nested: {
       translations: "Translations",
     },
+  },
+  nav: {
+    home: "Home",
+    about: "About",
+    projects: "Projects",
+    contact: "Contact",
+  },
+  lang: {
+    en: "English",
+    de: "German",
+    fr: "French",
   },
 } as const;

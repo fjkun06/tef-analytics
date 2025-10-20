@@ -2,19 +2,17 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-import { useChangeLocale, useCurrentLocale } from "@/locales/client";
-
-const LOCALES = [
-  { code: "en" as const, label: "English", icon: "🇬🇧" },
-  { code: "de" as const, label: "Deutsch", icon: "🇩🇪" },
-  { code: "fr" as const, label: "Français", icon: "🇫🇷" },
-];
+import { useChangeLocale, useCurrentLocale, useScopedI18n } from "@/locales/client";
+import { LocaleProps } from "@/locales/locales.interface";
+import constants from "@/utils/constants";
+const languageLocales = constants.locales;
 
 export function LanguageSwitch() {
   const changeLocale = useChangeLocale();
   const current = useCurrentLocale();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
+  const tLang = useScopedI18n("lang");
 
   useEffect(() => {
     function handleOutside(e: MouseEvent) {
@@ -25,12 +23,12 @@ export function LanguageSwitch() {
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  const onSelect = (locale: (typeof LOCALES)[number]["code"]) => {
+  const onSelect = (locale: LocaleProps) => {
     changeLocale(locale);
     setOpen(false);
   };
 
-  const currentIcon = LOCALES.find((l) => l.code === current)?.icon ?? "";
+  const currentIcon = languageLocales.find((l) => l.code === current)?.icon ?? "";
 
   return (
     <div className="relative" ref={ref}>
@@ -53,19 +51,21 @@ export function LanguageSwitch() {
 
       {open && (
         <div className="z-20 w-full rounded-md border border-slate-100 bg-white py-1 shadow-lg sm:shadow-lg lg:absolute lg:right-0 lg:mt-2 lg:w-40 dark:border-slate-800 dark:bg-slate-900">
-          {LOCALES.map((l) => (
+          {languageLocales.map((locale) => (
             <button
-              key={l.code}
+              key={locale.code}
               type="button"
-              onClick={() => onSelect(l.code)}
+              onClick={() => onSelect(locale.code)}
               className={`w-full px-3 py-2 text-left text-sm transition hover:bg-slate-100 dark:hover:bg-slate-800 ${
-                current === l.code
+                current === locale.code
                   ? "text-rose-600 dark:text-rose-400"
                   : "text-slate-700 dark:text-slate-200"
               }`}
             >
-              <span className="mr-2 inline-block text-lg">{(l as any).icon ?? ""}</span>
-              {l.label}
+              <span className="mr-2 inline-block text-lg">
+                {(locale as any).icon ?? ""}
+              </span>
+              {tLang(locale.code)}
             </button>
           ))}
         </div>
