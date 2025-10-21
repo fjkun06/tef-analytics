@@ -2,7 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 
-import Logo from "./icons/Logo";
+import Logo from "./layouts/Logo";
 import strings from "@/utils/strings";
 
 const Brand: React.FC = () => (

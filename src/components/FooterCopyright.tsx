@@ -5,7 +5,10 @@ import Link from "next/link";
 import { FooterCopyrightProps } from "@/interfaces/footer.interface";
 import { getScopedI18n } from "@/locales/server";
 
-const FooterCopyright: React.FC<FooterCopyrightProps> = async ({ appName, year }) => {
+export default async function FooterCopyright({
+  appName,
+  year,
+}: FooterCopyrightProps): Promise<React.ReactElement> {
   const t = await getScopedI18n("footer.copyright");
   return (
     <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
@@ -32,6 +35,4 @@ const FooterCopyright: React.FC<FooterCopyrightProps> = async ({ appName, year }
       </div>
     </div>
   );
-};
-
-export default FooterCopyright;
+}

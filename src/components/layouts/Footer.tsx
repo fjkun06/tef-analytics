@@ -7,7 +7,7 @@ import constants from "@/utils/constants";
 import { getCurrentYear } from "@/utils/functions/getCurrentYear";
 import strings from "@/utils/strings";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
@@ -30,6 +30,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

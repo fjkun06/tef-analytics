@@ -1,29 +1,12 @@
-import { Metadata } from "next";
-
-import Client from "@/components/Client";
-import ClientTranslationProvider from "@/components/ClientTranslationProvider";
 import { getI18n, getScopedI18n, getCurrentLocale } from "@/locales/server";
 
-export const metadata: Metadata = {
-  title: "Tef Analytics | Contact",
-  description: "",
-};
-export default async function Contact({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-
+export default async function Contact() {
   const t = await getI18n();
   const t2 = await getScopedI18n("hello");
   const currentLocale = getCurrentLocale();
 
   return (
     <div>
-      <ClientTranslationProvider locale={locale}>
-        <Client />
-      </ClientTranslationProvider>
       <h1>SSR / SSG</h1>
       <p>
         Current locale:
