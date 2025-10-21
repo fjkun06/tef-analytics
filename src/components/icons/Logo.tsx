@@ -1,4 +1,5 @@
 import type { IconProps } from "@/interfaces/icons.interface";
+import strings from "@/utils/strings";
 
 const Logo = ({ className = "h-8 w-8 text-indigo-600" }: IconProps) => (
   <svg
@@ -7,9 +8,9 @@ const Logo = ({ className = "h-8 w-8 text-indigo-600" }: IconProps) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     role="img"
-    aria-label="Tef Analytics"
+    aria-label={strings.appName}
   >
-    <title>Tef Analytics</title>
+    <title>{strings.appName}</title>
     <g transform="translate(0,0)">
       <rect x="0" y="0" width="32" height="32" rx="6" fill="currentColor" />
       <path d="M8 24 L16 10 L24 24 Z" fill="white" />
@@ -23,7 +24,7 @@ const Logo = ({ className = "h-8 w-8 text-indigo-600" }: IconProps) => (
         fontWeight="600"
         fontSize="14"
       >
-        Tef Analytics
+        {strings.appName}
       </text>
     </g>
   </svg>

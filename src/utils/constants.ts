@@ -1,3 +1,5 @@
+import { FooterAboutTranslationKeys } from "@/interfaces/footer.interface";
+
 const constants = {
   locales: [
     { code: "en" as const, label: "English", icon: "🇬🇧" },
@@ -10,6 +12,12 @@ const constants = {
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ],
+  aboutLinks: [
+    { href: "#", label: "about.companyHistory" },
+    { href: "#", label: "about.meetTeam" },
+    { href: "#", label: "about.employeeHandbook" },
+    { href: "#", label: "about.careers" },
+  ] as { href: string; label: FooterAboutTranslationKeys }[],
 };
 
 export default constants;

@@ -3,6 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 import ClientTranslationProvider from "@/components/ClientTranslationProvider";
+import Footer from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default async function RootLayout({
         <Navbar />
       </ClientTranslationProvider>
       {children}
+      <Footer />
     </>
   );
 }

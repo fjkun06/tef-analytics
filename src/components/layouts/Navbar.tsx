@@ -1,11 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
-import Link from "next/link";
-
+import Brand from "@/components/Brand";
 import IconClose from "@/components/icons/IconClose";
 import IconMenu from "@/components/icons/IconMenu";
-import Logo from "@/components/icons/Logo";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import NavLink from "@/components/NavLink";
 import type { NavItem } from "@/interfaces/navbar.interface";
@@ -22,14 +20,7 @@ const Navbar: React.FC = () => {
     <header className="w-full border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Logo />
-              <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                Tef Analytics
-              </span>
-            </Link>
-          </div>
+          <Brand />
 
           {/* Desktop nav */}
           <div className="flex items-center gap-6">
