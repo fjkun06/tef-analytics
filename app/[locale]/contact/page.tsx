@@ -7,7 +7,6 @@ export default async function Contact() {
 
   return (
     <div>
-      <h1>SSR / SSG</h1>
       <p>
         Current locale:
         <span>{currentLocale}</span>

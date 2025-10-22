@@ -8,7 +8,6 @@ export default async function Page() {
   ];
   return (
     <div>
-      <h1>SSR / SSG</h1>
       <p>Hello: {t("hello.world2")}</p>
       <div className="bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
