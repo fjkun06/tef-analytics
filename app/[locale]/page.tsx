@@ -1,4 +1,5 @@
-import { HomeImpactCard } from "@/components/cards";
+import { HomeImpactCard, HomeProjectCard } from "@/components/cards";
+import SectionWrapper from "@/components/wrappers/SectionWrapper";
 import constants from "@/utils/constants";
 export default async function Page() {
   const stats = [
@@ -7,13 +8,23 @@ export default async function Page() {
     { id: 3, name: "New users annually", value: "46,000" },
   ];
   return (
-    <div className="h-full w-full max-w-7xl flex-1 bg-red-200">
+    <div className="flex h-full w-full max-w-7xl flex-1 flex-col bg-red-200">
       {/* <p>Hello: {t("hello.world2")}</p> */}
-      <div className="flex w-full flex-wrap justify-center gap-4 bg-gray-900 px-1 py-6 sm:gap-6 sm:py-6 lg:flex-nowrap lg:gap-8">
-        {constants.domainDetails.map((detail) => (
-          <HomeImpactCard key={detail.domain} {...detail} />
-        ))}
-      </div>
+      <SectionWrapper>
+        <div className="flex flex-wrap justify-center gap-4 bg-gray-900 py-6 sm:gap-6 lg:flex-nowrap lg:gap-6">
+          {constants.domainDetails.map((detail) => (
+            <HomeImpactCard key={detail.domain} {...detail} />
+          ))}
+        </div>
+      </SectionWrapper>
+      <SectionWrapper>
+        <div className="flex flex-wrap justify-center gap-4 bg-gray-900 py-6 sm:gap-6 lg:flex-nowrap lg:justify-between">
+          {constants.mainProjects.map((project) => (
+            <HomeProjectCard key={project.icon} {...project} />
+          ))}
+        </div>
+      </SectionWrapper>
+
       <div className="bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">

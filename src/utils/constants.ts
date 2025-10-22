@@ -40,6 +40,30 @@ const constants = {
       detailNumber: 6,
     },
   ],
+
+  mainProjects: [
+    {
+      year: 2024,
+      icon: "IconRobot",
+      translationKey: "project1",
+      skills: ["Python", "TensorFlow", "NLP", "Flask"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2018,
+      icon: "IconShield",
+      translationKey: "project2",
+      skills: ["Python", "Machine Learning", "AWS", "Docker"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2017,
+      icon: "IconTrend",
+      translationKey: "project3",
+      skills: ["R", "SQL", "R Shiny", "Statistical Modeling"],
+      achievmentsCount: 1,
+    },
+  ],
 };
 
 export default constants;

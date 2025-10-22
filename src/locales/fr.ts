@@ -54,5 +54,25 @@ export default {
         subtitle: "Secteurs transformés",
       },
     },
+    chosenprojects: {
+      project1: {
+        title: "Outil d'analyse de documents juridiques avec LLM personnalisé",
+        description:
+          "Création d'une application pour résumer et analyser des documents juridiques à l'aide d'un modèle spécialisé entraîné sur le jargon juridique.",
+        "achievements#zero": "Efficacité du traitement des documents améliorée",
+      },
+      project2: {
+        title: "Système de détection de fraude en temps réel",
+        description:
+          "Conception et mise en œuvre d'un système de détection de fraude en temps réel pour les transactions FinTech.",
+        "achievements#zero": "Réduction de 80% des contrôles manuels",
+      },
+      project3: {
+        title: "Tableau de bord d'analyse prédictive des ventes",
+        description:
+          "Création d'un modèle de prévision des ventes de produits de boulangerie dans plusieurs magasins.",
+        "achievements#zero": "Augmentation du chiffre d'affaires de 38%",
+      },
+    },
   },
 } as const;

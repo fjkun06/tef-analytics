@@ -54,5 +54,25 @@ export default {
         subtitle: "Transformierte Branchen",
       },
     },
+    chosenprojects: {
+      project1: {
+        title: "Analysewerkzeug für juristische Dokumente mit Custom LLM",
+        description:
+          "Entwicklung einer Anwendung zur Zusammenfassung und Analyse juristischer Dokumente mit einem spezialisierten Modell für juristische Fachsprache.",
+        "achievements#zero": "Steigerung der Effizienz der Dokumentenverarbeitung",
+      },
+      project2: {
+        title: "Echtzeit-Betrugserkennungssystem",
+        description:
+          "Konzeption und Implementierung eines Systems zur Echtzeit-Betrugserkennung bei FinTech-Transaktionen.",
+        "achievements#zero": "Reduzierung manueller Prüfungen um 80%",
+      },
+      project3: {
+        title: "Dashboard für prädiktive Verkaufsanalysen",
+        description:
+          "Erstellung eines Prognosemodells für den Verkauf von Backwaren in mehreren Filialen.",
+        "achievements#zero": "Umsatzsteigerung um 38%",
+      },
+    },
   },
 } as const;
