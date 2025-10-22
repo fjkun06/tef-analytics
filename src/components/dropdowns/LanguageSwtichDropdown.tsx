@@ -21,7 +21,9 @@ function LanguageSwtichDropdown({
               : "text-slate-700 dark:text-slate-200"
           }`}
         >
-          <span className="mr-2 inline-block text-lg">{(locale as any).icon ?? ""}</span>
+          <span data-testid="data-span" className="mr-2 inline-block text-lg">
+            {(locale as any).icon ?? ""}
+          </span>
           {tLang(locale.code)}
         </button>
       ))}
