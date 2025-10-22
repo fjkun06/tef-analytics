@@ -1,16 +1,10 @@
 "use client";
-import React, { PropsWithChildren } from "react";
+import React from "react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type NavLinkProps = PropsWithChildren<{
-  href: string;
-  className?: string; // base className
-  activeClassName?: string;
-  inactiveClassName?: string;
-  onClick?: () => void;
-}>;
+import { NavLinkProps } from "@/interfaces/navbar.interface";
 
 export default function NavLink({
   href,
