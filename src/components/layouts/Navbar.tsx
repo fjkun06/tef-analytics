@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 
 import Brand from "@/components/Brand";
 import IconClose from "@/components/icons/IconClose";
@@ -34,7 +34,9 @@ const Navbar: React.FC = () => {
                   {t(hrefToNavKey(item.href))}
                 </NavLink>
               ))}
-              <LanguageSwitch />
+              <Suspense>
+                <LanguageSwitch />
+              </Suspense>
             </nav>
 
             {/* Mobile menu button */}
@@ -69,7 +71,9 @@ const Navbar: React.FC = () => {
           ))}
 
           {/* Language switscher dropdown*/}
-          <LanguageSwitch />
+          <Suspense>
+            <LanguageSwitch />
+          </Suspense>
         </nav>
       </div>
     </header>

@@ -18,6 +18,28 @@ const constants = {
     { href: "#", label: "about.employeeHandbook" },
     { href: "#", label: "about.careers" },
   ] as { href: string; label: FooterAboutTranslationKeys }[],
+  domainDetails: [
+    {
+      domain: "experience",
+      icon: "IconTrend",
+      detailNumber: 16,
+    },
+    {
+      domain: "projects",
+      icon: "IconCode",
+      detailNumber: 15,
+    },
+    {
+      domain: "technologies",
+      icon: "IconDatabase",
+      detailNumber: 20,
+    },
+    {
+      domain: "impact",
+      icon: "IconWeb",
+      detailNumber: 6,
+    },
+  ],
 };
 
 export default constants;

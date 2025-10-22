@@ -6,7 +6,7 @@ import { LocaleProps } from "@/locales/locales.interface";
 import constants from "@/utils/constants";
 
 export function useLanguageSwitchController() {
-  const changeLocale = useChangeLocale();
+  const changeLocale = useChangeLocale({ preserveSearchParams: true });
   const current = useCurrentLocale();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);

@@ -31,6 +31,7 @@ const customJestConfig = {
   collectCoverageFrom: [
     "src/components/**/*.{js,ts,jsx,tsx}",
     "!src/components/icons/*.{js,ts,jsx,tsx}",
+    "!src/components/cards/*.{js,ts}",
     "src/pages/**/*.{js,ts,jsx,tsx}",
     "!src/utils/**/*.{js,ts,jsx,tsx}",
     "src/utils/functions/*.{js,ts,jsx,tsx}",

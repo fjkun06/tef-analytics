@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "test": "jest --watchAll",
+    "test": "jest --onlyChanged",
     "test:ci": "jest --ci",
     "prepare": "husky",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",

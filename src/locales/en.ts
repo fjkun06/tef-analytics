@@ -35,4 +35,24 @@ export default {
     de: "German",
     fr: "French",
   },
+  home: {
+    domains: {
+      experience: {
+        title: "Years of Experience",
+        subtitle: "Data Science & ML",
+      },
+      projects: {
+        title: "Projects Delivered",
+        subtitle: "Across Industries",
+      },
+      technologies: {
+        title: "Technologies",
+        subtitle: "Tools & Frameworks",
+      },
+      impact: {
+        title: "Global Impact",
+        subtitle: "Industries Transformed",
+      },
+    },
+  },
 } as const;

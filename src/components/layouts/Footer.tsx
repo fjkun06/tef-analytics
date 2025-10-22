@@ -9,7 +9,7 @@ import strings from "@/utils/strings";
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="w-full bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <SocialLinks className="mt-8 flex justify-center gap-6 md:gap-8 lg:justify-start" />
