@@ -1,8 +1,5 @@
 // jest.config.ts
 import nextJest from "next/jest";
-import { pathsToModuleNameMapper } from "ts-jest";
-
-import { compilerOptions } from "./tsconfig.json";
 
 // Provide the path to your Next.js app to load next.config.js
 // and .env files in your test environment
@@ -20,9 +17,10 @@ const customJestConfig = {
 
   // Map TypeScript paths from tsconfig.json to Jest moduleNameMapper
   moduleNameMapper: {
-    ...pathsToModuleNameMapper(compilerOptions.paths || {}, {
-      prefix: "<rootDir>/src/",
-    }),
+    // ...pathsToModuleNameMapper(compilerOptions.paths || {}, {
+    //   prefix: "<rootDir>/src/",
+    // }),
+    "^@/(.*)$": "<rootDir>/src/$1",
     // Mock CSS and static assets
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
     "\\.(jpg|jpeg|png|gif|webp|avif|svg)$": "<rootDir>/__mocks__/fileMock.js",
@@ -32,8 +30,10 @@ const customJestConfig = {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/components/**/*.{js,ts,jsx,tsx}",
+    "!src/components/icons/*.{js,ts,jsx,tsx}",
     "src/pages/**/*.{js,ts,jsx,tsx}",
-    "src/utils/**/*.{js,ts,jsx,tsx}",
+    "!src/utils/**/*.{js,ts,jsx,tsx}",
+    "src/utils/functions/*.{js,ts,jsx,tsx}",
     "!src/pages/_app.{js,ts,jsx,tsx}",
     "!src/pages/_document.{js,ts,jsx,tsx}",
     "!**/node_modules/**",

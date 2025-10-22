@@ -30,7 +30,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "jest.config.ts",
-    "global.d.ts"
+    "global.d.ts",
+    "src/components/SocialIconLink.test.tsx"
   ],
   "exclude": ["node_modules"]
 }
