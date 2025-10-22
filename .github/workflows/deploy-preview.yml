@@ -5,7 +5,7 @@ on:
     workflows: ["CI Push/PR"] # 👈 depends on CI
     types:
       - completed
-      
+
 jobs:
   vercel-cli-deploy-preview:
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push' && github.event.workflow_run.head_branch == 'dev'}}
@@ -16,13 +16,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
-  
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-  
+
       # 🧠 Add cache step here (before installing deps)
       - name: Cache dependencies and Next.js build
         uses: actions/cache@v4
@@ -33,24 +33,25 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-  
+
       - name: Install Vercel CLI
         run: npm install --global vercel
-  
+
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-  
+
       - name: Build Project Artifacts
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
         env:
           NPM_FLAGS: --legacy-peer-deps
-  
+
       - name: Deploy Project Artifacts to Vercel
         id: deploy
         shell: bash
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | tee deploy.log
+        run:
+          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | tee deploy.log
 
-            # Set preview url
+          # Set preview url
       - id: seturl
         name: Set preview url
         run: echo "url=$(tail -1 deploy.log)">> $GITHUB_OUTPUT
