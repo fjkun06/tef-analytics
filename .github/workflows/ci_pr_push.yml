@@ -6,7 +6,9 @@
 
 # CI Checks (Lint + Test + Build) for Merge or Pull Requests
 
-name: Push/PR
+ # CI Checks (Lint + Test + Build) for Merge or Pull Requests
+ 
+name:  CI Push/PR
 
 on:
   push:
