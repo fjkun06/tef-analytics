@@ -26,7 +26,9 @@ const socialLinks = [
   },
 ];
 
-const SocialLinks: React.FC<SocialLinksProps> = async ({ className }) => {
+export default async function SocialLinks({
+  className,
+}: SocialLinksProps): Promise<React.ReactElement> {
   const t = await getScopedI18n("footer");
   return (
     <div className="flex flex-col items-center lg:items-start">
@@ -43,6 +45,4 @@ const SocialLinks: React.FC<SocialLinksProps> = async ({ className }) => {
       </ul>
     </div>
   );
-};
-
-export default SocialLinks;
+}

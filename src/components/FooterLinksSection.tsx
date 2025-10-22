@@ -6,11 +6,11 @@ import {
 } from "@/interfaces/footer.interface";
 import { getScopedI18n } from "@/locales/server";
 
-const FooterLinksSection: React.FC<FooterLinksSectionProps> = async ({
+export default async function FooterLinksSection({
   links,
   className,
   headingTranslationKey = "about",
-}) => {
+}: FooterLinksSectionProps): Promise<React.ReactElement> {
   const t = await getScopedI18n("footer");
   const mappedHeadingTranslationKey =
     `${headingTranslationKey}.title` as FooterAboutTranslationKeys;
@@ -33,6 +33,4 @@ const FooterLinksSection: React.FC<FooterLinksSectionProps> = async ({
       </ul>
     </div>
   );
-};
-
-export default FooterLinksSection;
+}

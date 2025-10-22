@@ -3,9 +3,13 @@ import { renderHook } from "@testing-library/react";
 import { useLanguageSwitchController } from "./LanguageSwitch.controller";
 const sampleReturnValue = {
   open: false,
-  ref: "div",
+  ref: { current: null },
   current: "en",
-  currentIcon: "🇬🇧",
+  currentIcon: "",
+  languageLocales: [],
+  onSelect: expect.any(Function),
+  tLang: "lang",
+  setOpen: expect.any(Function),
 };
 jest.mock("@/locales/client", () => ({
   useChangeLocale: jest.fn(),
@@ -13,27 +17,23 @@ jest.mock("@/locales/client", () => ({
   useScopedI18n: jest.fn((key: string) => key),
 }));
 
-// jest.mock("@/hooks/useClickedOutside", () => jest.fn());
-jest.mock("./LanguageSwitch.controller", () => ({
-  useLanguageSwitchController: jest.fn(() => ({
-    ...sampleReturnValue,
-    // tLang: jest.fn(),
-    // setOpen: jest.fn(),
-    // onSelect: jest.fn(),
-  })),
+jest.mock("@/utils/constants", () => ({
+  locales: [],
 }));
+
+jest.mock("@/hooks/useClickedOutside", () => jest.fn());
 
 describe("useLanguageSwitchController", () => {
   it("should return the correct initial state", () => {
     const { result } = renderHook(() => useLanguageSwitchController());
     expect(result.current).toEqual(sampleReturnValue);
   });
-  // it("should call useClickedOutside", async () => {
+  // it("should call onSelect", async () => {
   //   renderHook(() => useLanguageSwitchController());
-  //   // const useClickedOutsideMock = useClickedOutside({
+  //   // const mock = useClickedOutside({
   //   //   ref: { current: null },
   //   //   functionToBeTriggered: jest.fn(),
   //   // });
-  //   await waitFor(() => expect(useClickedOutside).toHaveBeenCalledTimes(1));
+  //   expect(jest.fn()).toHaveBeenCalled();
   // });
 });
