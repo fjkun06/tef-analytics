@@ -21,7 +21,7 @@ const constants = {
     {
       domain: "experience",
       icon: "IconTrend",
-      detailNumber: 16,
+      detailNumber: 10,
     },
     {
       domain: "projects",
@@ -31,7 +31,7 @@ const constants = {
     {
       domain: "technologies",
       icon: "IconDatabase",
-      detailNumber: 20,
+      detailNumber: 15,
     },
     {
       domain: "impact",
