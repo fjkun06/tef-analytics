@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   const t = useScopedI18n("nav");
 
   return (
-    <header className="w-full border-b border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900">
+    <header className="borderl-slate-200 dark:borderl-slate-700 sticky top-0 z-999 w-full border-b bg-white dark:bg-slate-900 dark:bg-[url(/bg-white.svg)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Brand />
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
           mobileOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
         }`}
       >
-        <nav className="space-y-1 px-4 pb-4">
+        <nav className="space-y-1 px-4 pb-4 dark:bg-slate-800">
           {navbarItems.map((item) => (
             <NavLink
               key={item.name}

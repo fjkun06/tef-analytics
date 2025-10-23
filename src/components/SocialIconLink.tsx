@@ -7,7 +7,7 @@ import type { SocialIconLinkProps } from "@/interfaces/icons.interface";
 const SocialIconLink: React.FC<SocialIconLinkProps> = ({ href, label, icon }) => (
   <Link
     href={href}
-    className="text-gray-500 transition hover:text-indigo-600 dark:text-gray-500 dark:hover:text-indigo-600"
+    className="text-gray-500 transition hover:text-teal-600 dark:text-gray-500 dark:hover:text-teal-600"
     rel="noreferrer"
     target="_blank"
     passHref

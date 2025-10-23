@@ -3,7 +3,7 @@ import { CarouselWrapperProps } from "@/interfaces/wrappers.interface";
 export const CarouselWrapper = ({ children, index, className }: CarouselWrapperProps) => {
   return (
     <div
-      className={`group flex animate-[scrolling_20s_linear_infinite] gap-10 pr-10 ${className ?? ""} ${index === 1 ? "aria-hidden" : ""}`}
+      className={`group flex animate-[scrolling_30s_linear_infinite] gap-10 pr-10 ${className ?? ""} ${index === 1 ? "aria-hidden" : ""}`}
     >
       {children}
     </div>

@@ -12,3 +12,23 @@ export type InfiniteCarouselProps = {
   carouselClassName?: string;
   carouselItemClassName?: string;
 };
+
+export type Project = {
+  year: number;
+  icon: string;
+  translationKey: string;
+  skills: string[];
+  achievmentsCount: number;
+};
+export type HomeProjectsSectionProps = {
+  mainProjects: Project[];
+};
+type DomainDetailsProps = {
+  domain: string;
+  icon: string;
+  detailNumber: number;
+};
+export type HomeSkillsSectionProps = {
+  domainDetails: DomainDetailsProps[];
+  skills: string[];
+};

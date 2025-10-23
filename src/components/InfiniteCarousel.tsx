@@ -23,7 +23,7 @@ function InfiniteCarousel({
 }: InfiniteCarouselProps) {
   return (
     <div
-      className={`carousel flex max-w-[800px] overflow-hidden bg-gray-900 hover:[&>.group]:[animation-play-state:paused] ${carouselClassName ?? ""}`}
+      className={`carousel flex max-w-[800px] overflow-hidden hover:[&>.group]:[animation-play-state:paused] ${carouselClassName ?? ""}`}
     >
       {[0, 1].map((index) => (
         <CarouselWrapper key={index} index={index} className={carouselItemClassName}>

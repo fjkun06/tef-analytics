@@ -64,6 +64,21 @@ const constants = {
       achievmentsCount: 1,
     },
   ],
+  skills: [
+    "Machine Learning",
+    "Deep Learning & AI",
+    "Cloud Computing",
+    "Data visualisation",
+    "Business Intelligence",
+    "Statistical modelling",
+    "Reporting",
+    "LLM",
+    "Analytics",
+    "MLOps",
+    "Data Analysis",
+    "LLMOps",
+    "Data Cleaning",
+  ],
 };
 
 export default constants;

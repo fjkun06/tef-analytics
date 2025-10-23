@@ -21,7 +21,8 @@ export default async function RootLayout({
   const { locale } = await params;
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center bg-green-500">
+    <main className="flex min-h-screen w-full flex-col items-center bg-slate-300">
+      {/* <main className="flex min-h-screen w-full flex-col items-center bg-[#b1d7dbac]"> */}
       <ClientTranslationProvider locale={locale}>
         <Navbar />
       </ClientTranslationProvider>
