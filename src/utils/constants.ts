@@ -13,10 +13,9 @@ const constants = {
     { name: "Contact", href: "/contact" },
   ],
   aboutLinks: [
-    { href: "#", label: "about.companyHistory" },
-    { href: "#", label: "about.meetTeam" },
-    { href: "#", label: "about.employeeHandbook" },
-    { href: "#", label: "about.careers" },
+    { href: "#", label: "about.privacy" },
+    { href: "#", label: "about.cookie" },
+    { href: "#", label: "about.imprint" },
   ] as { href: string; label: FooterAboutTranslationKeys }[],
   domainDetails: [
     {

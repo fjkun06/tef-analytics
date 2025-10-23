@@ -1,11 +1,13 @@
 export default {
   footer: {
     about: {
-      companyHistory: "Company History",
-      meetTeam: "Meet the Team",
-      employeeHandbook: "Employee Handbook",
-      careers: "Careers",
-      title: "About Us",
+      privacy: "Privacy Policy",
+      cookie: "Cookie Policy",
+      imprint: "Imprint",
+      title: "Legal",
+    },
+    contact: {
+      title: "Contact",
     },
     social: {
       description:
@@ -13,15 +15,6 @@ export default {
     },
     copyright: {
       allRightsReserved: "All rights reserved.",
-      terms: "Terms & Conditions",
-      privacy: "Privacy Policy",
-    },
-  },
-  hello: {
-    world: "Hello {param}!",
-    world2: "Hello World!",
-    nested: {
-      translations: "Translations",
     },
   },
   nav: {
