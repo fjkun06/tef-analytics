@@ -1,5 +1,8 @@
 import React from "react";
 
+import { CarouselWrapper } from "./wrappers/CarouselWrapper";
+import { InfiniteCarouselProps } from "@/interfaces/home.interface";
+
 /**
  * InfiniteCarousel component for creating an infinitely scrolling horizontal carousel.
  *
@@ -17,39 +20,13 @@ function InfiniteCarousel({
   children,
   carouselClassName,
   carouselItemClassName,
-}: {
-  children: React.ReactNode;
-  carouselClassName?: string;
-  carouselItemClassName?: string;
-}) {
-  const CarouselWrapper = ({
-    children,
-    index,
-  }: {
-    children: React.ReactNode;
-    index: number;
-  }) => {
-    return (
-      <div
-        className={`group flex animate-[scrolling_20s_linear_infinite] gap-10 pr-10 ${carouselItemClassName ?? ""} ${index === 1 ? "aria-hidden" : ""}`}
-      >
-        {children}
-      </div>
-    );
-  };
-  /**
-   * CarouselWrapper is an internal component that wraps carousel items and applies animation classes.
-   *
-   * @param children - The carousel items to render.
-   * @param index - The index of the wrapper (used for aria-hidden and key).
-   */
-
+}: InfiniteCarouselProps) {
   return (
     <div
       className={`carousel flex max-w-[800px] overflow-hidden bg-gray-900 hover:[&>.group]:[animation-play-state:paused] ${carouselClassName ?? ""}`}
     >
       {[0, 1].map((index) => (
-        <CarouselWrapper key={index} index={index}>
+        <CarouselWrapper key={index} index={index} className={carouselItemClassName}>
           {children}
         </CarouselWrapper>
       ))}

@@ -6,23 +6,40 @@ import CardWrapper from "./CardWrapper";
 import SkillPill from "../buttons/SkillPill";
 import { HomeProjectCardProps, NumRange } from "@/interfaces/cards.interface";
 import { getScopedI18n } from "@/locales/server";
+import { mapAchievements } from "@/utils/functions/mapAchievements";
 
+/**
+ * HomeProjectCard component for displaying a project card with icon, year, translated title/description, achievements, and skills.
+ *
+ * @param year - The year of the project.
+ * @param icon - The icon component name to dynamically import and display.
+ * @param translationKey - The translation key prefix for this project (used for title, description, achievements).
+ * @param skills - An array of skill labels to display as pills.
+ * @param achievmentsCount - Number of achievements to display (default: 1).
+ *
+ * @example
+ * <HomeProjectCard
+ *   year="2023"
+ *   icon="IconAnalytics"
+ *   translationKey="project1"
+ *   skills={["Python", "LLM"]}
+ *   achievmentsCount={2}
+ * />
+ */
 export default async function HomeProjectCard({
   year,
   icon,
   translationKey,
-  skills = [],
-  achievmentsCount = 1,
+  skills,
+  achievmentsCount,
 }: HomeProjectCardProps) {
   const Icon = dynamic(() => import(`@/components/icons/${icon}`));
   const t = await getScopedI18n("home.chosenprojects");
   const t2 = (code: any, index?: number) => t(code, { count: index as NumRange<5> });
-  const achievements = Array.from({ length: achievmentsCount }).map(
-    (_, index: number) => (
-      <span key={index} className="text-xs text-black sm:text-sm">
-        {t2(`${translationKey}.achievements`, index)}
-      </span>
-    ),
+  const achievements: React.ReactElement[] = mapAchievements(
+    t2,
+    achievmentsCount ?? 0,
+    translationKey,
   );
 
   return (
@@ -42,17 +59,16 @@ export default async function HomeProjectCard({
             {t2(`${translationKey}.description`)}
           </span>
         </p>
-        <ul className="flex flex-col gap-y-2">
-          <li className="flex items-center gap-x-2">
-            <span className="h-1 w-1 rounded-full bg-green-500 sm:h-1.5 sm:w-1.5"></span>
-            {...achievements}
-          </li>
-        </ul>
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill) => (
-            <SkillPill key={skill} label={skill} />
-          ))}
-        </div>
+        {achievements.length && (
+          <ul className="flex flex-col gap-y-2">{...achievements}</ul>
+        )}
+        {skills.length && (
+          <div className="skills flex flex-wrap gap-3">
+            {skills.map((skill) => (
+              <SkillPill key={skill} label={skill} />
+            ))}
+          </div>
+        )}
       </div>
     </CardWrapper>
   );
