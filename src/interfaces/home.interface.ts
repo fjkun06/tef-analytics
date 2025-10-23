@@ -23,7 +23,7 @@ export type Project = {
 export type HomeProjectsSectionProps = {
   mainProjects: Project[];
 };
-type DomainDetailsProps = {
+export type DomainDetailsProps = {
   domain: string;
   icon: string;
   detailNumber: number;

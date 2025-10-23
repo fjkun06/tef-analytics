@@ -48,6 +48,9 @@ export default {
       },
     },
     chosenprojects: {
+      title: "Projets présentés",
+      subtitle:
+        "Solutions innovantes dans tous les secteurs utilisant des technologies de pointe en IA et ML",
       project1: {
         title: "Outil d'analyse de documents juridiques avec LLM personnalisé",
         description:
@@ -66,6 +69,25 @@ export default {
           "Création d'un modèle de prévision des ventes de produits de boulangerie dans plusieurs magasins.",
         "achievements#zero": "Augmentation du chiffre d'affaires de 38%",
       },
+    },
+    skills: {
+      title: "Transformation des données en",
+      subheading: "Domaines d'expertise",
+      subtitle:
+        "Transformation des entreprises grâce à des solutions basées sur les données et à l'innovation en IA",
+      content: {
+        one: "Aperçus",
+        two: "Connaissance",
+        three: "Solutions",
+        four: "Intelligence",
+      },
+    },
+    header: {
+      me: "Je suis Franck Tankouan",
+      slogan:
+        "Bienvenue dans mon hub d'analytique, —où les données se transforment en décisions.",
+      description:
+        " Expert en science des données et spécialiste de l'IA transformant des données complexes en informations exploitables. Exploration des frontières de l'apprentissage automatique et de l'intelligence artificielle.",
     },
   },
 } as const;

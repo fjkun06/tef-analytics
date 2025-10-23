@@ -22,7 +22,7 @@ function LanguageSwtichDropdown({
           }`}
         >
           <span data-testid="data-span" className="mr-2 inline-block text-lg">
-            {(locale as any).icon ?? ""}
+            {(locale as any).icon}
           </span>
           {tLang(locale.code)}
         </button>

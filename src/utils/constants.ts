@@ -78,6 +78,7 @@ const constants = {
     "LLMOps",
     "Data Cleaning",
   ],
+  callToActions: ["about", "projects", "contact"],
 };
 
 export default constants;

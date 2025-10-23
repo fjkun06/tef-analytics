@@ -48,6 +48,9 @@ export default {
       },
     },
     chosenprojects: {
+      title: "Featured Projects",
+      subtitle:
+        "Innovative solutions across industries using cutting-edge AI and ML technologies",
       project1: {
         title: "Legal Document Analysis Tool with Custom LLM",
         description:
@@ -67,6 +70,23 @@ export default {
         "achievements#zero": "Increased revenue by 38%",
         "achievements#one": "Improved customer satisfaction",
       },
+    },
+    skills: {
+      title: "Transforming Data into",
+      subheading: "Areas of Expertise",
+      subtitle: "Transforming businesses with data-driven solutions and AI innovation",
+      content: {
+        one: "Insights",
+        two: "Knowledge",
+        three: "Solutions",
+        four: "Intelligence",
+      },
+    },
+    header: {
+      me: "I am Franck Tankouan",
+      slogan: "Welcome to my analytics hub, —where data turns into decisions.",
+      description:
+        "Data Science Expert and AI Specialist transforming complex data into actionable insights. Exploring the frontiers of machine learning and artificial intelligence.",
     },
   },
 } as const;

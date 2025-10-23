@@ -48,6 +48,9 @@ export default {
       },
     },
     chosenprojects: {
+      title: "Ausgewählte Projekte",
+      subtitle:
+        "Innovative Lösungen branchenübergreifend unter Einsatz modernster KI- und ML-Technologien",
       project1: {
         title: "Analysewerkzeug für juristische Dokumente mit Custom LLM",
         description:
@@ -66,6 +69,25 @@ export default {
           "Erstellung eines Prognosemodells für den Verkauf von Backwaren in mehreren Filialen.",
         "achievements#zero": "Umsatzsteigerung um 38%",
       },
+    },
+    skills: {
+      title: "Verwandelt Daten in",
+      subheading: "Fachgebiete",
+      subtitle:
+        "Transformiert Unternehmen durch datengestützte Lösungen und KI-Innovation",
+      content: {
+        one: "Erkenntnisse",
+        two: "Wissen",
+        three: "Lösungen",
+        four: "Intelligenz",
+      },
+    },
+    header: {
+      me: "Ich bin Franck Tankouan",
+      slogan:
+        "Willkommen in meinem Analyse-Hub, —wo Daten in Entscheidungen umgewandelt werden.",
+      description:
+        "Datenwissenschaftsexperte und KI-Spezialist, der komplexe Daten in umsetzbare Erkenntnisse verwandelt. Erforschung der Grenzen des maschinellen Lernens und der künstlichen Intelligenz.",
     },
   },
 } as const;

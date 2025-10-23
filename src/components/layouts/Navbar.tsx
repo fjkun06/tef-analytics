@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
           mobileOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
         }`}
       >
-        <nav className="space-y-1 px-4 pb-4 dark:bg-slate-800">
+        <nav className="space-y-1 px-4 pb-4 dark:bg-slate-900">
           {navbarItems.map((item) => (
             <NavLink
               key={item.name}
