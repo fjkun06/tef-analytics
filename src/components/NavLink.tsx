@@ -17,9 +17,9 @@ export default function NavLink({
   const pathname = usePathname() || "/";
 
   const pathnameWithoutLocale = (() => {
-    const m = pathname.match(/^\/([a-z]{2})(\/.*|$)/i);
-    if (!m) return pathname;
-    const rest = m[2];
+    const subPath = pathname.match(/^\/([a-z]{2})(\/.*|$)/i);
+    if (!subPath) return pathname;
+    const rest = subPath[2];
     return rest === "" ? "/" : rest;
   })();
 
