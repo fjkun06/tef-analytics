@@ -26,11 +26,7 @@ export default async function HomeProjectCard({
   );
 
   return (
-    <CardWrapper className="text-secondary flex w-[90%] flex-col justify-start gap-y-3 rounded-xl bg-white p-3 shadow-lg shadow-cyan-200/30 transition-all ease-in hover:scale-102 min-[380px]:w-[97%] sm:p-6 md:max-w-[324px] lg:w-[32.5%] lg:max-w-[384px]">
-      {/* <CardWrapper className="text-secondary flex w-[90%] md:max-w-[324px] flex-col
-     justify-start gap-y-3 rounded-xl bg-white p-3 shadow-lg
-     shadow-cyan-200/30 transition-all ease-in hover:scale-102
-     min-[380px]:w-[47%] sm:w-[40%] sm:p-6 lg:w-[32.5%] md:max-w-[384px]"> */}
+    <CardWrapper className="text-secondary flex w-[90%] flex-col justify-start gap-y-3 rounded-xl bg-white p-3 shadow-lg shadow-cyan-200/30 transition-all ease-in hover:scale-102 min-[380px]:w-[97%] sm:!p-0 md:max-w-[324px] md:!p-6 lg:w-[32.5%] lg:max-w-[384px]">
       <div className="flex size-full flex-col gap-y-1 p-2 sm:gap-y-3 sm:p-6">
         <div className="flex items-center gap-x-2 sm:gap-x-4">
           <span className="grid size-7 place-content-center rounded-[10px] bg-linear-to-r from-[#0cc941] to-[#3b82f6] text-white sm:size-[44px]">

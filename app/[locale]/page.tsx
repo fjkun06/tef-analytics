@@ -1,4 +1,6 @@
+import SkillPill from "@/components/buttons/SkillPill";
 import { HomeImpactCard, HomeProjectCard } from "@/components/cards";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
 import SectionWrapper from "@/components/wrappers/SectionWrapper";
 import constants from "@/utils/constants";
 export default async function Page() {
@@ -23,6 +25,22 @@ export default async function Page() {
             <HomeProjectCard key={project.icon} {...project} />
           ))}
         </div>
+      </SectionWrapper>
+      <SectionWrapper>
+        {/* <div className="flex flex-wrap justify-center gap-4 bg-gray-900 py-6 sm:gap-6 lg:flex-nowrap lg:justify-between"> */}
+        <InfiniteCarousel carouselClassName="bg-white" carouselItemClassName="bg-white">
+          {[
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            ...["Python", "Machine Learning", "AWS", "Docker"],
+          ].map((skill) => (
+            <SkillPill carousel key={skill} label={skill} />
+          ))}
+        </InfiniteCarousel>
+        {/* </div> */}
       </SectionWrapper>
 
       <div className="bg-gray-900 py-24 sm:py-32">

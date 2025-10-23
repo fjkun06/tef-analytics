@@ -16,6 +16,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
+
+  --animate-scrolling: scrolling 1s ease-in-out infinite;
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop nav */}
           <div className="flex items-center gap-6">
-            <nav className="ml-6 hidden items-center gap-6 space-x-2 lg:flex">
+            <nav className="ml-6 hidden items-center gap-2 space-x-2 lg:flex">
               {navbarItems.map((item) => (
                 <NavLink
                   key={item.name}
