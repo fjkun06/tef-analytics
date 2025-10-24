@@ -1,4 +1,4 @@
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import HomeDomainDetails from "./HomeDomainDetails";
 
@@ -24,7 +24,7 @@ jest.mock("../cards/HomeImpactCard", () => ({
 
 describe("HomeDomainDetails", () => {
   it("should render correctly", () => {
-    act(() => render(<HomeDomainDetails domainDetails={details} />));
+    render(<HomeDomainDetails domainDetails={details} />);
 
     expect(screen.getByText("experience")).toBeInTheDocument();
   });

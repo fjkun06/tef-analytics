@@ -21,8 +21,6 @@ jest.mock("@/utils/constants", () => ({
   locales: [],
 }));
 
-// jest.mock("@/hooks/useClickedOutside", () => jest.fn());
-
 const TestComponent = () => {
   const { open, setOpen, ref } = useLanguageSwitchController();
   return (

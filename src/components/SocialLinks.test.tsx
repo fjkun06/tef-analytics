@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import SocialLinks from "./SocialLinks";
 
@@ -8,8 +8,8 @@ jest.mock("@/locales/server", () => ({
 
 describe("SocialLinks", () => {
   it("renders correctly", async () => {
-    const element = await SocialLinks({ className: "test-class" });
-    render(element);
+    const element = await SocialLinks();
+    await act(() => render(element));
     expect(screen.getByText("social.description")).toBeInTheDocument();
   });
 });

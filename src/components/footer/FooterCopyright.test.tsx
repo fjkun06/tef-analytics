@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import FooterCopyright from "@/components/footer/FooterCopyright";
 
@@ -12,7 +12,7 @@ test("renders copyright year and app name", async () => {
 
   const element = await FooterCopyright({ appName, year });
 
-  render(element);
+  await act(() => render(element));
 
   expect(screen.getByText(`© ${year} ${appName}`)).toBeInTheDocument();
 });

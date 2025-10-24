@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import HomeProjectsSectionHeader from "./HomeProjectsSectionHeader";
 
@@ -8,7 +8,7 @@ jest.mock("@/locales/server", () => ({
 describe("HomeProjectsSectionHeader", () => {
   it("should render and translate correctly", async () => {
     const element = await HomeProjectsSectionHeader();
-    render(element);
+    await act(() => render(element));
     expect(screen.getByText("title")).toBeInTheDocument();
     expect(screen.getByText("subtitle")).toBeInTheDocument();
   });

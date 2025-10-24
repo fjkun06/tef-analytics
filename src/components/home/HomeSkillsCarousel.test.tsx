@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import HomeSkillsCarousel from "./HomeSkillsCarousel";
 
@@ -10,13 +10,9 @@ jest.mock("./HomeSkillsSectionSubHeading", () => ({
 }));
 describe("HomeSkillsCarousel", () => {
   it("should render correctly", () => {
-    act(() => render(<HomeSkillsCarousel skills={skills} />));
+    render(<HomeSkillsCarousel skills={skills} />);
 
     expect(screen.getByText("HomeSkillsSectionSubHeading Component")).toBeInTheDocument();
-    waitFor(() => {
-      skills.forEach((skill) => {
-        expect(screen.getByText(skill)).toBeInTheDocument();
-      });
-    });
+    expect(screen.getAllByTestId("skill-pill")).toHaveLength(8);
   });
 });

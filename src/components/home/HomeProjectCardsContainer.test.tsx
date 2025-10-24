@@ -1,4 +1,4 @@
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import HomeProjectCardsContainer from "./HomeProjectCardsContainer";
 
@@ -28,7 +28,7 @@ jest.mock("../cards/HomeProjectCard", () => ({
 
 describe("HomeProjectCardsContainer", () => {
   it("should render correctly", () => {
-    act(() => render(<HomeProjectCardsContainer mainProjects={details} />));
+    render(<HomeProjectCardsContainer mainProjects={details} />);
 
     expect(screen.getByText("project1")).toBeInTheDocument();
   });

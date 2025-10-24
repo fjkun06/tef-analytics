@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import FooterLegalLinks from "./FooterLegalLinks";
 
@@ -9,7 +9,7 @@ describe("FooterLegalLinks", () => {
   it("should render correctly", async () => {
     const element = await FooterLegalLinks();
 
-    render(element);
+    await act(() => render(element));
 
     expect(document.querySelector(".legal")).toBeInTheDocument();
     expect(screen.getByText("about.cookie")).toBeInTheDocument();
