@@ -8,7 +8,7 @@
  */
 import React from "react";
 
-import { HomeProjectCard } from "./cards";
+import { HomeProjectCard } from "../cards";
 import { Project } from "@/interfaces/home.interface";
 
 /**

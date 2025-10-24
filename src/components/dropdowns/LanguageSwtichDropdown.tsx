@@ -13,6 +13,7 @@ function LanguageSwtichDropdown({
       {languageLocales.map((locale) => (
         <button
           key={locale.code}
+          data-testid="language-dropdown-switch-button"
           type="button"
           onClick={() => onSelect(locale.code)}
           className={`w-full cursor-pointer px-3 py-2 text-left text-sm transition hover:bg-slate-100 dark:hover:bg-slate-800 ${

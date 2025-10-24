@@ -15,7 +15,7 @@ const details = [
     achievmentsCount: 1,
   },
 ];
-jest.mock("./cards/HomeProjectCard", () => ({
+jest.mock("../cards/HomeProjectCard", () => ({
   __esModule: true,
   default: (props: (typeof details)[0]) => {
     return (

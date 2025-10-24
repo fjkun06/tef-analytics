@@ -8,7 +8,7 @@
  */
 import React from "react";
 
-import NavigateButton from "./buttons/NavigateButton";
+import NavigateButton from "../buttons/NavigateButton";
 import { getScopedI18n } from "@/locales/server";
 import constants from "@/utils/constants";
 

@@ -1,6 +1,10 @@
 import { CarouselWrapperProps } from "@/interfaces/wrappers.interface";
 
-export const CarouselWrapper = ({ children, index, className }: CarouselWrapperProps) => {
+export default function CarouselWrapper({
+  children,
+  index,
+  className,
+}: CarouselWrapperProps) {
   return (
     <div
       className={`group flex animate-[scrolling_30s_linear_infinite] gap-10 pr-10 ${className ?? ""} ${index === 1 ? "aria-hidden" : ""}`}
@@ -8,7 +12,7 @@ export const CarouselWrapper = ({ children, index, className }: CarouselWrapperP
       {children}
     </div>
   );
-};
+}
 /**
  * CarouselWrapper is an internal component that wraps carousel items and applies animation classes.
  *

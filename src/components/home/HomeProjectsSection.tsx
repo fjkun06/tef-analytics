@@ -11,7 +11,7 @@ import React from "react";
 import HomeCallToActionButtons from "./HomeCallToActionButtons";
 import HomeProjectCardsContainer from "./HomeProjectCardsContainer";
 import HomeProjectsSectionHeader from "./HomeProjectsSectionHeader";
-import SectionWrapper from "./wrappers/SectionWrapper";
+import SectionWrapper from "../wrappers/SectionWrapper";
 import { HomeProjectsSectionProps } from "@/interfaces/home.interface";
 
 /**

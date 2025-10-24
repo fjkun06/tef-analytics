@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HomeImpactCard } from "./cards";
+import { HomeImpactCard } from "../cards";
 import { DomainDetailsProps } from "@/interfaces/home.interface";
 
 /**

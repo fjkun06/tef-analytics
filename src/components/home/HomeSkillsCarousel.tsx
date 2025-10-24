@@ -8,9 +8,9 @@
  */
 import React from "react";
 
-import SkillPill from "./buttons/SkillPill";
 import HomeSkillsSectionSubHeading from "./HomeSkillsSectionSubHeading";
-import InfiniteCarousel from "./InfiniteCarousel";
+import SkillPill from "../buttons/SkillPill";
+import InfiniteCarousel from "../InfiniteCarousel";
 
 /**
  * Component that displays the homepage skills carousel.

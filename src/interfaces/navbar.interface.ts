@@ -20,5 +20,5 @@ export type NavbarProps = {
   toggleMobileOpen: () => void;
   t: (key: any) => string;
   navbarItems: NavItem[];
-  ref?: MutableRefObject<HTMLHeadElement | null>;
+  ref?: MutableRefObject<HTMLDivElement | null>;
 };
