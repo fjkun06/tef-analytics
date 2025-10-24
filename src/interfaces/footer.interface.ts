@@ -1,13 +1,14 @@
+import React from "react";
+
 export interface SocialLinksProps {
   className?: string;
 }
 
 export type FooterAboutTranslationKeys =
-  | "about.companyHistory"
-  | "about.meetTeam"
-  | "about.employeeHandbook"
-  | "about.title"
-  | "about.careers";
+  | "about.privacy"
+  | "about.cookie"
+  | "about.imprint"
+  | "about.title";
 
 export interface FooterCopyrightProps {
   appName: string;
@@ -20,7 +21,6 @@ export type FooterLink = {
 };
 
 export type FooterLinksSectionProps = {
-  links: FooterLink[];
-  className?: string;
-  headingTranslationKey?: string;
+  headingTranslationKey: string;
+  children: React.ReactNode | React.ReactNode[];
 };

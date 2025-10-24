@@ -13,11 +13,88 @@ const constants = {
     { name: "Contact", href: "/contact" },
   ],
   aboutLinks: [
-    { href: "#", label: "about.companyHistory" },
-    { href: "#", label: "about.meetTeam" },
-    { href: "#", label: "about.employeeHandbook" },
-    { href: "#", label: "about.careers" },
+    { href: "/privacy", label: "about.privacy" },
+    { href: "/cookies", label: "about.cookie" },
+    { href: "/imprint", label: "about.imprint" },
   ] as { href: string; label: FooterAboutTranslationKeys }[],
+  domainDetails: [
+    {
+      domain: "experience",
+      icon: "IconTrend",
+      detailNumber: 10,
+    },
+    {
+      domain: "projects",
+      icon: "IconCode",
+      detailNumber: 15,
+    },
+    {
+      domain: "technologies",
+      icon: "IconDatabase",
+      detailNumber: 15,
+    },
+    {
+      domain: "impact",
+      icon: "IconWeb",
+      detailNumber: 6,
+    },
+  ],
+
+  mainProjects: [
+    {
+      year: 2024,
+      icon: "IconRobot",
+      translationKey: "project1",
+      skills: ["Python", "TensorFlow", "NLP", "Flask"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2018,
+      icon: "IconShield",
+      translationKey: "project2",
+      skills: ["Python", "Machine Learning", "AWS", "Docker"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2017,
+      icon: "IconTrend",
+      translationKey: "project3",
+      skills: ["R", "SQL", "R Shiny", "Statistical Modeling"],
+      achievmentsCount: 1,
+    },
+  ],
+  skills: [
+    "Machine Learning",
+    "Deep Learning & AI",
+    "Cloud Computing",
+    "Data visualisation",
+    "Business Intelligence",
+    "Statistical modelling",
+    "Reporting",
+    "LLM",
+    "Analytics",
+    "MLOps",
+    "Data Analysis",
+    "LLMOps",
+    "Data Cleaning",
+  ],
+  callToActions: ["about", "projects", "contact"],
+  impressum: {
+    lowerHalf: [
+      {
+        index: 4,
+        titleTranslationKey: "liabilityForContent",
+      },
+      {
+        index: 5,
+        titleTranslationKey: "liabilityForLinks",
+      },
+      {
+        index: 6,
+        titleTranslationKey: "copyright",
+      },
+    ],
+  },
 };
 
 export default constants;

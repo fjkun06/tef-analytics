@@ -1,4 +1,5 @@
-import { PropsWithChildren } from "react";
+/*eslint-disable*/
+import { MutableRefObject, PropsWithChildren } from "react";
 
 export type NavItem = {
   name: string;
@@ -13,3 +14,11 @@ export type NavLinkProps = PropsWithChildren<{
   inactiveClassName?: string;
   onClick?: () => void;
 }>;
+
+export type NavbarProps = {
+  isMobileOpen: boolean;
+  toggleMobileOpen: () => void;
+  t: (key: any) => string;
+  navbarItems: NavItem[];
+  ref?: MutableRefObject<HTMLHeadElement | null>;
+};

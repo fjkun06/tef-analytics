@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
 import FooterLinksSection from "./FooterLinksSection";
-import constants from "@/utils/constants";
 
 jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
@@ -9,15 +8,14 @@ jest.mock("@/locales/server", () => ({
 describe("FooterLinkSection", () => {
   it("should render correctly", async () => {
     const element = await FooterLinksSection({
-      links: constants.aboutLinks,
-      className: "test-class",
       headingTranslationKey: "about",
+      children: <span className="test-class">Footer Links</span>,
     });
 
     render(element);
 
     expect(document.querySelector(".test-class")).toBeInTheDocument();
-    expect(document.querySelectorAll(".test-class li").length).toBe(4);
     expect(screen.getByText("about.title")).toBeInTheDocument();
+    expect(screen.getByText(/Footer Links/)).toBeInTheDocument();
   });
 });

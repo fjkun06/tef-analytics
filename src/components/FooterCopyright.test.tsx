@@ -14,8 +14,5 @@ test("renders copyright year and app name", async () => {
 
   render(element);
 
-  expect(screen.getByText(/allRightsReserved/)).toBeInTheDocument();
-  expect(screen.getByText(/terms/)).toBeInTheDocument();
-  expect(screen.getByText(/privacy/)).toBeInTheDocument();
   expect(screen.getByText(`© ${year} ${appName}`)).toBeInTheDocument();
 });

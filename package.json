@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3005",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "test": "jest --watchAll",
+    "test": "jest --onlyChanged --watch",
     "test:ci": "jest --ci",
     "prepare": "husky",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",

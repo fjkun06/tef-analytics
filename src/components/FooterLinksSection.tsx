@@ -7,9 +7,8 @@ import {
 import { getScopedI18n } from "@/locales/server";
 
 export default async function FooterLinksSection({
-  links,
-  className,
-  headingTranslationKey = "about",
+  children,
+  headingTranslationKey,
 }: FooterLinksSectionProps): Promise<React.ReactElement> {
   const t = await getScopedI18n("footer");
   const mappedHeadingTranslationKey =
@@ -19,18 +18,7 @@ export default async function FooterLinksSection({
       <p className="text-lg font-medium text-gray-900 dark:text-white">
         {t(mappedHeadingTranslationKey)}
       </p>
-      <ul className={className}>
-        {links.map((link) => (
-          <li key={link.label}>
-            <a
-              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href={link.href}
-            >
-              {t(link.label)}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {children}
     </div>
   );
 }
