@@ -1,10 +1,22 @@
+/**
+ * HomeCallToActionButtons
+ *
+ * Renders a set of call-to-action navigation buttons for the homepage.
+ * Each button label is translated using the scoped i18n for navigation keys.
+ *
+ * @returns  A flex container with navigation buttons.
+ */
 import React from "react";
 
 import NavigateButton from "./buttons/NavigateButton";
 import { getScopedI18n } from "@/locales/server";
 import constants from "@/utils/constants";
 
-async function HomeCallToActionButtons() {
+/**
+ * Async server component that displays call-to-action buttons on the homepage.
+ * Buttons translation keys are taken from constants.callToActions and translated using i18n.
+ */
+async function HomeCallToActionButtons(): Promise<React.ReactElement> {
   const t = await getScopedI18n("nav");
   const t2 = (key: any) => t(key);
 
@@ -13,23 +25,11 @@ async function HomeCallToActionButtons() {
       {constants.callToActions.map((action) => (
         <NavigateButton key={action} label={t2(action)} route={`/${action}`} />
       ))}
-
-      {/* <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200 duration-500">
-          <div className="translate-y-0 transition group-hover:-translate-y-[150%]">
-            Hover me
-          </div>
-          <div className="absolute translate-y-[150%] transition group-hover:translate-y-0">
-            Hover me
-          </div>
-        </button>
-        <button
-          type="button"
-          className="me-2 mb-2 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
-        >
-          Purple to Blue
-        </button> */}
     </div>
   );
 }
 
+/**
+ * Exports the HomeCallToActionButtons component for use in the homepage.
+ */
 export default HomeCallToActionButtons;

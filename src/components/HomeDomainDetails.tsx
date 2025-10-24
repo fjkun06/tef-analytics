@@ -3,7 +3,17 @@ import React from "react";
 import { HomeImpactCard } from "./cards";
 import { DomainDetailsProps } from "@/interfaces/home.interface";
 
-function HomeDomainDetails({ domainDetails }: { domainDetails: DomainDetailsProps[] }) {
+/**
+ * Async server component that displays domain impact cards on the homepage.
+ *
+ * @param domainDetails - Array of domain details to display (DomainDetailsProps[]).
+ * @returns {React.ReactElement} A flex container with HomeImpactCard components.
+ */
+function HomeDomainDetails({
+  domainDetails,
+}: {
+  domainDetails: DomainDetailsProps[];
+}): React.ReactElement {
   return (
     <div className={"flex flex-wrap justify-center gap-4 sm:gap-6 lg:flex-nowrap"}>
       {domainDetails.map((detail) => (
@@ -13,4 +23,7 @@ function HomeDomainDetails({ domainDetails }: { domainDetails: DomainDetailsProp
   );
 }
 
+/**
+ * Exports the HomeDomainDetails component for use in the homepage.
+ */
 export default HomeDomainDetails;

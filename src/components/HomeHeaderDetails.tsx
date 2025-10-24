@@ -1,8 +1,18 @@
+/**
+ * HomeHeaderDetails
+ *
+ * Renders the header details for the homepage, including name, slogan, and description, with translations.
+ *
+ * @returns {Promise<React.ReactNode>} A header section with translated content.
+ */
 import React from "react";
 
 import { getScopedI18n } from "@/locales/server";
 
-async function HomeHeaderDetails() {
+/**
+ * Async server component that displays the header details for the homepage.
+ */
+async function HomeHeaderDetails(): Promise<React.ReactElement> {
   const t = await getScopedI18n("home.header");
 
   return (
@@ -18,4 +28,7 @@ async function HomeHeaderDetails() {
   );
 }
 
+/**
+ * Exports the HomeHeaderDetails component for use in the homepage.
+ */
 export default HomeHeaderDetails;
