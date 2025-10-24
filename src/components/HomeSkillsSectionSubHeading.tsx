@@ -1,8 +1,18 @@
+/**
+ * HomeSkillsSectionSubHeading
+ *
+ * Renders the subheading for the skills section, translated using i18n.
+ *
+ * @returns {Promise<React.ReactNode>} A heading element with translated subheading text.
+ */
 import React from "react";
 
 import { getScopedI18n } from "@/locales/server";
 
-async function HomeSkillsSectionSubHeading() {
+/**
+ * Async server component that displays the subheading for the skills section.
+ */
+async function HomeSkillsSectionSubHeading(): Promise<React.ReactElement> {
   const t = await getScopedI18n("home.skills");
 
   return (
@@ -12,4 +22,7 @@ async function HomeSkillsSectionSubHeading() {
   );
 }
 
+/**
+ * Exports the HomeSkillsSectionSubHeading component for use in the homepage.
+ */
 export default HomeSkillsSectionSubHeading;

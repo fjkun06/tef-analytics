@@ -6,11 +6,21 @@ import CardWrapper from "./CardWrapper";
 import { HomeImpactCardProps } from "@/interfaces/cards.interface";
 import { getScopedI18n } from "@/locales/server";
 
+/**
+ * HomeImpactCard
+ *
+ * Async server component that renders a domain impact card.
+ *
+ * @param icon - The icon component name to display (string, e.g. "IconName.tsx").
+ * @param domain - The domain key for translation and display (string).
+ * @param detailNumber - The number to display as the domain impact (number).
+ * @returns { Promise<React.ReactElement>} A card with domain impact details.
+ */
 export default async function HomeImpactCard({
   icon,
   domain,
   detailNumber,
-}: HomeImpactCardProps) {
+}: HomeImpactCardProps): Promise<React.ReactElement> {
   const t = await getScopedI18n("home.domains");
   const t2 = (code: any) => t(code);
   const Icon = dynamic(() => import(`@/components/icons/${icon}`));

@@ -1,8 +1,18 @@
+/**
+ * HomeSkillsSectionDetails
+ *
+ * Renders the skills section details, including title, content, and subtitle, with translations.
+ *
+ * @returns {Promise<React.ReactNode>} A flex container with translated skills section content.
+ */
 import React from "react";
 
 import { getScopedI18n } from "@/locales/server";
 
-async function HomeSkillsSectionDetails() {
+/**
+ * Async server component that displays the details of the skills section.
+ */
+async function HomeSkillsSectionDetails(): Promise<React.ReactElement> {
   const t = await getScopedI18n("home.skills");
   const t2 = (key: any) => t(key);
   return (
@@ -18,4 +28,7 @@ async function HomeSkillsSectionDetails() {
   );
 }
 
+/**
+ * Exports the HomeSkillsSectionDetails component for use in the homepage.
+ */
 export default HomeSkillsSectionDetails;
