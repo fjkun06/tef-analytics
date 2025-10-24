@@ -1,18 +1,7 @@
-import { getI18n, getScopedI18n, getCurrentLocale } from "@/locales/server";
-
-export default async function Contact() {
-  const t = await getI18n();
-  const t2 = await getScopedI18n("hello");
-  const currentLocale = getCurrentLocale();
-
+export default function Contact() {
   return (
     <div>
-      <p>
-        Current locale:
-        <span>{currentLocale}</span>
-      </p>
-      <p>Hello: {t("hello.world2")}</p>
-      <p>Scoped hello: {t2("world", { param: "Scoped Paul" })}</p>
+      <p>Contact</p>
     </div>
   );
 }
