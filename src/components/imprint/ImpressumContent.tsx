@@ -1,5 +1,6 @@
 import React from "react";
 
+import LegalSectionHeading from "./LegalSectionHeading";
 import { ImpressumContentProps } from "@/interfaces/legal.interface";
 import { getScopedI18n } from "@/locales/server";
 
@@ -11,7 +12,11 @@ async function ImpressumContent({ index, titleTranslationKey }: ImpressumContent
   const finalKey = indices[index - 4];
   return (
     <section>
-      <h2 className="mb-4 text-xl font-semibold text-slate-900">{`${index}. ${t2(titleTranslationKey)}`}</h2>
+      <LegalSectionHeading
+        scope="imprint"
+        index={index}
+        translationKey={titleTranslationKey}
+      />
       <p>{t2(finalKey)}</p>
     </section>
   );
