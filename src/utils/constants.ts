@@ -13,9 +13,9 @@ const constants = {
     { name: "Contact", href: "/contact" },
   ],
   aboutLinks: [
-    { href: "#", label: "about.privacy" },
-    { href: "#", label: "about.cookie" },
-    { href: "#", label: "about.imprint" },
+    { href: "/privacy", label: "about.privacy" },
+    { href: "/cookies", label: "about.cookie" },
+    { href: "/imprint", label: "about.imprint" },
   ] as { href: string; label: FooterAboutTranslationKeys }[],
   domainDetails: [
     {
@@ -79,6 +79,22 @@ const constants = {
     "Data Cleaning",
   ],
   callToActions: ["about", "projects", "contact"],
+  impressum: {
+    lowerHalf: [
+      {
+        index: 4,
+        titleTranslationKey: "liabilityForContent",
+      },
+      {
+        index: 5,
+        titleTranslationKey: "liabilityForLinks",
+      },
+      {
+        index: 6,
+        titleTranslationKey: "copyright",
+      },
+    ],
+  },
 };
 
 export default constants;
