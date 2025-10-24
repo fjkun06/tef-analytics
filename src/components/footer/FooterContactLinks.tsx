@@ -1,6 +1,6 @@
 import React from "react";
 
-import SocialIconLink from "./SocialIconLink";
+import SocialIconLink from "../SocialIconLink";
 import IconLinkedIn from "@/components/icons/IconLinkedIn";
 import IconX from "@/components/icons/IconX";
 import IconXing from "@/components/icons/IconXing";

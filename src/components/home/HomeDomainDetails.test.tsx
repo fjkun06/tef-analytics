@@ -13,7 +13,7 @@ const details = [
     detailNumber: 10,
   },
 ];
-jest.mock("./cards/HomeImpactCard", () => ({
+jest.mock("../cards/HomeImpactCard", () => ({
   __esModule: true,
   default: (props: (typeof details)[0]) => (
     <div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CarouselWrapper } from "./wrappers/CarouselWrapper";
+import { CarouselWrapper } from "./wrappers";
 import { InfiniteCarouselProps } from "@/interfaces/home.interface";
 
 /**

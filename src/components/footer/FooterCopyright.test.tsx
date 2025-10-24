@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import FooterCopyright from "@/components/FooterCopyright";
+import FooterCopyright from "@/components/footer/FooterCopyright";
 
 jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),

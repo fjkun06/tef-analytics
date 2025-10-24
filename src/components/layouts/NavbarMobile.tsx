@@ -5,9 +5,26 @@ import NavLink from "../NavLink";
 import { NavbarProps } from "@/interfaces/navbar.interface";
 import { hrefToNavKey } from "@/utils/functions/hrefToNavKey";
 
-function NavbarMobile({ isMobileOpen, toggleMobileOpen, t, navbarItems }: NavbarProps) {
+/**
+ * NavbarMobile
+ *
+ * Renders the mobile version of the navigation bar, including navigation links and language switcher.
+ *
+ * @param isMobileOpen - Whether the mobile menu is open.
+ * @param toggleMobileOpen - Function to toggle the mobile menu.
+ * @param t - Translation function for navigation items.
+ * @param navbarItems - Array of navigation items to display.
+ * @returns {React.ReactNode} The mobile navigation bar.
+ */
+function NavbarMobile({
+  isMobileOpen,
+  toggleMobileOpen,
+  t,
+  navbarItems,
+}: NavbarProps): React.ReactNode {
   return (
     <div
+      data-testid="navbar-mobile"
       className={`transform transition-all duration-200 ease-in-out lg:hidden ${
         isMobileOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
       }`}

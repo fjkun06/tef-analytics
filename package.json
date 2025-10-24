@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "test": "jest --onlyChanged --watch",
     "test:ci": "jest --ci",
+    "test:dev": "jest --onlyChanged --ci",
     "prepare": "husky",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "format": "prettier --write .",

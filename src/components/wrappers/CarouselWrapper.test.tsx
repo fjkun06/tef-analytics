@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import { CarouselWrapper } from "./CarouselWrapper";
+import CarouselWrapper from "./CarouselWrapper";
 
 describe("CarouselWrapper", () => {
   it("should render and apply classes correctly", () => {

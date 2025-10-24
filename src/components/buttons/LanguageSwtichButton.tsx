@@ -11,6 +11,7 @@ function LanguageSwtichButton({
   return (
     <button
       type="button"
+      data-testid="language-switch-button"
       aria-expanded={open}
       aria-haspopup="menu"
       onClick={() => setOpen((s) => !s)}
