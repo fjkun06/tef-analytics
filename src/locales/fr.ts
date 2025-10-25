@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 export default {
   footer: {
     about: {
@@ -107,5 +109,47 @@ export default {
     four: "En tant que fournisseur de services, nous sommes responsables de notre propre contenu sur ces pages. Cependant, nous ne sommes pas tenus de surveiller les informations de tiers transmises ou stockées ou d'examiner les circonstances qui indiquent une activité illégale.",
     five: "Notre offre contient des liens vers des sites Web externes de tiers, sur lesquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou l'opérateur respectif des pages est toujours responsable du contenu des pages liées.",
     six: "Le contenu et les œuvres créés par les opérateurs de sites sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution ou toute forme de commercialisation de ce matériel au-delà du cadre de la loi sur le droit d'auteur nécessite le consentement écrit préalable de son auteur ou créateur.",
+  },
+  privacy: {
+    title: "Politique de confidentialité",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'Cette politique de confidentialité explique comment Dr. Arsene Ntiwa ("nous", "notre" ou "nos") collecte, utilise et protège vos données personnelles lorsque vous visitez notre site Web. Nous nous engageons à protéger votre vie privée et à traiter vos données de manière ouverte et transparente.',
+      twoTitle: "Responsable du traitement des données",
+      location: "Location: Allemagne",
+    },
+    middleSection: {
+      threeTitle: "Données que nous collectons",
+      threeSubtitle: "Nous collectons et traitons les données suivantes :",
+      threePointOne: "Informations que vous fournissez via le formulaire de contact",
+      threePointTwo:
+        "Données techniques (adresse IP, type de navigateur, informations sur l'appareil)",
+      threePointThree:
+        "Données de cookies (comme détaillé dans notre politique de cookies)",
+      fourTitle: "Base légale du traitement",
+      fourSubtitle: "Nous traitons vos données sur la base de :",
+      fourPointOne: "Votre consentement",
+      fourPointTwo: "Nécessité contractuelle",
+      fourPointThree: "Obligations légales",
+      fourPointFour: "Intérêts légitimes",
+      fiveTitle: "Vos droits",
+      fiveSubtitle: "En vertu du RGPD, vous avez les droits suivants :",
+      fivePointOne: "Droit d'accès à vos données",
+      fivePointTwo: "Droit de rectification",
+      fivePointThree: "Droit à l'effacement ('droit à l'oubli')",
+      fivePointFour: "Droit de limiter le traitement",
+      fivePointFive: "Droit à la portabilité des données",
+      fivePointSix: "Droit d'opposition",
+      fivePointSeven: "Droit de retirer son consentement",
+    },
+    footerSection: {
+      sixTitle: "Nous contacter",
+      sixDescription:
+        "Pour toute question relative à la confidentialité ou pour exercer vos droits, veuillez nous contacter à l'adresse suivante :",
+      sevenTitle: "Mises à jour de cette politique",
+      sevenDescription:
+        "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. La dernière version sera toujours disponible sur notre site Web.",
+    },
   },
 } as const;

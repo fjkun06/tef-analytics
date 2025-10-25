@@ -95,6 +95,41 @@ const constants = {
       },
     ],
   },
+  privacy: {
+    bodySections: [
+      {
+        index: 3,
+        titleKey: "threeTitle",
+        subtitleKey: "threeSubtitle",
+        listItems: [
+          "threePointOne",
+          "threePointTwo",
+          "threePointThree",
+          "threePointFour",
+        ],
+      },
+      {
+        index: 4,
+        titleKey: "fourTitle",
+        subtitleKey: "fourSubtitle",
+        listItems: ["fourPointOne", "fourPointTwo", "fourPointThree", "fourPointFour"],
+      },
+      {
+        index: 5,
+        titleKey: "fiveTitle",
+        subtitleKey: "fiveSubtitle",
+        listItems: [
+          "fivePointOne",
+          "fivePointTwo",
+          "fivePointThree",
+          "fivePointFour",
+          "fivePointFive",
+          "fivePointSix",
+          "fivePointSeven",
+        ],
+      },
+    ],
+  },
 };
 
 export default constants;
