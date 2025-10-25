@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import HomeProjectCard from "./HomeProjectCard";
 
@@ -22,13 +22,13 @@ describe("HomeProjectCard", () => {
 
   it("should render correctly", async () => {
     const element = await HomeProjectCard({ ...project });
-    render(element);
+    await act(() => render(element));
     expect(screen.getByText(/2024/)).toBeInTheDocument();
     expect(screen.getByText(/project1.description/)).toBeInTheDocument();
   });
   it("should not render skills div", async () => {
     const element = await HomeProjectCard({ ...project2 });
-    render(element);
+    await act(() => render(element));
     expect(document.querySelector(".skills")).not.toBeInTheDocument();
     expect(document.querySelectorAll("ul")).toHaveLength(0);
   });

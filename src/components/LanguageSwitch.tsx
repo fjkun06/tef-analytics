@@ -11,7 +11,7 @@ export function LanguageSwitch() {
     useLanguageSwitchController();
 
   return (
-    <div className="relative" ref={ref}>
+    <div data-testid="language-switch" className="relative" ref={ref}>
       <LanguageSwtichButton
         open={open}
         setOpen={setOpen}

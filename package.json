@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "test": "jest --onlyChanged --watch",
     "test:ci": "jest --ci",
+    "test:dev": "jest --onlyChanged --ci",
     "prepare": "husky",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "format": "prettier --write .",
@@ -30,6 +31,7 @@
   "dependencies": {
     "@eslint/js": "^9.38.0",
     "eslint-plugin-react": "^7.37.5",
+    "framer-motion": "^12.23.24",
     "globals": "^16.4.0",
     "jiti": "^2.6.1",
     "next": "15.5.6",

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { NavLinkProps } from "@/interfaces/navbar.interface";
+import { NavLinkProps as FooterLinkProps } from "@/interfaces/navbar.interface";
 
 function FooterLink({
   href,
@@ -13,9 +13,8 @@ function FooterLink({
   activeClassName = "dark:text-teal-500/75 underline",
   inactiveClassName,
   onClick,
-}: NavLinkProps) {
+}: FooterLinkProps) {
   const pathname = usePathname() || "/";
-
   const pathnameWithoutLocale = (() => {
     const subPath = pathname.match(/^\/([a-z]{2})(\/.*|$)/i);
     if (!subPath) return pathname;

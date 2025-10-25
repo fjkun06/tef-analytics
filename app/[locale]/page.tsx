@@ -1,6 +1,6 @@
-import HomeHeader from "@/components/HomeHeader";
-import HomeProjectsSection from "@/components/HomeProjectsSection";
-import HomeSkillsSection from "@/components/HomeSkillsSection";
+import HomeHeader from "@/components/home/HomeHeader";
+import HomeProjectsSection from "@/components/home/HomeProjectsSection";
+import HomeSkillsSection from "@/components/home/HomeSkillsSection";
 import constants from "@/utils/constants";
 export default async function Page() {
   return (
