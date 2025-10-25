@@ -8,7 +8,23 @@ import NavLink from "../NavLink";
 import { NavbarProps } from "@/interfaces/navbar.interface";
 import { hrefToNavKey } from "@/utils/functions/hrefToNavKey";
 
-function NavbarDesktop({ isMobileOpen, toggleMobileOpen, t, navbarItems }: NavbarProps) {
+/**
+ * NavbarDesktop
+ *
+ * Renders the desktop version of the navigation bar, including navigation links and language switcher.
+ *
+ * @param isMobileOpen - Whether the mobile menu is open.
+ * @param toggleMobileOpen - Function to toggle the mobile menu.
+ * @param t - Translation function for navigation items.
+ * @param navbarItems - Array of navigation items to display.
+ * @returns {React.ReactNode} The desktop navigation bar.
+ */
+function NavbarDesktop({
+  isMobileOpen,
+  toggleMobileOpen,
+  t,
+  navbarItems,
+}: NavbarProps): React.ReactNode {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="flex h-16 items-center justify-between">

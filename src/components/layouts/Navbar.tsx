@@ -1,11 +1,19 @@
 "use client";
 import React from "react";
 
-import useNavbarController from "./NavbarController";
+import useNavbarController from "./Navbar.controller";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
 
-const Navbar: React.FC = () => {
+/**
+ * Navbar
+ *
+ * Renders the main navigation bar, including desktop and mobile variants.
+ * Uses a controller hook for state and translation logic.
+ *
+ * @returns {React.ReactNode} The navigation bar for the application.
+ */
+const Navbar = (): React.ReactNode => {
   const { isMobileOpen, toggleMobileOpen, t, navbarItems, ref } = useNavbarController();
 
   return (
@@ -32,4 +40,7 @@ const Navbar: React.FC = () => {
   );
 };
 
+/**
+ * Exports the Navbar component for use in the application.
+ */
 export default Navbar;

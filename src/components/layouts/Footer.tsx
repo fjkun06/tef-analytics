@@ -1,14 +1,16 @@
 import React from "react";
 
-import FooterContactLinks from "../FooterContactLinks";
-import FooterCopyright from "../FooterCopyright";
-import FooterLegalLinks from "../FooterLegalLinks";
-import FooterLinksSection from "../FooterLinksSection";
+import {
+  FooterContactLinks,
+  FooterCopyright,
+  FooterLegalLinks,
+  FooterLinksSection,
+} from "../footer";
 import SocialLinks from "../SocialLinks";
 import { getCurrentYear } from "@/utils/functions/getCurrentYear";
 import strings from "@/utils/strings";
 
-export default async function Footer() {
+export default function Footer() {
   return (
     <footer className="w-full bg-white dark:bg-slate-900 dark:bg-[url(/bg-white.svg)]">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import FooterLinksSection from "./FooterLinksSection";
 
@@ -12,7 +12,7 @@ describe("FooterLinkSection", () => {
       children: <span className="test-class">Footer Links</span>,
     });
 
-    render(element);
+    await act(() => render(element));
 
     expect(document.querySelector(".test-class")).toBeInTheDocument();
     expect(screen.getByText("about.title")).toBeInTheDocument();

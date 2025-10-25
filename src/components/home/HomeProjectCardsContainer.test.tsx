@@ -1,4 +1,4 @@
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import HomeProjectCardsContainer from "./HomeProjectCardsContainer";
 
@@ -15,7 +15,7 @@ const details = [
     achievmentsCount: 1,
   },
 ];
-jest.mock("./cards/HomeProjectCard", () => ({
+jest.mock("../cards/HomeProjectCard", () => ({
   __esModule: true,
   default: (props: (typeof details)[0]) => {
     return (
@@ -28,7 +28,7 @@ jest.mock("./cards/HomeProjectCard", () => ({
 
 describe("HomeProjectCardsContainer", () => {
   it("should render correctly", () => {
-    act(() => render(<HomeProjectCardsContainer mainProjects={details} />));
+    render(<HomeProjectCardsContainer mainProjects={details} />);
 
     expect(screen.getByText("project1")).toBeInTheDocument();
   });

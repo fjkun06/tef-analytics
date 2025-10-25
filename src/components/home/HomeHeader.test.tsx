@@ -6,8 +6,6 @@ jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
 }));
 
-//Mock async server components
-
 jest.mock("./HomeHeaderDetails", () => ({
   __esModule: true,
   default: () => <div>HomeHeaderDetails Component</div>,

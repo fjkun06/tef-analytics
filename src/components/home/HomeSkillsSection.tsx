@@ -12,7 +12,7 @@ import React from "react";
 import HomeDomainDetails from "./HomeDomainDetails";
 import HomeSkillsCarousel from "./HomeSkillsCarousel";
 import HomeSkillsSectionDetails from "./HomeSkillsSectionDetails";
-import SectionWrapper from "./wrappers/SectionWrapper";
+import SectionWrapper from "../wrappers/SectionWrapper";
 import { HomeSkillsSectionProps } from "@/interfaces/home.interface";
 
 /**

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
 import HomeImpactCard from "./HomeImpactCard";
 
@@ -14,7 +14,7 @@ describe("HomeImpactCard", () => {
       detailNumber: 16,
     });
 
-    render(element);
+    await act(() => render(element));
 
     expect(screen.getByText("16+")).toBeInTheDocument();
     expect(screen.getByText("experience.subtitle")).toBeInTheDocument();

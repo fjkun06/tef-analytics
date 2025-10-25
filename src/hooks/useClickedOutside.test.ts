@@ -14,13 +14,9 @@ jest.mock("@/locales/client", () => ({
   useScopedI18n: jest.fn((key: string) => key),
 }));
 
-// jest.mock("@/hooks/useClickedOutside", () => jest.fn());
 jest.mock("@/components/LanguageSwitch.controller", () => ({
   useLanguageSwitchController: jest.fn(() => ({
     ...sampleReturnValue,
-    // tLang: jest.fn(),
-    // setOpen: jest.fn(),
-    // onSelect: jest.fn(),
   })),
 }));
 describe("useClickedOutside", () => {

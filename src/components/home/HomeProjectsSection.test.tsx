@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import HomeProjectsSection from "./HomeProjectsSection";
 import { Project } from "@/interfaces/home.interface";
@@ -30,25 +30,20 @@ jest.mock("./HomeProjectsSectionHeader", () => ({
 }));
 describe("HomeProjectsSection", () => {
   it("should render correctly", () => {
-    act(() =>
-      render(
-        <HomeProjectsSection
-          mainProjects={[
-            {
-              year: 2024,
-              icon: "IconRobot",
-              translationKey: "project1",
-              skills: ["Python", "TensorFlow", "NLP", "Flask"],
-              achievmentsCount: 1,
-            },
-          ]}
-        />,
-      ),
+    render(
+      <HomeProjectsSection
+        mainProjects={[
+          {
+            year: 2024,
+            icon: "IconRobot",
+            translationKey: "project1",
+            skills: ["Python", "TensorFlow", "NLP", "Flask"],
+            achievmentsCount: 1,
+          },
+        ]}
+      />,
     );
-
     expect(screen.getByText("2024")).toBeInTheDocument();
-    waitFor(() => {
-      expect(screen.getByText("HomeProjectsSectionHeader")).toBeInTheDocument();
-    });
+    expect(screen.getByText("HomeProjectsSectionHeader Component")).toBeInTheDocument();
   });
 });

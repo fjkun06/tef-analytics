@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 
-import FooterCopyright from "@/components/FooterCopyright";
+import FooterCopyright from "@/components/footer/FooterCopyright";
 
 jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
@@ -12,7 +12,7 @@ test("renders copyright year and app name", async () => {
 
   const element = await FooterCopyright({ appName, year });
 
-  render(element);
+  await act(() => render(element));
 
   expect(screen.getByText(`© ${year} ${appName}`)).toBeInTheDocument();
 });
