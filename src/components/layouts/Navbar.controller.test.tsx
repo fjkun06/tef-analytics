@@ -55,9 +55,9 @@ describe("useNavbarController", () => {
   /**
    * Checks that toggling the mobile menu updates state as expected.
    */
-  it("should toggle mobile navbar state correctly", () => {
+  it("should toggle mobile navbar state correctly", async () => {
     const { result } = renderHook(useNavbarController);
-    act(() => result.current.toggleMobileOpen());
+    await act(() => result.current.toggleMobileOpen());
     expect(result.current.isMobileOpen).toBe(true);
   });
 

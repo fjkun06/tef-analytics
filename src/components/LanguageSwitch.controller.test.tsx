@@ -44,10 +44,10 @@ describe("useLanguageSwitchController", () => {
   it("should call onSelect", async () => {
     const { result } = renderHook(() => useLanguageSwitchController());
 
-    act(() => result.current.setOpen(true));
+    await act(() => result.current.setOpen(true));
     expect(result.current.open).toBe(true);
 
-    act(() => result.current.onSelect("de"));
+    await act(() => result.current.onSelect("de"));
     expect(result.current.open).toBe(false);
   });
 
