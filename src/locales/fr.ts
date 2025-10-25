@@ -152,4 +152,41 @@ export default {
         "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. La dernière version sera toujours disponible sur notre site Web.",
     },
   },
+  cookie: {
+    title: "Politique de cookies",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'Cette politique de cookies explique comment Dr. Arsene Ntiwa ("nous", "notre" ou "nos") utilise des cookies et des technologies similaires sur notre site Web. En utilisant notre site Web, vous consentez à l\'utilisation de cookies comme décrit dans cette politique.',
+      twoTitle: "Qu'est-ce que les cookies ?",
+      twoDescription:
+        "Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil lorsque vous visitez un site Web. Ils aident à rendre les sites Web plus efficaces et fournissent des informations aux propriétaires de sites Web.",
+    },
+    middleSection: {
+      threeTitle: "Types de cookies que nous utilisons",
+      threeSubtitle: "Nous utilisons les types de cookies suivants :",
+      threePointOneTitle: "Cookies essentiels",
+      threePointOneSubtitle:
+        "Ceux-ci sont nécessaires au bon fonctionnement du site Web et ne peuvent pas être désactivés.",
+      threePointTwoTitle: "Cookies d'analyse",
+      threePointTwoSubtitle:
+        "Cela nous aide à comprendre comment les visiteurs interagissent avec notre site Web en collectant et en rapportant des informations de manière anonyme.",
+      threePointThreeTitle: "Cookies de préférence",
+      threePointThreeSubtitle:
+        "Ces cookies permettent au site Web de se souvenir de vos préférences et choix.",
+    },
+    footerSection: {
+      fourTitle: "Gestion des cookies",
+      fourSubtitle:
+        "La plupart des navigateurs Web vous permettent de contrôler les cookies via leurs paramètres. Vous pouvez généralement trouver ces paramètres dans le menu 'options' ou 'préférences' de votre navigateur.",
+      fourPointOne:
+        "Veuillez noter que la désactivation de certains cookies peut affecter la fonctionnalité de notre site Web.",
+      fiveTitle: "Mises à jour de cette politique",
+      fiveSubtitle:
+        "Nous pouvons mettre à jour cette politique de cookies de temps à autre. Toute modification sera publiée sur cette page.",
+      sixTitle: "Nous contacter",
+      sixDescription:
+        "Si vous avez des questions concernant notre politique de cookies, veuillez nous contacter à l'adresse suivante :",
+    },
+  },
 } as const;

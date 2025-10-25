@@ -130,6 +130,23 @@ const constants = {
       },
     ],
   },
+
+  cookies: {
+    bodySections: [
+      {
+        titleKey: "threePointOneTitle",
+        descriptionKey: "threePointOneSubtitle",
+      },
+      {
+        titleKey: "threePointTwoTitle",
+        descriptionKey: "threePointTwoSubtitle",
+      },
+      {
+        titleKey: "threePointThreeTitle",
+        descriptionKey: "threePointThreeSubtitle",
+      },
+    ],
+  },
 };
 
 export default constants;
