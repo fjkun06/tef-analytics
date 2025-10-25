@@ -14,7 +14,7 @@ jest.mock("./LegalSectionHeading", () => ({
 describe("ImpressumContent (async)", () => {
   it("renders the section with correct heading and content", async () => {
     const element = await ImpressumContent({ index: 4, titleTranslationKey: "heading" });
-    act(() => render(element));
+    await act(() => render(element));
 
     expect(screen.getByText("heading")).toBeInTheDocument();
     expect(screen.getByText("four")).toBeInTheDocument();
