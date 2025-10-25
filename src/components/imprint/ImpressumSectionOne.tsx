@@ -7,13 +7,14 @@
  */
 import React from "react";
 
+import LegalSectionHeading from "./LegalSectionHeading";
 import { getScopedI18n } from "@/locales/server";
 
 async function ImpressumSectionOne(): Promise<React.ReactElement> {
   const t = await getScopedI18n("imprint");
   return (
     <section>
-      <h2 className="mb-4 text-xl font-semibold text-slate-900">{`1. ${t("accordingTo")}`}</h2>
+      <LegalSectionHeading index={1} translationKey="accordingTo" scope="imprint" />
       <p>
         Franck Tankouan
         <br />

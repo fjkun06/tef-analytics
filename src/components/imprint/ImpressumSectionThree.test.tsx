@@ -6,6 +6,13 @@ jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
 }));
 
+jest.mock("./LegalSectionHeading", () => ({
+  __esModule: true,
+  default: ({ translationKey, index }: { translationKey: string; index: number }) => (
+    <h1>{`${index}. ${translationKey}`}</h1>
+  ),
+}));
+
 const mockContent = ["threeOne", "threeTwo", "threeThree"];
 
 describe("ImpressumSectionThree (async)", () => {

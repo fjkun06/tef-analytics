@@ -7,6 +7,7 @@
  */
 import React from "react";
 
+import LegalSectionHeading from "./LegalSectionHeading";
 import { getScopedI18n } from "@/locales/server";
 
 async function ImpressumSectionThree(): Promise<React.ReactElement> {
@@ -15,9 +16,12 @@ async function ImpressumSectionThree(): Promise<React.ReactElement> {
   const translationKeys = ["threeOne", "threeTwo", "threeThree"];
   return (
     <section>
-      <h2 className="mb-4 text-xl font-semibold text-slate-900">
-        {`3. ${t("professionalInformation")}`}
-      </h2>
+      <LegalSectionHeading
+        index={3}
+        translationKey="professionalInformation"
+        scope="imprint"
+      />
+
       <ul className="list-disc pl-6">
         {translationKeys.map((key, index) => (
           <li key={index}>{t2(key)}</li>

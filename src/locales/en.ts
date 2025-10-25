@@ -1,3 +1,4 @@
+/*eslint-disable */
 export default {
   footer: {
     about: {
@@ -107,5 +108,82 @@ export default {
     four: "As a service provider, we are responsible for our own content on these pages according to § 7 paragraph 1 TMG. However, according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
     five: " Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
     six: "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator.",
+  },
+  privacy: {
+    title: "Privacy Policy",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'This Privacy Policy explains how Dr. Arsene Ntiwa ("we," "our," or "us") collects, uses, and protects your personal data when you visit our website. We are committed to protecting your privacy and handling your data in an open and transparent manner.',
+      twoTitle: "Data Controller",
+      location: "Location: Germany",
+    },
+    middleSection: {
+      threeTitle: "Data We Collect",
+      threeSubtitle: "We collect and process the following data:",
+      threePointOne: "Information you provide through the contact form",
+      threePointTwo: "Technical data (IP address, browser type, device information)",
+      threePointThree: "Cookie data (as detailed in our Cookie Policy)",
+      fourTitle: "Legal Basis for Processing",
+      fourSubtitle: "We process your data based on:",
+      fourPointOne: "Your consent",
+      fourPointTwo: "Contractual necessity",
+      fourPointThree: "Legal obligations",
+      fourPointFour: "Legitimate interests",
+      fiveTitle: "Your Rights",
+      fiveSubtitle: "Under GDPR, you have the following rights:",
+      fivePointOne: "Right to access your data",
+      fivePointTwo: "Right to rectification",
+      fivePointThree: "Right to erasure ('right to be forgotten')",
+      fivePointFour: "Right to restrict processing",
+      fivePointFive: "Right to data portability",
+      fivePointSix: "Right to object",
+      fivePointSeven: "Right to withdraw consent",
+    },
+    footerSection: {
+      sixTitle: "Contact Us",
+      sixDescription:
+        "For any privacy-related questions or to exercise your rights, please contact us at:",
+      sevenTitle: "Updates to This Policy",
+      sevenDescription:
+        "We may update this Privacy Policy from time to time. The latest version will always be available on our website.",
+    },
+  },
+  cookie: {
+    title: "Privacy Policy",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'This Cookie Policy explains how Dr. Arsene Ntiwa ("we," "our," or "us") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies as described in this policy.',
+      twoTitle: "What Are Cookies?",
+      twoDescription:
+        "Cookies are small text files that are stored on your device when you visit a website. They help make websites work more efficiently and provide information to website owners.",
+    },
+    middleSection: {
+      threeTitle: "Types of Cookies We Use",
+      threeSubtitle: "We use the following types of cookies:",
+      threePointOneTitle: "Essential Cookies",
+      threePointOneSubtitle:
+        "These are necessary for the website to function properly and cannot be switched off.",
+      threePointTwoTitle: "Analytics Cookies",
+      threePointTwoSubtitle:
+        "These help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+      threePointThreeTitle: "Preference Cookies",
+      threePointThreeSubtitle:
+        "These enable the website to remember your preferences and choices.",
+    },
+    footerSection: {
+      fourTitle: "Managing Cookies",
+      fourSubtitle:
+        "Most web browsers allow you to control cookies through their settings. You can usually find these settings in the 'options' or 'preferences' menu of your browser.",
+      fourPointOne:
+        "Please note that disabling certain cookies may affect the functionality of our website.",
+      fiveTitle: "Updates to This Policy",
+      fiveSubtitle:
+        "We may update this Cookie Policy from time to time. Any changes will be posted on this page.",
+      sixTitle: "Contact Us",
+      sixDescription:
+        "If you have any questions about our Cookie Policy, please contact us at:",
+    },
   },
 } as const;

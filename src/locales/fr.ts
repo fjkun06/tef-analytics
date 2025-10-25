@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 export default {
   footer: {
     about: {
@@ -107,5 +109,84 @@ export default {
     four: "En tant que fournisseur de services, nous sommes responsables de notre propre contenu sur ces pages. Cependant, nous ne sommes pas tenus de surveiller les informations de tiers transmises ou stockées ou d'examiner les circonstances qui indiquent une activité illégale.",
     five: "Notre offre contient des liens vers des sites Web externes de tiers, sur lesquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou l'opérateur respectif des pages est toujours responsable du contenu des pages liées.",
     six: "Le contenu et les œuvres créés par les opérateurs de sites sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution ou toute forme de commercialisation de ce matériel au-delà du cadre de la loi sur le droit d'auteur nécessite le consentement écrit préalable de son auteur ou créateur.",
+  },
+  privacy: {
+    title: "Politique de confidentialité",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'Cette politique de confidentialité explique comment Dr. Arsene Ntiwa ("nous", "notre" ou "nos") collecte, utilise et protège vos données personnelles lorsque vous visitez notre site Web. Nous nous engageons à protéger votre vie privée et à traiter vos données de manière ouverte et transparente.',
+      twoTitle: "Responsable du traitement des données",
+      location: "Location: Allemagne",
+    },
+    middleSection: {
+      threeTitle: "Données que nous collectons",
+      threeSubtitle: "Nous collectons et traitons les données suivantes :",
+      threePointOne: "Informations que vous fournissez via le formulaire de contact",
+      threePointTwo:
+        "Données techniques (adresse IP, type de navigateur, informations sur l'appareil)",
+      threePointThree:
+        "Données de cookies (comme détaillé dans notre politique de cookies)",
+      fourTitle: "Base légale du traitement",
+      fourSubtitle: "Nous traitons vos données sur la base de :",
+      fourPointOne: "Votre consentement",
+      fourPointTwo: "Nécessité contractuelle",
+      fourPointThree: "Obligations légales",
+      fourPointFour: "Intérêts légitimes",
+      fiveTitle: "Vos droits",
+      fiveSubtitle: "En vertu du RGPD, vous avez les droits suivants :",
+      fivePointOne: "Droit d'accès à vos données",
+      fivePointTwo: "Droit de rectification",
+      fivePointThree: "Droit à l'effacement ('droit à l'oubli')",
+      fivePointFour: "Droit de limiter le traitement",
+      fivePointFive: "Droit à la portabilité des données",
+      fivePointSix: "Droit d'opposition",
+      fivePointSeven: "Droit de retirer son consentement",
+    },
+    footerSection: {
+      sixTitle: "Nous contacter",
+      sixDescription:
+        "Pour toute question relative à la confidentialité ou pour exercer vos droits, veuillez nous contacter à l'adresse suivante :",
+      sevenTitle: "Mises à jour de cette politique",
+      sevenDescription:
+        "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. La dernière version sera toujours disponible sur notre site Web.",
+    },
+  },
+  cookie: {
+    title: "Politique de cookies",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'Cette politique de cookies explique comment Dr. Arsene Ntiwa ("nous", "notre" ou "nos") utilise des cookies et des technologies similaires sur notre site Web. En utilisant notre site Web, vous consentez à l\'utilisation de cookies comme décrit dans cette politique.',
+      twoTitle: "Qu'est-ce que les cookies ?",
+      twoDescription:
+        "Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil lorsque vous visitez un site Web. Ils aident à rendre les sites Web plus efficaces et fournissent des informations aux propriétaires de sites Web.",
+    },
+    middleSection: {
+      threeTitle: "Types de cookies que nous utilisons",
+      threeSubtitle: "Nous utilisons les types de cookies suivants :",
+      threePointOneTitle: "Cookies essentiels",
+      threePointOneSubtitle:
+        "Ceux-ci sont nécessaires au bon fonctionnement du site Web et ne peuvent pas être désactivés.",
+      threePointTwoTitle: "Cookies d'analyse",
+      threePointTwoSubtitle:
+        "Cela nous aide à comprendre comment les visiteurs interagissent avec notre site Web en collectant et en rapportant des informations de manière anonyme.",
+      threePointThreeTitle: "Cookies de préférence",
+      threePointThreeSubtitle:
+        "Ces cookies permettent au site Web de se souvenir de vos préférences et choix.",
+    },
+    footerSection: {
+      fourTitle: "Gestion des cookies",
+      fourSubtitle:
+        "La plupart des navigateurs Web vous permettent de contrôler les cookies via leurs paramètres. Vous pouvez généralement trouver ces paramètres dans le menu 'options' ou 'préférences' de votre navigateur.",
+      fourPointOne:
+        "Veuillez noter que la désactivation de certains cookies peut affecter la fonctionnalité de notre site Web.",
+      fiveTitle: "Mises à jour de cette politique",
+      fiveSubtitle:
+        "Nous pouvons mettre à jour cette politique de cookies de temps à autre. Toute modification sera publiée sur cette page.",
+      sixTitle: "Nous contacter",
+      sixDescription:
+        "Si vous avez des questions concernant notre politique de cookies, veuillez nous contacter à l'adresse suivante :",
+    },
   },
 } as const;
