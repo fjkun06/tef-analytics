@@ -187,4 +187,11 @@ export default {
         "If you have any questions about our Cookie Policy, please contact us at:",
     },
   },
+
+  contact: {
+    title: "Let's Connect",
+    description: "Ready to transform your data challenges into opportunities?",
+    email: "support@example.com",
+    phone: "+1 (555) 123-4567",
+  },
 } as const;
