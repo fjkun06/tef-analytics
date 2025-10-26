@@ -102,6 +102,7 @@ export default {
     liabilityForLinks: "Responsabilité des liens",
     copyright: "Droits d'auteur",
     email: "Moyen de contact préféré : Email",
+    location: "Location: Allemagne",
     lastUpdated: "Dernière mise à jour: le 21 décembre 2024",
     threeOne: "Titre professionnel : Data Scientist",
     threeTwo: "Décerné par : Université technique de Munich",

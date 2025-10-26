@@ -101,6 +101,7 @@ export default {
     liabilityForLinks: "Haftung für Links",
     copyright: "Urheberrecht",
     email: "Bevorzugte Kontaktaufnahme: E-Mail",
+    location: "Standort: Deutschland",
     lastUpdated: "Zuletzt aktualisiert: 21. Dezember 2024",
     threeOne: "Berufsbezeichnung: Data Scientist",
     threeTwo: "Verliehen durch: Technische Universität München",

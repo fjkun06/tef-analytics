@@ -100,6 +100,7 @@ export default {
     liabilityForContent: "Liability for Content",
     liabilityForLinks: "Liability for Links",
     copyright: "Copyright",
+    location: "Location: Germany",
     email: "Preferred method of contact: Email",
     lastUpdated: "Last updated on: December 21, 2024",
     threeOne: "Professional Title: Data Scientist",
