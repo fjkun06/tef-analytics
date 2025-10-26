@@ -6,17 +6,14 @@ jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
 }));
 
-jest.mock("./LegalSectionHeading", () => ({
-  __esModule: true,
-  default: ({ translationKey }: { translationKey: string }) => <h1>{translationKey}</h1>,
-}));
+jest.mock("../imprint/LegalSectionHeading");
 
 describe("ImpressumContent (async)", () => {
   it("renders the section with correct heading and content", async () => {
     const element = await ImpressumContent({ index: 4, titleTranslationKey: "heading" });
     await act(() => render(element));
 
-    expect(screen.getByText("heading")).toBeInTheDocument();
+    expect(screen.getByText("4. imprint.heading")).toBeInTheDocument();
     expect(screen.getByText("four")).toBeInTheDocument();
   });
 });
