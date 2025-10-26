@@ -21,10 +21,11 @@ function ContactAndProjectWrapper({
 }: ContactAndProjectWrapperProps): React.ReactElement {
   return (
     <div
-      className={`relative mx-auto flex min-h-screen w-full flex-col items-center bg-slate-100 ${className}`}
+      className={`relative mx-auto flex min-h-screen w-full flex-col items-center bg-slate-200 backdrop-blur-md ${className}`}
     >
       <div
-        className={`${className} relative flex min-h-screen w-full flex-col items-center bg-slate-100 px-4 py-16 sm:px-6 lg:px-8`}
+        className={`${className} relative flex min-h-screen w-full flex-col items-center bg-slate-200 px-4 py-16 backdrop-blur-md sm:px-6 lg:px-8`}
+        // className={`${className} relative flex min-h-screen w-full flex-col items-center bg-slate-100 px-4 py-16 sm:px-6 lg:px-8`}
       >
         {/* Diagonal Grid with Light Pattern */}
         <div
@@ -37,7 +38,7 @@ function ContactAndProjectWrapper({
             backgroundSize: "40px 40px",
           }}
         />
-        <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center">
+        <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center gap-16">
           {children}
         </div>
       </div>

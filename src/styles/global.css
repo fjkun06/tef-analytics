@@ -8,6 +8,12 @@
   --foreground: #171717;
 }
 
+@layer base {
+  button:focus-visible {
+    @apply outline outline-slate-900;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

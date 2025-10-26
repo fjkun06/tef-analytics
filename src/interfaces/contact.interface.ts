@@ -22,7 +22,8 @@ export type ContactAndProjectWrapperProps = {
  * @property scope - Translation scope, either "contact" or "project"
  */
 export type PageHeaderProps = {
-  scope: "contact" | "project";
+  scope: "contact" | "projects";
+  isProjectCard?: boolean;
 };
 
 /**
@@ -72,7 +73,10 @@ export type BasicTextProps = {
  * Props for heading components.
  * Extends BasicTextProps with same properties as text components.
  */
-export type BasicHeadingProps = BasicTextProps & {};
+export type BasicHeadingProps = BasicTextProps & {
+  isProjectCardHeading?: boolean;
+  projectTimeSpan?: string;
+};
 
 /**
  * Props for the ContactLinkItem component.
