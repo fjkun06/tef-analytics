@@ -6,3 +6,4 @@ export { default as ImpressumSectionThree } from "./ImpressumSectionThree";
 export { default as LastUpdated } from "./LastUpdated";
 export { default as LegalHeading } from "./LegalHeading";
 export { default as LegalSectionHeading } from "./LegalSectionHeading";
+export { default as LegalEmailLocation } from "./LegalEmailLocation";
