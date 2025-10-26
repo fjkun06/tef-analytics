@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Exploring the intersection of data science, machine learning, and artificial intelligence. Turning complex data into actionable insights.",
     },
     copyright: {
       allRightsReserved: "All rights reserved.",
@@ -147,6 +147,43 @@ export default {
       sevenTitle: "Updates to This Policy",
       sevenDescription:
         "We may update this Privacy Policy from time to time. The latest version will always be available on our website.",
+    },
+  },
+  cookie: {
+    title: "Privacy Policy",
+    topSection: {
+      oneTitle: "Introduction",
+      oneDescription:
+        'This Cookie Policy explains how Dr. Arsene Ntiwa ("we," "our," or "us") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies as described in this policy.',
+      twoTitle: "What Are Cookies?",
+      twoDescription:
+        "Cookies are small text files that are stored on your device when you visit a website. They help make websites work more efficiently and provide information to website owners.",
+    },
+    middleSection: {
+      threeTitle: "Types of Cookies We Use",
+      threeSubtitle: "We use the following types of cookies:",
+      threePointOneTitle: "Essential Cookies",
+      threePointOneSubtitle:
+        "These are necessary for the website to function properly and cannot be switched off.",
+      threePointTwoTitle: "Analytics Cookies",
+      threePointTwoSubtitle:
+        "These help us understand how visitors interact with our website by collecting and reporting information anonymously.",
+      threePointThreeTitle: "Preference Cookies",
+      threePointThreeSubtitle:
+        "These enable the website to remember your preferences and choices.",
+    },
+    footerSection: {
+      fourTitle: "Managing Cookies",
+      fourSubtitle:
+        "Most web browsers allow you to control cookies through their settings. You can usually find these settings in the 'options' or 'preferences' menu of your browser.",
+      fourPointOne:
+        "Please note that disabling certain cookies may affect the functionality of our website.",
+      fiveTitle: "Updates to This Policy",
+      fiveSubtitle:
+        "We may update this Cookie Policy from time to time. Any changes will be posted on this page.",
+      sixTitle: "Contact Us",
+      sixDescription:
+        "If you have any questions about our Cookie Policy, please contact us at:",
     },
   },
 } as const;

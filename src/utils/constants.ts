@@ -130,6 +130,45 @@ const constants = {
       },
     ],
   },
+
+  cookies: {
+    headerSections: [
+      {
+        titleKey: "oneTitle",
+        descriptionKey: "oneDescription",
+      },
+      {
+        titleKey: "twoTitle",
+        descriptionKey: "twoDescription",
+      },
+    ],
+    bodySections: [
+      {
+        titleKey: "threePointOneTitle",
+        descriptionKey: "threePointOneSubtitle",
+      },
+      {
+        titleKey: "threePointTwoTitle",
+        descriptionKey: "threePointTwoSubtitle",
+      },
+      {
+        titleKey: "threePointThreeTitle",
+        descriptionKey: "threePointThreeSubtitle",
+      },
+    ],
+    footerSections: [
+      {
+        titleKey: "fourTitle",
+        descriptionKey: "fourSubtitle",
+        ClassName: "mt-2 text-slate-500 italic",
+      },
+      {
+        titleKey: "fiveTitle",
+        descriptionKey: "fiveSubtitle",
+        ClassName: "",
+      },
+    ],
+  },
 };
 
 export default constants;

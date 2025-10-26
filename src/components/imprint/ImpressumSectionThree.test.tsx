@@ -6,12 +6,7 @@ jest.mock("@/locales/server", () => ({
   getScopedI18n: jest.fn().mockResolvedValue((key: string) => key),
 }));
 
-jest.mock("./LegalSectionHeading", () => ({
-  __esModule: true,
-  default: ({ translationKey, index }: { translationKey: string; index: number }) => (
-    <h1>{`${index}. ${translationKey}`}</h1>
-  ),
-}));
+jest.mock("../imprint/LegalSectionHeading");
 
 const mockContent = ["threeOne", "threeTwo", "threeThree"];
 
@@ -20,7 +15,7 @@ describe("ImpressumSectionThree (async)", () => {
     const element = await ImpressumSectionThree();
     await act(() => render(element));
 
-    expect(screen.getByText("3. professionalInformation")).toBeInTheDocument();
+    expect(screen.getByText("3. imprint.professionalInformation")).toBeInTheDocument();
 
     mockContent.forEach((content) => {
       expect(screen.getByText(content)).toBeInTheDocument();

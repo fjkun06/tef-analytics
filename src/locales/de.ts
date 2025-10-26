@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Erforsche die Schnittstelle von Data Science, maschinellem Lernen und künstlicher Intelligenz. Verwandle komplexe Daten in umsetzbare Erkenntnisse.",
     },
     copyright: {
       allRightsReserved: "Alle Rechte vorbehalten.",
@@ -147,6 +147,43 @@ export default {
       sevenTitle: "Änderungen an dieser Richtlinie",
       sevenDescription:
         "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Die neueste Version ist immer auf unserer Website verfügbar.",
+    },
+  },
+  cookie: {
+    title: "Datenschutzrichtlinie",
+    topSection: {
+      oneTitle: "Einführung",
+      oneDescription:
+        'Diese Cookie-Richtlinie erklärt, wie Dr. Arsene Ntiwa ("wir", "unser" oder "uns") Cookies und ähnliche Technologien auf unserer Website verwendet. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu, wie in dieser Richtlinie beschrieben.',
+      twoTitle: "Was sind Cookies?",
+      twoDescription:
+        "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie helfen, Websites effizienter zu gestalten und Informationen an die Website-Betreiber bereitzustellen.",
+    },
+    middleSection: {
+      threeTitle: "Arten von Cookies, die wir verwenden",
+      threeSubtitle: "Wir verwenden die folgenden Arten von Cookies:",
+      threePointOneTitle: "Notwendige Cookies",
+      threePointOneSubtitle:
+        "Diese sind erforderlich, damit die Website ordnungsgemäß funktioniert und können nicht deaktiviert werden.",
+      threePointTwoTitle: "Analyse-Cookies",
+      threePointTwoSubtitle:
+        "Diese helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und melden.",
+      threePointThreeTitle: "Präferenz-Cookies",
+      threePointThreeSubtitle:
+        "Diese ermöglichen es der Website, Ihre Präferenzen und Entscheidungen zu speichern.",
+    },
+    footerSection: {
+      fourTitle: "Verwalten von Cookies",
+      fourSubtitle:
+        "Die meisten Webbrowser ermöglichen es Ihnen, Cookies über ihre Einstellungen zu steuern. Diese Einstellungen finden Sie normalerweise im Menü 'Optionen' oder 'Einstellungen' Ihres Browsers.",
+      fourPointOne:
+        "Bitte beachten Sie, dass das Deaktivieren bestimmter Cookies die Funktionalität unserer Website beeinträchtigen kann.",
+      fiveTitle: "Änderungen an dieser Richtlinie",
+      fiveSubtitle:
+        "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite veröffentlicht.",
+      sixTitle: "Kontaktieren Sie uns",
+      sixDescription:
+        "Wenn Sie Fragen zu unserer Cookie-Richtlinie haben, kontaktieren Sie uns bitte unter:",
     },
   },
 } as const;
