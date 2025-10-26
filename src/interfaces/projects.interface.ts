@@ -7,3 +7,8 @@ export type ProjectCategoryPillProps = React.DetailedHTMLProps<
   category: string;
   isActive?: boolean;
 };
+
+export type ProjectCardTechnologiesProps = {
+  technologies: string[];
+  title: string;
+};

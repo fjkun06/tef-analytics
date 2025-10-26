@@ -12,11 +12,11 @@ import { SkillPillProps } from "@/interfaces/buttons.interface";
  * <SkillPill label="Business Intelligence" />
  * <SkillPill label="Data Science" carousel />
  */
-function SkillPill({ label, carousel = false }: SkillPillProps) {
+function SkillPill({ label, carousel = false, className }: SkillPillProps) {
   return (
     <span
       data-testid="skill-pill"
-      className={`inline-flex w-max items-center rounded-full bg-blue-500/5 px-2 py-0.5 text-[10px] font-medium text-blue-500 sm:px-3 sm:py-1 ${carousel ? "sm:text-sm" : "sm:text-xs"}`}
+      className={`inline-flex w-max items-center rounded-full bg-blue-500/5 px-2 py-0.5 text-[10px] font-medium text-blue-500 sm:px-3 sm:py-1 ${carousel ? "sm:text-sm" : "sm:text-xs"} ${className}`}
     >
       {label}
     </span>

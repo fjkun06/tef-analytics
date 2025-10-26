@@ -12,6 +12,7 @@
 export type SkillPillProps = {
   label: string;
   carousel?: boolean;
+  className?: string;
 };
 
 /**

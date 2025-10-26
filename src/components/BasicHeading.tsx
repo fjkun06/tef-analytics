@@ -21,7 +21,7 @@ function BasicHeading({
         <h2 className="bg-linear-to-r from-[#2563eb] via-[#6366f1] to-[#14b8a6] bg-clip-text text-lg font-bold text-transparent sm:text-2xl">
           {text}
         </h2>
-        <span className="text-sm text-blue-600/80">{projectTimeSpan}</span>
+        <span className="text-xs text-blue-600/80 sm:text-sm">{projectTimeSpan}</span>
       </div>
     );
   }
