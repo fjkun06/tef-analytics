@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Erforsche die Schnittstelle von Data Science, maschinellem Lernen und künstlicher Intelligenz. Verwandle komplexe Daten in umsetzbare Erkenntnisse.",
     },
     copyright: {
       allRightsReserved: "Alle Rechte vorbehalten.",

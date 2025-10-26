@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Exploring the intersection of data science, machine learning, and artificial intelligence. Turning complex data into actionable insights.",
     },
     copyright: {
       allRightsReserved: "All rights reserved.",

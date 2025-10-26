@@ -13,7 +13,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Exploration de l'intersection entre la science des données, l'apprentissage automatique et l'intelligence artificielle. Transformation de données complexes en informations exploitables.",
     },
     copyright: {
       allRightsReserved: "Tous droits réservés.",
