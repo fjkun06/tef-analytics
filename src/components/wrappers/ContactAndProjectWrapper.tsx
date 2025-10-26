@@ -37,7 +37,7 @@ function ContactAndProjectWrapper({
             backgroundSize: "40px 40px",
           }}
         />
-        <div className="relative z-9999 flex h-full w-full max-w-7xl flex-col items-center">
+        <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center">
           {children}
         </div>
       </div>

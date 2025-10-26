@@ -1,9 +1,21 @@
+/**
+ * PageHeader
+ *
+ * Async server component that renders a localized header for contact pages.
+ * Displays a gradient title and description text centered on the page.
+ * Uses i18n for multi-language support with customizable scope.
+ *
+ * @param {PageHeaderProps} props - Component props
+ * @param {string} props.scope - Translation scope key for i18n (e.g., "contact.header")
+ *
+ * @returns {Promise<React.ReactElement>} Header section with gradient title and description
+ */
 import React from "react";
 
 import { PageHeaderProps } from "@/interfaces/contact.interface";
 import { getScopedI18n } from "@/locales/server";
-//11
-async function PageHeader({ scope }: PageHeaderProps) {
+
+async function PageHeader({ scope }: PageHeaderProps): Promise<React.ReactElement> {
   const t = await getScopedI18n(scope as any);
 
   return (

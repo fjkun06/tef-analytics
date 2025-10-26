@@ -1,5 +1,6 @@
 import React from "react";
 
+import BasicText from "./BasicText";
 import Brand from "./Brand";
 import { getScopedI18n } from "@/locales/server";
 
@@ -8,9 +9,7 @@ export default async function SocialLinks(): Promise<React.ReactElement> {
   return (
     <div className="flex flex-col items-center lg:items-start">
       <Brand />
-      <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs lg:text-left dark:text-gray-400">
-        {t("social.description")}
-      </p>
+      <BasicText text={t("social.description")} />
     </div>
   );
 }

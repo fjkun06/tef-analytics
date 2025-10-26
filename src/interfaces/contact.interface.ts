@@ -21,3 +21,18 @@ export type ContactSectionContainerItemProps = {
   icon: React.ReactNode;
   descriptionKey: string;
 };
+
+export type BasicTextProps = {
+  text: string;
+  large?: boolean;
+  className?: string;
+};
+
+export type BasicHeadingProps = BasicTextProps & {};
+
+export type ContactLinkItemProps = {
+  href: string;
+  label: string;
+  icon: React.ReactNode;
+  title: string;
+};
