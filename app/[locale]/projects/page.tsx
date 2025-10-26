@@ -1,5 +1,5 @@
-import Projectcard from "./Projectcard";
-import ProjectCategoryPill from "./ProjectCategoryPill";
+import Projectcard from "../../../src/components/projects/Projectcard";
+import ProjectCategoryPill from "../../../src/components/projects/ProjectCategoryPill";
 import { ContactAndProjectWrapper, PageHeader } from "@/components";
 
 export default function Projects() {
@@ -17,7 +17,7 @@ export default function Projects() {
         <ProjectCategoryPill category="Research" />
       </div>
       <div className="flex h-max w-full max-w-[1216px] justify-center justify-self-center">
-        <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
+        <div className="grid w-full grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           <Projectcard />
           <Projectcard />
           <Projectcard />

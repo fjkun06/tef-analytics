@@ -25,12 +25,12 @@ async function ContactDomainCard({
   const t = await getScopedI18n("contact");
   const t2 = (key: any) => t(key);
   return (
-    <div className="flex w-full flex-col items-start gap-4 rounded-xl bg-gradient-to-br from-[#2563eb1a] via-[#6366f11a] to-[#14b8a61a] p-6 shadow-lg backdrop-blur-lg md:max-w-[384px] md:min-w-1/3">
+    <div className="flex w-full flex-col items-start gap-4 rounded-xl p-6 shadow-[0_5px_20px_#18204833] backdrop-blur-lg md:max-w-[384px] md:min-w-1/3">
       <ContactIconBubble icon={icon} />
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-1">
         <BasicHeading text={t2("domainCard")} className="capitalize" />
         <BasicText
-          className="!m-0 !text-left"
+          className="!m-0 !text-left !text-gray-500"
           text={t2(
             "End-to-end machine learning solutions tailored to your business needs.",
           )}

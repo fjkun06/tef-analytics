@@ -17,7 +17,7 @@ function BasicHeading({
 
   if (isProjectCardHeading) {
     return (
-      <div className="">
+      <div className="flex flex-col gap-2">
         <h2 className="bg-linear-to-r from-[#2563eb] via-[#6366f1] to-[#14b8a6] bg-clip-text text-lg font-bold text-transparent sm:text-2xl">
           {text}
         </h2>
