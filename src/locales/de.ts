@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Erforsche die Schnittstelle von Data Science, maschinellem Lernen und künstlicher Intelligenz. Verwandle komplexe Daten in umsetzbare Erkenntnisse.",
     },
     copyright: {
       allRightsReserved: "Alle Rechte vorbehalten.",
@@ -101,6 +101,7 @@ export default {
     liabilityForLinks: "Haftung für Links",
     copyright: "Urheberrecht",
     email: "Bevorzugte Kontaktaufnahme: E-Mail",
+    location: "Standort: Deutschland",
     lastUpdated: "Zuletzt aktualisiert: 21. Dezember 2024",
     threeOne: "Berufsbezeichnung: Data Scientist",
     threeTwo: "Verliehen durch: Technische Universität München",

@@ -12,7 +12,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Exploring the intersection of data science, machine learning, and artificial intelligence. Turning complex data into actionable insights.",
     },
     copyright: {
       allRightsReserved: "All rights reserved.",
@@ -100,6 +100,7 @@ export default {
     liabilityForContent: "Liability for Content",
     liabilityForLinks: "Liability for Links",
     copyright: "Copyright",
+    location: "Location: Germany",
     email: "Preferred method of contact: Email",
     lastUpdated: "Last updated on: December 21, 2024",
     threeOne: "Professional Title: Data Scientist",

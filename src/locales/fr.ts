@@ -13,7 +13,7 @@ export default {
     },
     social: {
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+        "Exploration de l'intersection entre la science des données, l'apprentissage automatique et l'intelligence artificielle. Transformation de données complexes en informations exploitables.",
     },
     copyright: {
       allRightsReserved: "Tous droits réservés.",
@@ -102,6 +102,7 @@ export default {
     liabilityForLinks: "Responsabilité des liens",
     copyright: "Droits d'auteur",
     email: "Moyen de contact préféré : Email",
+    location: "Location: Allemagne",
     lastUpdated: "Dernière mise à jour: le 21 décembre 2024",
     threeOne: "Titre professionnel : Data Scientist",
     threeTwo: "Décerné par : Université technique de Munich",

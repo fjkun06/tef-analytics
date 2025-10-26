@@ -7,6 +7,7 @@
  */
 import React from "react";
 
+import LegalEmailLocation from "./LegalEmailLocation";
 import LegalSectionHeading from "./LegalSectionHeading";
 import { getScopedI18n } from "@/locales/server";
 
@@ -15,14 +16,7 @@ async function ImpressumSectionOne(): Promise<React.ReactElement> {
   return (
     <section>
       <LegalSectionHeading index={1} translationKey="accordingTo" scope="imprint" />
-      <p>
-        Franck Tankouan
-        <br />
-        Otto-Brenner-Weg 4<br />
-        44225 Dortmund
-        <br />
-        {t("country")}
-      </p>
+      <LegalEmailLocation location={t("location")} />
     </section>
   );
 }
