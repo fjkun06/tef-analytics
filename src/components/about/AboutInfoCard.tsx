@@ -6,7 +6,7 @@ import { getScopedI18n } from "@/locales/server";
 async function AboutInfoCard() {
   const t = await getScopedI18n("about");
   return (
-    <div className="flex w-full max-w-[730px] flex-col gap-2 rounded-xl bg-blue-600 p-3 sm:p-6 md:p-8">
+    <div className="flex w-full flex-col gap-2 rounded-xl bg-blue-600 p-3 sm:p-6 md:p-8 lg:max-w-[730px]">
       <h3 className="text-lg font-semibold text-white sm:text-2xl md:text-3xl">
         Dr. Arsene Ntiwa
       </h3>

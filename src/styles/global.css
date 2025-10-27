@@ -24,6 +24,17 @@
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
 
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
   --animate-scrolling: scrolling 1s ease-in-out infinite;
   @keyframes scrolling {
     0% {

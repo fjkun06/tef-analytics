@@ -39,3 +39,12 @@ export type CarouselWrapperProps = {
   index: number;
   className?: string;
 };
+
+export type PagesWrapperProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+export type AboutSideSectionContainerProps = {
+  children: React.ReactNode;
+  title: string;
+};

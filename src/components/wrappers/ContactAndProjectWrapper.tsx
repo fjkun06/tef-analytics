@@ -13,6 +13,7 @@
  */
 import React from "react";
 
+import PagesWrapper from "./PagesWrapper";
 import { ContactAndProjectWrapperProps } from "@/interfaces/contact.interface";
 
 function ContactAndProjectWrapper({
@@ -20,29 +21,11 @@ function ContactAndProjectWrapper({
   className,
 }: ContactAndProjectWrapperProps): React.ReactElement {
   return (
-    <div
-      className={`relative mx-auto flex min-h-screen w-full flex-col items-center bg-slate-200 backdrop-blur-md ${className}`}
-    >
-      <div
-        className={`${className} relative flex min-h-screen w-full flex-col items-center bg-slate-200 px-4 py-16 backdrop-blur-md sm:px-6 lg:px-8`}
-        // className={`${className} relative flex min-h-screen w-full flex-col items-center bg-slate-100 px-4 py-16 sm:px-6 lg:px-8`}
-      >
-        {/* Diagonal Grid with Light Pattern */}
-        <div
-          className="pointer-events-none absolute inset-0 z-0"
-          style={{
-            backgroundImage: `
-          repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px),
-        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px)
-        `,
-            backgroundSize: "40px 40px",
-          }}
-        />
-        <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center gap-16">
-          {children}
-        </div>
+    <PagesWrapper className={className}>
+      <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center gap-16">
+        {children}
       </div>
-    </div>
+    </PagesWrapper>
   );
 }
 
