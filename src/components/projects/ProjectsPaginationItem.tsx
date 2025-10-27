@@ -38,7 +38,7 @@ function ProjectsPaginationItem({
 }: ProjectsPaginationItemProps) {
   const currentItemStyle =
     isCurrent && !isNavigation
-      ? "border-slate-900 bg-slate-900 text-white size-9"
+      ? "border-slate-900 bg-slate-900 text-white size-9 hover:bg-slate-900"
       : "border-slate-400 ";
   return (
     <AnimatePresence mode="popLayout">

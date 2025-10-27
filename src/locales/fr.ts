@@ -190,4 +190,20 @@ export default {
         "Si vous avez des questions concernant notre politique de cookies, veuillez nous contacter à l'adresse suivante :",
     },
   },
+
+  contact: {
+    title: "Let's Connect",
+    description: "Ready to transform your data challenges into opportunities?",
+    email: "support@example.com",
+    phone: "+1 (555) 123-4567",
+  },
+  projects: {
+    title: "Our Projects",
+    description:
+      "Explore our diverse range of projects that leverage data for impactful solutions.",
+  },
+  about: {
+    title: "Data Science Expert & ML Engineer",
+    description: "Learn more about our mission, vision, and the team behind our success.",
+  },
 } as const;

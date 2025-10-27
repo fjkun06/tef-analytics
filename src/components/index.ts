@@ -8,6 +8,7 @@ export * from "./contact";
 export * from "./icons";
 export * from "./privacy";
 export * from "./projects";
+export * from "./about";
 
 export { default as Brand } from "./Brand";
 export { default as ClientTranslationProvider } from "./ClientTranslationProvider";

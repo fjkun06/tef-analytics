@@ -1,4 +1,4 @@
-const IconMenu = () => (
+const IconRobot = () => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -13,4 +13,4 @@ const IconMenu = () => (
   </svg>
 );
 
-export default IconMenu;
+export default IconRobot;

@@ -194,4 +194,14 @@ export default {
     email: "support@example.com",
     phone: "+1 (555) 123-4567",
   },
+  projects: {
+    title: "Our Projects",
+    description:
+      "Explore our diverse range of projects that leverage data for impactful solutions.",
+  },
+  about: {
+    title: "Data Science Expert & ML Engineer",
+    description: "Learn more about our mission, vision, and the team behind our success.",
+    location: "Germany",
+  },
 } as const;

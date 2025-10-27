@@ -11,3 +11,5 @@ export { default as IconX } from "./IconX";
 export { default as IconXing } from "./IconXing";
 export { default as IconChevronLeft } from "./IconChevronLeft";
 export { default as IconChevronRight } from "./IconChevronRight";
+export { default as IconEnvelope } from "./IconEnvelope";
+export { default as IconLocation } from "./IconLocation";
