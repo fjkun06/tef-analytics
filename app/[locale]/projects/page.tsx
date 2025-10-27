@@ -1,6 +1,10 @@
-import Projectcard from "../../../src/components/projects/Projectcard";
-import ProjectCategoryPill from "../../../src/components/projects/ProjectCategoryPill";
-import { ContactAndProjectWrapper, PageHeader } from "@/components";
+import {
+  ContactAndProjectWrapper,
+  PageHeader,
+  Projectcard,
+  ProjectCategoryPill,
+  ProjectsPagination,
+} from "@/components";
 
 export default function Projects() {
   return (
@@ -27,6 +31,7 @@ export default function Projects() {
           <Projectcard />
         </div>
       </div>
+      <ProjectsPagination />
     </ContactAndProjectWrapper>
   );
 }

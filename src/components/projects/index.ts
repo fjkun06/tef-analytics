@@ -5,3 +5,5 @@ export { default as ProjectCardPillsGroup } from "./ProjectCardPillsGroup";
 export { default as ProjectCardSection } from "./ProjectCardSection";
 export { default as ProjectCardTechnologyPill } from "./ProjectCardTechnologyPill";
 export { default as ProjectCategoryPill } from "./ProjectCategoryPill";
+export { default as ProjectsPagination } from "./ProjectsPagination";
+export { default as ProjectsPaginationItem } from "./ProjectsPaginationItem";

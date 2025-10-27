@@ -9,3 +9,5 @@ export { default as IconTrend } from "./IconTrend";
 export { default as IconWeb } from "./IconWeb";
 export { default as IconX } from "./IconX";
 export { default as IconXing } from "./IconXing";
+export { default as IconChevronLeft } from "./IconChevronLeft";
+export { default as IconChevronRight } from "./IconChevronRight";
