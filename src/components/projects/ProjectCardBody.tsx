@@ -15,11 +15,15 @@
  */
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import ProjectCardSection from "./ProjectCardSection";
+import { ProjectCardBodyDataProps } from "@/interfaces/projects.interface";
 
-export default function ProjectCardBody() {
+export default function ProjectCardBody({
+  shortDescription,
+  projectCardBodySections,
+}: ProjectCardBodyDataProps): React.ReactElement {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const [isProjectCardBodyOpen, setIsProjectCardBodyOpen] = useState(false);
   const [height, setHeight] = useState(0);
@@ -34,58 +38,23 @@ export default function ProjectCardBody() {
     }
   }, [isProjectCardBodyOpen]);
 
-  const description =
-    "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.";
-  const descriptionItems = [
-    "Assist in predictive analytics tools screening",
-    "Design and implement predictive models with R and SAS",
-    "Provide predictive analytics expertise",
-    "Support platform development and deployment",
-  ];
-  const achievementItems = [
-    "Predictive modeling",
-    "Weight optimization",
-    "Volume forecasting",
-  ];
-  const practicalWorkItems = [
-    "Built real-time invoice assessment system",
-    "Optimized API data processing",
-    "Implemented ML algorithms for fraud detection",
-  ];
-
-  const projectCardBodySEctions = [
-    {
-      title: "Description",
-      type: "list",
-      listItems: descriptionItems,
-    },
-    {
-      title: "Practical Work",
-      type: "list",
-      listItems: practicalWorkItems,
-    },
-    {
-      title: "Key Achievements",
-      type: "pills",
-      technologies: achievementItems,
-    },
-  ];
-
   return (
     <div
       className={"flex w-full max-w-md flex-col gap-4 transition-all"}
       onMouseEnter={toggleSetIsProjectCardBodyOpen}
       onMouseLeave={toggleSetIsProjectCardBodyOpen}
+      data-testid="project-card-body"
     >
-      <p className="text-xs font-bold text-gray-600 sm:text-sm">{description}</p>
+      <p className="text-xs font-bold text-gray-600 sm:text-sm">{shortDescription}</p>
       <div
         ref={contentRef}
         style={{
           maxHeight: isProjectCardBodyOpen ? `${height + 100}px` : "0px",
         }}
         className="flex flex-col gap-4 overflow-hidden transition-all duration-500 ease-in-out"
+        data-testid="project-card-body-content"
       >
-        {projectCardBodySEctions.map((section) =>
+        {projectCardBodySections.map((section) =>
           section.type === "pills" ? (
             <ProjectCardSection
               key={section.title}

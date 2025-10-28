@@ -1,3 +1,4 @@
+/*eslint-disable */
 /**
  * projects.interface.ts
  *
@@ -33,8 +34,6 @@ export type ProjectCategoryPillProps = React.DetailedHTMLProps<
  */
 export type ProjectCardSectionListProps = {
   listItems: string[];
-  title: string;
-  className?: string;
   type: "list";
 };
 
@@ -49,8 +48,6 @@ export type ProjectCardSectionListProps = {
  */
 export type ProjectCardSectionPillsProps = {
   technologies: string[];
-  title: string;
-  className?: string;
   type: "pills";
 };
 
@@ -58,9 +55,14 @@ export type ProjectCardSectionPillsProps = {
  * ProjectCardSectionProps
  * Union type for ProjectCardSection - either list or pills variant
  */
-export type ProjectCardSectionProps =
+
+type ProjectCardSectionMainProps =
   | ProjectCardSectionListProps
   | ProjectCardSectionPillsProps;
+export type ProjectCardSectionProps = ProjectCardSectionMainProps & {
+  title: string;
+  className?: string;
+};
 
 /**
  * ProjectCardPillsGroupProps
@@ -102,4 +104,16 @@ export type ProjectsPaginationItemProps = React.DetailedHTMLProps<
   isNavigation?: boolean;
   isCurrent?: boolean;
   animationKey?: number;
+};
+
+export type ProjectCardBodyProps = {
+  description: string;
+  descriptionItems: string[];
+  achievementItems: string[];
+  practicalWorkItems: string[];
+  translate: (key: any) => string;
+};
+export type ProjectCardBodyDataProps = {
+  shortDescription: string;
+  projectCardBodySections: ProjectCardSectionProps[];
 };

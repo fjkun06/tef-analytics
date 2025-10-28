@@ -37,9 +37,9 @@ export default async function RootLayout({
       {/* ClientTranslationProvider wraps Navbar to provide localization context */}
       <ClientTranslationProvider locale={locale}>
         <Navbar />
+        {children}
+        <Footer />
       </ClientTranslationProvider>
-      {children}
-      <Footer />
     </main>
   );
 }

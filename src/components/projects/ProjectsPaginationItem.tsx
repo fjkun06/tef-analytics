@@ -42,7 +42,7 @@ function ProjectsPaginationItem({
       : "border-slate-400 ";
   return (
     <AnimatePresence mode="popLayout">
-      <motion.li layout key={animationKey}>
+      <motion.li layout key={animationKey} data-testid="pagination-item">
         <button
           className={`grid cursor-pointer disabled:cursor-not-allowed disabled:text-gray-500 disabled:hover:bg-transparent ${currentItemStyle} size-8 place-content-center rounded border transition-colors hover:bg-slate-400 rtl:rotate-180 ${className}`}
           {...props}

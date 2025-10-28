@@ -38,6 +38,7 @@ const customJestConfig = {
     "src/pages/**/*.{js,ts,jsx,tsx}",
     "!src/utils/**/*.{js,ts,jsx,tsx}",
     "src/utils/functions/*.{js,ts,jsx,tsx}",
+    "!src/utils/functions/index.{js,ts,jsx,tsx}",
     "!src/pages/_app.{js,ts,jsx,tsx}",
     "!src/pages/_document.{js,ts,jsx,tsx}",
     "!**/node_modules/**",

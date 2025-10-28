@@ -30,7 +30,10 @@ function ProjectCardBodySectionListGroup({
         <li className="flex h-max items-start gap-2" key={index}>
           <span className="mt-[9px] h-1 w-1 rounded-full bg-slate-700 sm:h-1.5 sm:w-1.5" />
           {isAboutMeItem ? (
-            <span className={"text-sm leading-relaxed text-gray-600 dark:text-gray-600"}>
+            <span
+              data-testid="about-me-item"
+              className={"text-sm leading-relaxed text-gray-600 dark:text-gray-600"}
+            >
               {item}
             </span>
           ) : (

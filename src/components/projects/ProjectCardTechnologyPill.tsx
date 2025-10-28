@@ -22,6 +22,7 @@ function ProjectCardTechnologyPill({ tech }: { tech: string }): React.ReactEleme
   return (
     <span
       className={`${randomClass} rounded-4xl px-3 py-1 text-xs text-slate-900 sm:text-sm`}
+      data-testid="technology-pill"
     >
       {tech}
     </span>
