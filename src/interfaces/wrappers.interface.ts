@@ -40,11 +40,13 @@ export type CarouselWrapperProps = {
   className?: string;
 };
 
+/**
+ * Props for a pages wrapper component.
+ * Provides consistent page-level layout and styling.
+ * @property children - The page content as React nodes
+ * @property className - Optional additional CSS classes for the wrapper
+ */
 export type PagesWrapperProps = {
   children: React.ReactNode;
   className?: string;
-};
-export type AboutSideSectionContainerProps = {
-  children: React.ReactNode;
-  title: string;
 };

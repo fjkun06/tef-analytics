@@ -80,6 +80,7 @@ export type ProjectCardPillsGroupProps = {
  */
 export type ProjectCardListGroupProps = {
   listItems: string[];
+  isAboutMeItem?: boolean;
 };
 
 /**

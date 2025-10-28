@@ -22,13 +22,20 @@ import { ProjectCardListGroupProps } from "@/interfaces/projects.interface";
 
 function ProjectCardBodySectionListGroup({
   listItems,
+  isAboutMeItem,
 }: ProjectCardListGroupProps): React.ReactElement {
   return (
     <ul className="flex w-full flex-col gap-1">
       {listItems.map((item, index) => (
         <li className="flex h-max items-start gap-2" key={index}>
           <span className="mt-[9px] h-1 w-1 rounded-full bg-slate-700 sm:h-1.5 sm:w-1.5" />
-          <BasicText text={item} className="!mt-0 !text-sm !text-slate-700" />
+          {isAboutMeItem ? (
+            <span className={"text-sm leading-relaxed text-gray-600 dark:text-gray-600"}>
+              {item}
+            </span>
+          ) : (
+            <BasicText text={item} className="!mt-0 !text-sm !text-slate-700" />
+          )}
         </li>
       ))}
     </ul>
