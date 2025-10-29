@@ -16,6 +16,8 @@ export default function Contact() {
       <ContactIconBubble icon={<span>S</span>} />
       <div className="flex justify-center gap-4 max-md:flex-wrap">
         <ContactDomainCard
+          titleKey="domainCard"
+          descriptionKey="End-to-end machine learning solutions tailored to your business needs."
           icon={
             <svg
               stroke="currentColor"
@@ -32,6 +34,8 @@ export default function Contact() {
           }
         />
         <ContactDomainCard
+          titleKey="domainCard"
+          descriptionKey="End-to-end machine learning solutions tailored to your business needs."
           icon={
             <svg
               stroke="currentColor"
@@ -48,6 +52,8 @@ export default function Contact() {
           }
         />
         <ContactDomainCard
+          titleKey="domainCard"
+          descriptionKey="End-to-end machine learning solutions tailored to your business needs."
           icon={
             <svg
               stroke="currentColor"
@@ -64,7 +70,7 @@ export default function Contact() {
           }
         />
       </div>
-      <ContactSectionContainer heading="Get in Touch">
+      <ContactSectionContainer headingKey="Get in Touch">
         <div className="grid w-full grid-cols-2 gap-5 max-md:flex max-md:flex-col">
           <ContactLinkItem
             icon={
@@ -144,7 +150,7 @@ export default function Contact() {
           />
         </div>
       </ContactSectionContainer>
-      <ContactSectionContainer heading="Get in Touch">
+      <ContactSectionContainer headingKey="Get in Touch">
         <ContactSectionContainerItem
           descriptionKey="Hello"
           icon={

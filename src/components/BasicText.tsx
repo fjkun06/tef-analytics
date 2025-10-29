@@ -11,6 +11,7 @@ function BasicText({ text, large, className }: BasicTextProps): React.ReactEleme
     </p>
   ) : (
     <span
+      data-testid="basic-text"
       className={`sp2 ${className} mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs lg:text-left dark:text-gray-400`}
     >
       {text}

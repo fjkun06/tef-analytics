@@ -34,7 +34,7 @@ export type PageHeaderProps = {
  */
 export type ContactSectionContainerProps = {
   children: React.ReactNode | React.ReactNode[];
-  heading: string;
+  headingKey: string;
 };
 
 /**
