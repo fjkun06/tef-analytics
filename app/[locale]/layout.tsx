@@ -38,8 +38,8 @@ export default async function RootLayout({
       <ClientTranslationProvider locale={locale}>
         <Navbar />
         {children}
-        <Footer />
       </ClientTranslationProvider>
+      <Footer />
     </main>
   );
 }

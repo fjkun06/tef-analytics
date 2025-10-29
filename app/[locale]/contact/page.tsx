@@ -11,7 +11,10 @@ import { availability, domains, socials } from "@/utils/contact.page.constants";
 export default function Contact() {
   return (
     <ContactAndProjectWrapper>
+      {/* <div className="w-full"> */}
       <PageHeader scope="contact" />
+
+      {/* </div> */}
 
       <div className="flex w-full flex-col gap-10">
         <ContactSectionContainer headingKey="socialsTitle">

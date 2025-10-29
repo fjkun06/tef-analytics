@@ -26,9 +26,9 @@ async function ContactSectionContainerItem({
   const t = await getScopedI18n("contact");
   const t2 = (key: any) => t(key);
   return (
-    <div className="flex w-full items-center gap-4 max-[430px]:flex-col max-[430px]:items-center max-[430px]:justify-center max-[430px]:gap-2">
+    <div className="flex w-full items-center gap-4 max-[430px]:flex-col max-[430px]:items-start max-[430px]:justify-center max-[430px]:gap-2">
       <ContactIconBubble icon={icon} />
-      <BasicText text={t2(descriptionKey)} large />
+      <BasicText text={t2(descriptionKey)} large className="max-[430px]:text-start" />
     </div>
   );
 }
