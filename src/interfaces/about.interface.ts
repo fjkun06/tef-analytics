@@ -46,4 +46,5 @@ export type AboutProgressItemProps = {
 export type AboutRegularPillsContainerProps = {
   pills: string[];
   title: string;
+  isFloating?: boolean;
 };

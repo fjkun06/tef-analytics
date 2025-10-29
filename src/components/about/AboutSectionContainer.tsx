@@ -1,3 +1,23 @@
+/**
+ * AboutSectionContainer
+ *
+ * Client component that provides a styled container for about page sections.
+ * Features gradient title with border, glassmorphic background, and ordered list layout
+ * for timeline-style content like education or experience sections.
+ *
+ * @param {AboutSideSectionContainerProps} props - Component props
+ * @param {string} props.title - Section heading with gradient styling
+ * @param {React.ReactNode} props.children - Section content items
+ *
+ * @returns {React.ReactElement} Styled section container with gradient title
+ *
+ * @example
+ * ```tsx
+ * <AboutSectionContainer title="Education">
+ *   <AboutSectionContainerItem {...itemProps} />
+ * </AboutSectionContainer>
+ * ```
+ */
 import React from "react";
 
 import { AboutSideSectionContainerProps } from "@/interfaces/about.interface";

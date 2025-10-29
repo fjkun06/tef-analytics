@@ -1,3 +1,17 @@
+/**
+ * AboutPhoto
+ *
+ * Client component that displays a circular profile photo with white border.
+ * Shows a professional headshot image with optimized loading and proper alt text.
+ * Features rounded styling with aspect ratio preservation and object-fit cover.
+ *
+ * @returns {React.ReactElement} Circular profile photo with border
+ *
+ * @example
+ * ```tsx
+ * <AboutPhoto />
+ * ```
+ */
 import React from "react";
 
 function AboutPhoto() {

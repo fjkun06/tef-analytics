@@ -1,3 +1,22 @@
+/**
+ * AboutProgressItem
+ *
+ * Client component that displays an animated progress bar for skills or achievements.
+ * Uses Framer Motion for smooth spring animations with configurable delay and stiffness.
+ * Shows skill title, percentage value, and animated progress bar fill.
+ *
+ * @param {AboutProgressItemProps} props - Component props
+ * @param {number} [props.percentage] - Progress value from 0-100
+ * @param {string} props.title - Skill or achievement name
+ * @param {number} [props.delay] - Animation delay in seconds
+ *
+ * @returns {React.ReactElement} Animated progress bar with title and percentage
+ *
+ * @example
+ * ```tsx
+ * <AboutProgressItem title="React" percentage={90} delay={0.2} />
+ * ```
+ */
 "use client";
 import React from "react";
 
@@ -28,7 +47,7 @@ export default function AboutProgressItem({
             damping: 25,
             mass: 1.5,
             duration: 1,
-            delay: delay! + 1,
+            delay: (delay ?? 0) + 1,
           }}
         />
       </div>

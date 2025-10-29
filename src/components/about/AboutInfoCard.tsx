@@ -1,3 +1,17 @@
+/**
+ * AboutInfoCard
+ *
+ * Server component that displays personal information card with name, title, email, and location.
+ * Features a blue gradient background with white text and integrated icons for contact information.
+ * Retrieves localized title and location text from internationalization system.
+ *
+ * @returns {Promise<React.ReactElement>} Personal info card with contact details
+ *
+ * @example
+ * ```tsx
+ * <AboutInfoCard />
+ * ```
+ */
 import React from "react";
 
 import { IconEnvelope, IconLocation } from "../icons";
