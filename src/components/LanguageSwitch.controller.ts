@@ -1,9 +1,14 @@
 import { useRef, useState } from "react";
 
+import { IconDeutschland, IconEngland, IconFrance } from "./icons";
 import useClickedOutside from "@/hooks/useClickedOutside";
 import { useChangeLocale, useCurrentLocale, useScopedI18n } from "@/locales/client";
 import { LocaleProps } from "@/locales/locales.interface";
-import constants from "@/utils/constants";
+export const locales = [
+  { code: "en" as const, icon: IconEngland },
+  { code: "de" as const, icon: IconDeutschland },
+  { code: "fr" as const, icon: IconFrance },
+];
 
 export function useLanguageSwitchController() {
   const changeLocale = useChangeLocale({ preserveSearchParams: true });
@@ -19,13 +24,13 @@ export function useLanguageSwitchController() {
 
   useClickedOutside({ ref, functionToBeTriggered: () => setOpen(false) });
 
-  const currentIcon = constants.locales.find((l) => l.code === current)?.icon ?? "";
+  const currentIcon = locales.find((l) => l.code === current)?.icon;
 
   return {
     open,
     ref,
     current,
-    languageLocales: constants.locales,
+    languageLocales: locales,
     currentIcon,
     tLang,
     setOpen,

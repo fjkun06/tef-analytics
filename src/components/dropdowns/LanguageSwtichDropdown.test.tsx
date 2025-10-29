@@ -21,7 +21,6 @@ describe("LanguageSwtichDropdown", () => {
   });
   it("it should render correctly", () => {
     expect(screen.getByText("English")).toBeInTheDocument();
-    expect(screen.getAllByTestId("data-span")[0].textContent).toBe("🇬🇧");
     expect(screen.getAllByTestId("data-span")).toHaveLength(2);
   });
   it("it should fire switch locale correctly", () => {

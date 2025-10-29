@@ -1,12 +1,12 @@
 import { act, fireEvent, render, renderHook } from "@testing-library/react";
 
-import { useLanguageSwitchController } from "./LanguageSwitch.controller";
+import { locales, useLanguageSwitchController } from "./LanguageSwitch.controller";
 const sampleReturnValue = {
   open: false,
   ref: { current: null },
   current: "en",
-  currentIcon: "",
-  languageLocales: [],
+  currentIcon: locales[0].icon,
+  languageLocales: locales,
   onSelect: expect.any(Function),
   tLang: "lang",
   setOpen: expect.any(Function),
@@ -15,10 +15,6 @@ jest.mock("@/locales/client", () => ({
   useChangeLocale: jest.fn((locale: string) => jest.fn(() => locale)),
   useCurrentLocale: jest.fn(() => "en"),
   useScopedI18n: jest.fn((scope: string) => scope),
-}));
-
-jest.mock("@/utils/constants", () => ({
-  locales: [],
 }));
 
 const TestComponent = () => {
