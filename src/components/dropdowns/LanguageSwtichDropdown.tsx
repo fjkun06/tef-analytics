@@ -1,31 +1,7 @@
-/**
- * LanguageSwtichDropdown
- *
- * Client component that renders the dropdown menu for language selection.
- * Displays available language options with icons, handles selection events,
- * and provides visual feedback for the currently selected language.
- *
- * @param {LanguageSwtichDropdownProps} props - Component props
- * @param {string} props.current - Currently selected language code
- * @param {Function} props.onSelect - Callback function when language is selected
- * @param {Function} props.tLang - Translation function for language names
- * @param {Array} props.languageLocales - Array of available language locale objects
- *
- * @returns {React.ReactElement} Dropdown menu with language options
- *
- * @example
- * ```tsx
- * <LanguageSwtichDropdown
- *   current="en"
- *   onSelect={handleLanguageChange}
- *   tLang={translateFunction}
- *   languageLocales={locales}
- * />
- * ```
- */
 import React from "react";
 
 import { LanguageSwtichDropdownProps } from "@/interfaces/langaugeswitcher.interface";
+import { LocaleProps } from "@/locales/locales.interface";
 
 function LanguageSwtichDropdown({
   current,
@@ -40,7 +16,7 @@ function LanguageSwtichDropdown({
           key={locale.code}
           data-testid="language-dropdown-switch-button"
           type="button"
-          onClick={() => onSelect(locale.code)}
+          onClick={() => onSelect(locale.code as LocaleProps)}
           className={`w-full cursor-pointer px-3 py-2 text-left text-sm transition hover:bg-slate-100 dark:hover:bg-slate-800 ${
             current === locale.code
               ? "text-rose-600 dark:text-rose-400"

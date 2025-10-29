@@ -45,7 +45,9 @@ function LanguageSwtichButton({
       <span className="sr-only">Change language</span>
       <span className="inline-flex items-center gap-2">
         <span className="text-lg">{currentIcon}</span>
-        <span className="uppercase">{(current || "en").slice(0, 2)}</span>
+        <span className="uppercase">
+          {React.createElement(current || React.Fragment)}
+        </span>
       </span>
       <span className="ml-2 text-sm text-slate-500 dark:text-slate-400">
         {open ? "▲" : "▼"}

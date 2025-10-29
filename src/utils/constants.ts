@@ -2,9 +2,9 @@ import { FooterAboutTranslationKeys } from "@/interfaces/footer.interface";
 
 const constants = {
   locales: [
-    { code: "en" as const, label: "English", icon: "🇬🇧" },
-    { code: "de" as const, label: "Deutsch", icon: "🇩🇪" },
-    { code: "fr" as const, label: "français", icon: "🇫🇷" },
+    { code: "en" as const, icon: "🇬🇧" },
+    { code: "de" as const, icon: "🇩🇪" },
+    { code: "fr" as const, icon: "🇫🇷" },
   ],
   navItems: [
     { name: "Home", href: "/" },
