@@ -23,6 +23,6 @@ describe("LanguageSwitch", () => {
   it("should translate correctly", () => {
     const { getAllByTestId } = render(<LanguageSwitch />);
     fireEvent.click(getAllByTestId("language-switch-button")[0]);
-    expect(getAllByTestId("data-span")).toHaveLength(2);
+    expect(getAllByTestId("data-span")).toHaveLength(3);
   });
 });

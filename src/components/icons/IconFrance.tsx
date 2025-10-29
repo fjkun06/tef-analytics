@@ -4,7 +4,7 @@ import React from "react";
 
 import { IconProps } from "@/interfaces/icons.interface";
 
-export default function IconFrance({ className = "h-6 w-6" }: IconProps) {
+export default function IconFrance({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

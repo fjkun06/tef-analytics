@@ -21,9 +21,9 @@ async function HomeSkillsSectionDetails(): Promise<React.ReactElement> {
   const words = returnWordsArray(t2);
   return (
     <div className="flex h-max flex-col items-center text-center">
-      <h2 className="font-display flex flex-col items-center justify-center gap-2 text-3xl font-bold tracking-tight sm:flex-row sm:text-4xl">
+      <h2 className="font-display flex flex-col items-center justify-center gap-2 text-3xl font-bold tracking-tight sm:contents sm:text-4xl">
         <span className="text-slate-900">{t2("title")}</span>
-        <div className="w-full text-center max-sm:flex max-sm:justify-center sm:w-[180px] sm:text-left">
+        <div className="w-full text-center max-sm:flex max-sm:justify-center sm:w-max sm:text-left">
           <HomeRotateWords words={words} />
         </div>
       </h2>

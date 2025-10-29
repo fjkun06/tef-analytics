@@ -32,7 +32,9 @@ export function LanguageSwitch() {
   return (
     <div
       data-testid="language-switch"
-      className={`relative max-lg:overflow-hidden ${open ? "overflow-visible" : "overflow-hidden"} transition-all duration-500 ease-in-out`}
+      className={
+        "relative transition-all duration-500 ease-in-out max-lg:overflow-hidden"
+      }
       ref={mergeRefs(ref, contentRef)}
       style={{
         maxHeight: open ? `${height + 100}px` : "44px",
@@ -50,6 +52,7 @@ export function LanguageSwitch() {
         onSelect={onSelect}
         tLang={(code: any) => tLang(code)}
         languageLocales={languageLocales}
+        isOpen={open}
       />
     </div>
   );

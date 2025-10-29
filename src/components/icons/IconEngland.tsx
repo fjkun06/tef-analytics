@@ -3,13 +3,14 @@ import React from "react";
 
 import { IconProps } from "@/interfaces/icons.interface";
 
-export default function IconEngland({ className = "h-6 w-6" }: IconProps) {
+export default function IconEngland({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="flag-icons-gb"
       viewBox="0 0 640 480"
       className={className}
+      data-testid="icon-england"
     >
       <path fill="#012169" d="M0 0h640v480H0z" />
       <path

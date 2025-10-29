@@ -30,13 +30,13 @@ function NavbarDesktop({
       <div className="flex h-16 items-center justify-between">
         <Brand />
 
-        <div className="flex items-center gap-6">
-          <nav className="ml-6 hidden items-center gap-2 space-x-2 lg:flex">
+        <div className="flex h-full items-center gap-6">
+          <nav className="ml-6 hidden h-full items-center gap-2 space-x-2 lg:flex">
             {navbarItems.map((item) => (
               <NavLink
                 key={item.name}
                 href={item.href}
-                className="rounded-md px-3 py-2 text-sm font-medium transition hover:bg-slate-100 dark:hover:bg-slate-800"
+                className="px-3 py-2 text-sm font-medium bg-blend-multiply"
               >
                 {t(hrefToNavKey(item.href))}
               </NavLink>
@@ -49,7 +49,7 @@ function NavbarDesktop({
           {/* Mobile menu button */}
           <button
             onClick={toggleMobileOpen}
-            className="inline-flex items-center justify-center rounded-md p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden dark:text-slate-200 dark:hover:bg-slate-800"
+            className="inline-flex items-center justify-center p-2 text-slate-700 transition hover:bg-slate-100 lg:hidden dark:text-slate-200 dark:hover:bg-slate-800"
             aria-expanded={isMobileOpen}
             aria-label={isMobileOpen ? "Close menu" : "Open menu"}
           >

@@ -37,12 +37,12 @@ function NavbarMobile({
         maxHeight: isMobileOpen ? `${height + 300}px` : "0px",
       }}
     >
-      <nav className="space-y-1 px-4 pb-4 dark:bg-slate-900">
+      <nav className="h-full space-y-1 px-4 pb-4 dark:bg-slate-900">
         {navbarItems.map((item) => (
           <NavLink
             key={item.name}
             href={item.href}
-            className="block rounded-md px-3 py-2 text-base font-medium transition hover:bg-slate-100 dark:hover:bg-slate-800"
+            className="block px-3 py-2 text-base font-medium transition"
             onClick={toggleMobileOpen}
           >
             {t(hrefToNavKey(item.href))}

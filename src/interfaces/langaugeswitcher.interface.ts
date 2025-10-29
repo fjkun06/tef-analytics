@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
+import { IconProps } from "./icons.interface";
 import { LocaleProps } from "@/locales/locales.interface";
 
 /**
@@ -15,7 +16,7 @@ export type LanguageSwtichButtonProps = {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   current: string | null;
-  currentIcon: React.ReactNode;
+  currentIcon: any;
 };
 
 /**
@@ -27,8 +28,9 @@ export type LanguageSwtichButtonProps = {
  * @property languageLocales - Array of available language options
  */
 export type LanguageSwtichDropdownProps = {
-  current: string;
+  current: any;
   onSelect: (locale: LocaleProps) => void;
   tLang: (code: any) => string;
-  languageLocales: { code: LocaleProps; icon?: string }[];
+  languageLocales: { code: LocaleProps; icon?: any }[];
+  isOpen?: boolean;
 };

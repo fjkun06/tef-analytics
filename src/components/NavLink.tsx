@@ -9,9 +9,10 @@ import { NavLinkProps } from "@/interfaces/navbar.interface";
 export default function NavLink({
   href,
   children,
-  className = "",
-  activeClassName = "text-indigo-600 dark:text-indigo-400 font-semibold bg-indigo-50 dark:bg-slate-800/50 rounded-md px-2 py-1",
-  inactiveClassName = "text-slate-700 dark:text-slate-200",
+  className = "h-full text-red-500",
+  activeClassName = "text-indigo-600 dark:text-slate-800 font-semibold bg-white/50 dark:bg-white/80 px-2 py-1 flex items-center",
+  // activeClassName = "text-indigo-600 dark:text-indigo-400 font-semibold bg-indigo-50 dark:bg-slate-800/50 rounded-md px-2 py-1",
+  inactiveClassName = "text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800",
   onClick,
 }: NavLinkProps) {
   const pathname = usePathname() || "/";
@@ -29,7 +30,7 @@ export default function NavLink({
   })();
 
   const finalClass =
-    `${className} ${isActive ? activeClassName : inactiveClassName}`.trim();
+    `${className} ${isActive ? activeClassName : inactiveClassName} transition-colors duration-300 ease-in-out`.trim();
 
   return (
     <Link href={href} className={finalClass} onClick={onClick}>
