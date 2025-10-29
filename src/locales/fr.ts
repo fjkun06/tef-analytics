@@ -192,7 +192,7 @@ export default {
   },
 
   contact: {
-    title: "Let's Connect",
+    title: "Contact",
     description: "Prêt à transformer vos défis liés aux données en opportunités ?",
     socialsTitle: "Entrer en contact",
     availability: {
@@ -200,9 +200,16 @@ export default {
       one: "Disponible pour des projets de conseil, des rôles de conseil technique et des collaborations à long terme.",
       two: "Le travail à distance et les engagements sur site sont possibles en Allemagne, dans l'UE et, puisque le monde est un village mondial, les possibilités sont infinies.",
     },
-
-    email: "support@example.com",
-    phone: "+1 (555) 123-4567",
+    domains: {
+      oneTitle: "Solutions en science des données",
+      oneDescription:
+        "Solutions de machine learning de bout en bout adaptées aux besoins de votre entreprise.",
+      twoTitle: "Consultation en IA",
+      twoDescription:
+        "Conseils stratégiques sur la mise en œuvre de solutions d'IA dans votre organisation.",
+      threeTitle: "Conseil technique",
+      threeDescription: "Expertise en infrastructure de données et opérations de ML.",
+    },
   },
   projects: {
     title: "Our Projects",

@@ -197,9 +197,16 @@ export default {
       one: "Available for consulting projects, technical advisory roles, and long-term collaborations.",
       two: "Remote work and on-site engagements possible within Germany, EU and since the world is a global village, the possibilities are endless.",
     },
-
-    email: "support@example.com",
-    phone: "+1 (555) 123-4567",
+    domains: {
+      oneTitle: "Data Science Solutions",
+      oneDescription:
+        "End-to-end machine learning solutions tailored to your business needs.",
+      twoTitle: "AI Consulting",
+      twoDescription:
+        "Strategic guidance on implementing AI solutions in your organization.",
+      threeTitle: "Technical Advisory",
+      threeDescription: "Expert advice on data infrastructure and ML operations.",
+    },
   },
   projects: {
     title: "Our Projects",

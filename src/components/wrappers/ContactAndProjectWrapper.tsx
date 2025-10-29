@@ -21,8 +21,10 @@ function ContactAndProjectWrapper({
   className,
 }: ContactAndProjectWrapperProps): React.ReactElement {
   return (
-    <PagesWrapper className={className}>
-      <div className="relative z-1 flex h-full w-full max-w-7xl flex-col items-center gap-16">
+    <PagesWrapper>
+      <div
+        className={`relative z-1 flex h-full w-full max-w-7xl flex-col items-center gap-16 lg:px-8 ${className}`}
+      >
         {children}
       </div>
     </PagesWrapper>

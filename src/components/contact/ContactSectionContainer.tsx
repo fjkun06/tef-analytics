@@ -25,7 +25,7 @@ async function ContactSectionContainer({
   const t2 = (key: any) => t(key);
 
   return (
-    <div className="flex w-full flex-col items-start gap-5 rounded-2xl bg-red-300 p-4 shadow-[0_5px_20px_#18204833] backdrop-blur-lg sm:p-8">
+    <div className="flex w-full flex-col items-start gap-5 rounded-2xl p-4 shadow-[0_5px_20px_#18204833] backdrop-blur-lg sm:p-8">
       <BasicHeading text={t2(headingKey)} large />
       <div className="flex w-full flex-col items-start gap-4">{children}</div>
     </div>
