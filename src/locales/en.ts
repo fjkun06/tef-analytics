@@ -191,6 +191,13 @@ export default {
   contact: {
     title: "Let's Connect",
     description: "Ready to transform your data challenges into opportunities?",
+    socialsTitle: "Get in Touch",
+    availability: {
+      title: "Availability",
+      one: "Available for consulting projects, technical advisory roles, and long-term collaborations.",
+      two: "Remote work and on-site engagements possible within Germany, EU and since the world is a global village, the possibilities are endless.",
+    },
+
     email: "support@example.com",
     phone: "+1 (555) 123-4567",
   },

@@ -193,7 +193,14 @@ export default {
 
   contact: {
     title: "Let's Connect",
-    description: "Ready to transform your data challenges into opportunities?",
+    description: "Prêt à transformer vos défis liés aux données en opportunités ?",
+    socialsTitle: "Entrer en contact",
+    availability: {
+      title: "Disponibilité",
+      one: "Disponible pour des projets de conseil, des rôles de conseil technique et des collaborations à long terme.",
+      two: "Le travail à distance et les engagements sur site sont possibles en Allemagne, dans l'UE et, puisque le monde est un village mondial, les possibilités sont infinies.",
+    },
+
     email: "support@example.com",
     phone: "+1 (555) 123-4567",
   },

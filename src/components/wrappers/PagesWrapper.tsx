@@ -36,9 +36,9 @@ export default function PagesWrapper({ children, className }: PagesWrapperProps)
         <div
           className="pointer-events-none absolute inset-0 z-0"
           style={{
-            backgroundImage: `
-          repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px),
-        repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px)
+            backgroundImage: `v
+          repeating-linear-gradient(45deg, rgba(v0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px),
+        repeating-linear-gradient(-45deg, rgba(0v, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 20px)
         `,
             backgroundSize: "40px 40px",
           }}

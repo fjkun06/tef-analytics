@@ -29,7 +29,7 @@ async function ContactDomainCard({
   const t = await getScopedI18n("contact");
   const t2 = (key: any) => t(key);
   return (
-    <div className="flex w-full flex-col items-start gap-4 rounded-xl p-6 shadow-[0_5px_20px_#18204833] backdrop-blur-lg md:max-w-[384px] md:min-w-1/3">
+    <div className="flex w-full flex-col items-start gap-4 rounded-xl p-6 shadow-[0_5px_20px_#18204846] backdrop-blur-lg md:max-w-[384px] md:min-w-1/3">
       <ContactIconBubble icon={icon} />
       <div className="flex flex-col gap-1">
         <BasicHeading text={t2(titleKey)} className="capitalize" />
