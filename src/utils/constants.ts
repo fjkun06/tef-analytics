@@ -169,6 +169,228 @@ const constants = {
       },
     ],
   },
+
+  projects: {
+    projectCardData: [
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+      {
+        title: "Predictive Maintenance for Industrial Equipment",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Custom LLM fine-tuned on legal domain with RAG-enhanced document processing pipeline.",
+        categories: ["Predictive Maintenance", "Predictive", "Maintenance"],
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: [
+          "Assist in predictive analytics tools screening",
+          "Design and implement predictive models with R and SAS",
+          "Provide predictive analytics expertise",
+          "Support platform development and deployment",
+        ],
+        achievementItems: [
+          "Predictive modeling",
+          "Weight optimization",
+          "Volume forecasting",
+        ],
+        practicalWorkItems: [
+          "Built real-time invoice assessment system",
+          "Optimized API data processing",
+          "Implemented ML algorithms for fraud detection",
+        ],
+      },
+    ],
+  },
 };
 
 export default constants;
