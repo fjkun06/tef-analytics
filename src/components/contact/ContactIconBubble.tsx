@@ -16,7 +16,7 @@ import { ContactIconBubbleProps } from "@/interfaces/contact.interface";
 
 function ContactIconBubble({ icon }: ContactIconBubbleProps): React.ReactElement {
   return (
-    <span className="flex size-12 min-w-12 items-center justify-center rounded-full border-blue-100 bg-[#2563EB1A] text-blue-600 shadow-sm backdrop-blur-sm [&>svg]:h-2/4 [&>svg]:w-2/4 [&>svg]:text-blue-600">
+    <span className="flex size-12 min-w-12 items-center justify-center rounded-full border-blue-100 bg-[#2564eb34] text-blue-600 shadow-sm backdrop-blur-sm [&>svg]:h-2/4 [&>svg]:w-2/4 [&>svg]:text-blue-600">
       {icon}
     </span>
   );

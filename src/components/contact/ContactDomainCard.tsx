@@ -29,7 +29,7 @@ async function ContactDomainCard({
   const t = await getScopedI18n("contact");
   const t2 = (key: any) => t(key);
   return (
-    <div className="relative flex w-full overflow-hidden rounded-xl shadow-[0_5px_20px_#18204833] backdrop-blur-lg transition-transform duration-200 ease-linear hover:scale-110 max-md:shadow-[0_5px_20px_#18204812] md:w-1/3 md:max-w-[384px]">
+    <div className="relative flex w-full overflow-hidden rounded-xl shadow-[0_5px_20px_#18204833] backdrop-blur-lg transition-transform duration-200 ease-linear max-md:shadow-[0_5px_20px_#18204812] md:w-1/3 md:max-w-[384px] md:hover:scale-110">
       <div
         className="absolute inset-0 z-0"
         style={{
