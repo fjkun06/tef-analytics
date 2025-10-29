@@ -1,7 +1,9 @@
+"use client";
 import React, { Suspense } from "react";
 
 import { LanguageSwitch } from "../LanguageSwitch";
 import NavLink from "../NavLink";
+import useDynamicHeight from "@/hooks/useDynamicHeight";
 import { NavbarProps } from "@/interfaces/navbar.interface";
 import { hrefToNavKey } from "@/utils/functions/hrefToNavKey";
 
@@ -22,12 +24,18 @@ function NavbarMobile({
   t,
   navbarItems,
 }: NavbarProps): React.ReactNode {
+  //use hook to dynamically set max height as open state is toggled
+  const { contentRef, height } = useDynamicHeight(isMobileOpen);
   return (
     <div
+      ref={contentRef}
       data-testid="navbar-mobile"
-      className={`transform transition-all duration-200 ease-in-out lg:hidden ${
-        isMobileOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
-      }`}
+      className={
+        "transform overflow-hidden transition-all duration-500 ease-in-out lg:hidden"
+      }
+      style={{
+        maxHeight: isMobileOpen ? `${height + 300}px` : "0px",
+      }}
     >
       <nav className="space-y-1 px-4 pb-4 dark:bg-slate-900">
         {navbarItems.map((item) => (

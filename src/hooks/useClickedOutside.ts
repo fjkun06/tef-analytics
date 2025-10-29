@@ -28,8 +28,11 @@ type UseOnClickOutsideProps = {
 const useClickedOutside = ({ ref, functionToBeTriggered }: UseOnClickOutsideProps) => {
   useEffect(() => {
     function handleOutside(e: MouseEvent) {
-      if (!ref.current) return;
-      if (!ref.current.contains(e.target as Node)) functionToBeTriggered();
+      if (!ref || ref === null) {
+        return;
+      } else if (ref !== null && !ref.current!.contains(e.target as Node)) {
+        !ref.current!.contains(e.target as Node) && functionToBeTriggered();
+      }
     }
     document.addEventListener("mousedown", handleOutside);
     return () => document.removeEventListener("mousedown", handleOutside);

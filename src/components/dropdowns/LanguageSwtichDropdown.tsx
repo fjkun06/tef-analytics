@@ -1,3 +1,28 @@
+/**
+ * LanguageSwtichDropdown
+ *
+ * Client component that renders the dropdown menu for language selection.
+ * Displays available language options with icons, handles selection events,
+ * and provides visual feedback for the currently selected language.
+ *
+ * @param {LanguageSwtichDropdownProps} props - Component props
+ * @param {string} props.current - Currently selected language code
+ * @param {Function} props.onSelect - Callback function when language is selected
+ * @param {Function} props.tLang - Translation function for language names
+ * @param {Array} props.languageLocales - Array of available language locale objects
+ *
+ * @returns {React.ReactElement} Dropdown menu with language options
+ *
+ * @example
+ * ```tsx
+ * <LanguageSwtichDropdown
+ *   current="en"
+ *   onSelect={handleLanguageChange}
+ *   tLang={translateFunction}
+ *   languageLocales={locales}
+ * />
+ * ```
+ */
 import React from "react";
 
 import { LanguageSwtichDropdownProps } from "@/interfaces/langaugeswitcher.interface";
@@ -9,7 +34,7 @@ function LanguageSwtichDropdown({
   languageLocales,
 }: LanguageSwtichDropdownProps) {
   return (
-    <div className="z-20 w-full rounded-md border border-slate-100 bg-white py-1 shadow-lg sm:shadow-lg lg:absolute lg:right-0 lg:mt-2 lg:w-40 dark:border-slate-800 dark:bg-slate-900">
+    <div className="z-20 w-full border border-slate-100 bg-white py-1 shadow-lg sm:shadow-lg lg:absolute lg:right-0 lg:mt-2 lg:w-40 dark:border-slate-800 dark:bg-slate-900">
       {languageLocales.map((locale) => (
         <button
           key={locale.code}

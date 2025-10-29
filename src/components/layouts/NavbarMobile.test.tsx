@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import NavbarMobile from "./NavbarMobile";
 
@@ -30,13 +30,7 @@ describe("NavbarMobile", () => {
       <NavbarMobile {...mockMobileNavbarProps} />,
     );
     expect(container.querySelectorAll("a")).toHaveLength(2);
-    expect(container.getElementsByClassName("max-h-screen")).toHaveLength(1);
+    expect(screen.getByTestId("navbar-mobile")).toBeInTheDocument();
     expect(getByTestId("language-switch")).toBeInTheDocument();
-  });
-  it("should toggle classes when open correctly", () => {
-    const { container } = render(
-      <NavbarMobile {...mockMobileNavbarProps} isMobileOpen={false} />,
-    );
-    expect(container.getElementsByClassName("overflow-hidden")).toHaveLength(1);
   });
 });

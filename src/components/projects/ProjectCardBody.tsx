@@ -15,28 +15,24 @@
  */
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import ProjectCardSection from "./ProjectCardSection";
+import useDynamicHeight from "@/hooks/useDynamicHeight";
 import { ProjectCardBodyDataProps } from "@/interfaces/projects.interface";
 
 export default function ProjectCardBody({
   shortDescription,
   projectCardBodySections,
 }: ProjectCardBodyDataProps): React.ReactElement {
-  const contentRef = useRef<HTMLDivElement | null>(null);
   const [isProjectCardBodyOpen, setIsProjectCardBodyOpen] = useState(false);
-  const [height, setHeight] = useState(0);
 
   const toggleSetIsProjectCardBodyOpen = () => {
     setIsProjectCardBodyOpen((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (contentRef.current) {
-      setHeight(contentRef.current.scrollHeight);
-    }
-  }, [isProjectCardBodyOpen]);
+  //use hook to dynamically set max height as open state is toggled
+  const { contentRef, height } = useDynamicHeight(isProjectCardBodyOpen);
 
   return (
     <div
