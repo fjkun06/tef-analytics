@@ -212,12 +212,13 @@ export default {
     },
   },
   projects: {
-    title: "Our Projects",
+    title: "Projets",
     description:
-      "Explore our diverse range of projects that leverage data for impactful solutions.",
+      "Explorez notre gamme diversifiée de projets qui tirent parti des données pour des solutions percutantes.",
   },
   about: {
-    title: "Data Science Expert & ML Engineer",
-    description: "Learn more about our mission, vision, and the team behind our success.",
+    title: "Expert en Science des Données & Ingénieur ML",
+    description:
+      "En savoir plus sur notre mission, notre vision et l'équipe derrière notre succès.",
   },
 } as const;

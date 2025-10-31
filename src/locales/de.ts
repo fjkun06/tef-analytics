@@ -209,12 +209,13 @@ export default {
     },
   },
   projects: {
-    title: "Unsere Projekte",
+    title: "Ausgewählte Projekte",
     description:
       "Entdecken Sie unsere vielfältige Palette von Projekten, die Daten für wirkungsvolle Lösungen nutzen.",
   },
   about: {
-    title: "Data Science Expert & ML Engineer",
-    description: "Learn more about our mission, vision, and the team behind our success.",
+    title: "Experte für Data Science & ML-Ingenieur",
+    description:
+      "Erfahren Sie mehr über unsere Mission, Vision und das Team hinter unserem Erfolg.",
   },
 } as const;

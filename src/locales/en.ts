@@ -209,7 +209,7 @@ export default {
     },
   },
   projects: {
-    title: "Our Projects",
+    title: "Featured Projects",
     description:
       "Explore our diverse range of projects that leverage data for impactful solutions.",
   },
