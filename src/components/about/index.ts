@@ -6,3 +6,4 @@ export { default as AboutSectionContainer } from "./AboutSectionContainer";
 export { default as AboutSectionContainerItem } from "./AboutSectionContainerItem";
 export { default as AboutProgressItem } from "./AboutProgressItem";
 export { default as getAboutMeController } from "./getAboutMeController";
+export { default as AboutProgressItemContainer } from "./AboutProgressItemContainer";

@@ -212,12 +212,229 @@ export default {
     },
   },
   projects: {
-    title: "Our Projects",
+    title: "Projets",
     description:
-      "Explore our diverse range of projects that leverage data for impactful solutions.",
+      "Explorez notre gamme diversifiée de projets qui tirent parti des données pour des solutions percutantes.",
   },
   about: {
-    title: "Data Science Expert & ML Engineer",
-    description: "Learn more about our mission, vision, and the team behind our success.",
+    title: "Master en science des données",
+    description:
+      "Data scientist expérimenté spécialisé dans l'intelligence artificielle, le MLOps et le développement de systèmes basés sur les données. Plus de 8 ans d'expérience dans l'intégration et la connexion de sources de données complexes, dans des projets critiques en matière de sécurité et dans la gestion d'équipes interdisciplinaires. Succès avérés dans le développement et la mise en œuvre productive de solutions d'IA et d'analyse de données évolutives dans l'industrie, la santé et le conseil. Connaissances approfondies de Linux, des technologies web, de la sécurité informatique, des frameworks ML modernes et des plateformes cloud.",
+
+    education: "Éducation",
+    experience: "Expérience",
+    location: "Allemagne",
+    language: "Langues",
+    languages: {
+      french: "Français (langue maternelle)",
+      german: "Allemand (courant)",
+      english: "Anglais (courant)",
+    },
+    work: [
+      {
+        title: "Data scientist senior",
+        company: "MAN Energy Solutions, Oberhausen",
+        timeSpan: "04.2023 – présent",
+        descriptionItems: [
+          "Développement, déploiement et maintenance de modèles ML évolutifs et de solutions analytiques pour les turbomachines (maintenance prédictive)",
+          "Transition réussie de nombreux modèles vers des environnements productifs",
+          "Transformation de données de capteurs de séries chronologiques en informations pertinentes pour l'entreprise grâce à l'apprentissage automatique et à des modèles basés sur des règles",
+
+          "Optimisation de l'environnement de développement analytique (outils et services) pour prendre en charge les nouvelles versions",
+          "Collaboration avec la direction et les différents services pour soutenir les décisions stratégiques grâce à des informations basées sur les données",
+          "Organisation de formations et d'ateliers pour promouvoir une culture axée sur les données dans le service après-vente (PrimeServ)",
+        ],
+      },
+
+      {
+        title: "Référent en science des données et IA",
+        company: "AOK Rheinland/Hamburg, Düsseldorf",
+        timeSpan: "01.2021 – 03.2023",
+        descriptionItems: [
+          "Mise en œuvre de solutions d'analyse avancées dans le domaine de la santé",
+
+          "Préparation de grands ensembles de données complexes (structurés et non structurés)",
+          "Développement de modèles ML innovants à l'aide de techniques modernes d'apprentissage automatique et profond",
+          "Mise en œuvre d'une solution de process mining pour analyser et optimiser les processus métier",
+          "Consultation avec les services spécialisés sur les approches basées sur les données et les projets d'IA",
+        ],
+      },
+
+      {
+        title: "Formateur indépendant et consultant en science des données",
+        company: "Upwork",
+        timeSpan: "06.2020 – 12.2022",
+        descriptionItems: [
+          "Consultation avec les clients sur des sujets liés à l'analyse avancée",
+
+          "Développement d'algorithmes d'apprentissage automatique et d'apprentissage profond (y compris des solutions NLP)",
+          "Création de tableaux de bord KPI à l'aide de Microsoft Power BI",
+          "Formation des clients à R et Python (programmation et analyse de données)",
+          "Mise en œuvre en freelance de projets parallèles à des postes permanents",
+        ],
+      },
+
+      {
+        title: "Consultant senior en science des données",
+        company: "Ernst & Young GmbH, Düsseldorf",
+        timeSpan: "03.2017 – 12.2020",
+        descriptionItems: [
+          "Consultation avec les clients sur des sujets liés à l'analyse avancée et à l'IA",
+
+          "Réalisation d'analyses exploratoires et prédictives de données (données structurées et non structurées)",
+          "Développement de solutions innovantes d'analyse prédictive et descriptive à l'aide de méthodes modernes",
+          "Mise en œuvre du process mining pour l'optimisation des processus chez le client",
+          "Conception et mise en œuvre d'un outil BI pour les KPI du process mining",
+        ],
+      },
+
+      {
+        title: "Consultant informatique associé",
+        company: "MSG Systems AG, Essen",
+        timeSpan: "09.2016 – 02.2017",
+
+        descriptionItems: [
+          "Développement de méthodes analytiques pour la résolution de problèmes basée sur les données",
+          "Création d'analyses statistiques et dérivation d'indicateurs clés pertinents pour l'entreprise",
+          "Acquisition et préparation de données à l'aide de SAS, SQL et Excel",
+        ],
+      },
+
+      {
+        title: "Stagiaire : analyse prédictive (expérience consommateur)",
+        company: "Deutsche Post Consult GmbH, Bonn",
+        timeSpan: "03.2016 – 07.2016",
+        descriptionItems: [
+          "Développement et validation de méthodes d'analyse statistique",
+          "Évaluations ad hoc et traduction des mesures en indicateurs pertinents",
+        ],
+      },
+
+      {
+        title: "Stagiaire en intelligence économique (gestion de bases de données)",
+        company: "Deutsche Post AG, Bonn",
+        timeSpan: "09.2015 – 02.2016",
+        descriptionItems: [
+          "Création de rapports et de statistiques à l'aide de SAS et Excel",
+          "Réalisation d'analyses ad hoc avec SAS",
+        ],
+      },
+
+      {
+        title: "Assistant de recherche (chaire de statistiques pour ingénieurs)",
+        company: "Technische Universität Dortmund, Dortmund",
+        timeSpan: "02.2015 – 12.2015",
+
+        descriptionItems: [
+          "Recherche sur la classification à l'aide de graphiques en profondeur avec des données sonores corporelles",
+          "Analyse statistique et simulation à l'aide de R et Matlab",
+          "Comparaison des classificateurs classiques (RandomForest, analyse discriminante, etc.)",
+          "Assistance à la chaire (examens, exercices, supervision)",
+        ],
+      },
+
+      {
+        title: "Stagiaire : analyse de données",
+        company: "Innofact AG, Düsseldorf",
+        timeSpan: "10.2014 – 12.2014",
+        descriptionItems: [
+          "Préparation d'ensembles de données",
+          "Évaluations statistiques à l'aide de R et SPSS",
+          "Présentation d'analyses multivariées",
+        ],
+      },
+
+      {
+        title: "Analyse tutorielle I & II",
+        company: "TU Dortmund, Faculté de statistique",
+        timeSpan: "04.2013 – 02.2014",
+
+        descriptionItems: [
+          "Animation de sessions de tutorat",
+          "Notation et supervision des examens",
+          "Réponse aux questions des étudiants sur les exercices",
+        ],
+      },
+    ],
+
+    school: [
+      {
+        title: "Master Data Science",
+        company: "Université technique de Dortmund, Dortmund",
+        timeSpan: "10.2012 – 02.2016",
+
+        descriptionItems: [
+          "Domaines d'étude : méthodes d'apprentissage statistique, processus stochastiques",
+          "Prix du meilleur diplôme obtenu par un étudiant international (2016)",
+        ],
+      },
+      {
+        title: "Master 1 Mathématiques (matière secondaire : statistiques appliquées)",
+        company: "Université de Yaoundé I, Cameroun",
+        timeSpan: "10.2009 – 07.2010",
+        descriptionItems: [
+          "Spécialisation en statistiques appliquées et modélisation mathématique",
+        ],
+      },
+      {
+        title: "Licence en mathématiques (matière secondaire : théorie des probabilités)",
+        company: "Université de Yaoundé I, Cameroun",
+        timeSpan: "10.2006 – 07.2009",
+        descriptionItems: [
+          "Bases de la théorie des probabilités et des statistiques mathématiques",
+        ],
+      },
+      {
+        title: "Lycée (baccalauréat)",
+        company: "Lycée de Nkol-Eton, Yaoundé",
+        timeSpan: "09.1992 – 07.2006",
+        descriptionItems: ["Spécialisation : mathématiques et physique scientifique"],
+      },
+
+      {
+        title: "Anglais des affaires (B2)",
+        company: "Université populaire, Oberhausen",
+        timeSpan: "09.2018 – 05.2019",
+        descriptionItems: [
+          "Approfondissement de la communication dans des contextes professionnels",
+        ],
+      },
+      {
+        title: "Cours d'allemand (C2)",
+        company: "AStA TU Dortmund",
+        timeSpan: "05.2025 – 06.2025",
+        descriptionItems: ["Participation réussie à un cours d'allemand de niveau C2"],
+      },
+      {
+        title: "Cours d'allemand (B1)",
+        company: "Goethe-Institut, Cameroun",
+        timeSpan: "03.2010 – 09.2010",
+        descriptionItems: ["Bases de la langue allemande au niveau B1"],
+      },
+      {
+        title: "Large Language Model Operations (LLMOps)",
+        company: "Duke University, en ligne",
+        timeSpan: "07.2025 – aujourd'hui",
+        descriptionItems: [
+          "Formation continue sur les LLMOps et les MLOps pour l'IA générative",
+        ],
+      },
+      {
+        title: "IA générative pour les scientifiques des données",
+        company: "IBM / Coursera, en ligne",
+        timeSpan: "05.2025 – 06.2025",
+        descriptionItems: [
+          "Formation continue sur l'IA générative et ses applications pratiques",
+        ],
+      },
+      {
+        title: "Certification Microsoft en intelligence artificielle",
+        company: "Microsoft",
+        timeSpan: "09.2018 – 05.2019",
+        descriptionItems: [
+          "Thèmes principaux : apprentissage profond, apprentissage par renforcement, traitement du langage naturel",
+        ],
+      },
+    ],
   },
 } as const;
