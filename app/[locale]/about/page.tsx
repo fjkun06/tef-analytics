@@ -10,20 +10,17 @@ import {
   PagesWrapper,
   ProjectCardBodySectionListGroup,
 } from "@/components";
-import returnTranslatedListItems from "@/utils/functions/returnTranslatedListItems";
+import {
+  // import returnTranslatedListItems, {
+  generateTranslationKeys,
+} from "@/utils/functions/returnTranslatedListItems";
 
 export default async function About() {
-  const { t } = await getAboutMeController();
+  const { t, school, work } = await getAboutMeController();
   const achievementItems = [
     "English (Professional)",
     "French (Native)",
     "German (Professional)",
-  ];
-
-  const descriptionItems = [
-    "Implemented large-scale analytics solutions for clients.",
-    "Developed predictive models for various industries",
-    "Led a team of data scientists and analysts",
   ];
 
   return (
@@ -58,48 +55,43 @@ export default async function About() {
               pills={["TensorFlow", "Kubernetes", "Docker", "MLflow"]}
             />
           </AboutSideSectionContainer>
-          <AboutSideSectionContainer title={t("Technologies & Tools")}>
+          <AboutSideSectionContainer title={t("languages")}>
             <ProjectCardBodySectionListGroup listItems={achievementItems} />
           </AboutSideSectionContainer>
         </aside>
         <div className="center-section col-start-2 col-end-4">
           <AboutInfoCard />
-          <AboutSectionContainer title={t("Education")}>
-            <AboutSectionContainerItem
-              descriptionItems={returnTranslatedListItems(
-                [
-                  "Focus on Econometrics and Statistical Learning. Thesis on Outliers in GARCH Models.",
-                ],
-                t,
-              )}
-              title={t("Ph.D. in Statistics")}
-              company={t("Technical University Dortmund")}
-              timeSpan="2008 - 2013"
-              hasThesis
-              thesisUrl="https://frankjordan.vercel.app/en"
-            />
 
-            <AboutSectionContainerItem
-              descriptionItems={returnTranslatedListItems(
-                [
-                  "Focus on Econometrics and Statistical Learning. Thesis on Outliers in GARCH Models.",
-                ],
-                t,
-              )}
-              title={t("M.Sc. Data Science")}
-              company={t("Technical University Dortmund")}
-              timeSpan="2005 - 2008"
-            />
-            <AboutSectionContainerItem
-              descriptionItems={returnTranslatedListItems(descriptionItems, t)}
-              title={t("Managing Director & Chief Data Scientist")}
-              company="MSG Systems AG"
-              timeSpan="2014 - 2017"
-            />
-            <AboutSectionContainerItem
-              title={t("Introduction to Git and GitHub")}
-              timeSpan="Feb 2013"
-            />
+          <AboutSectionContainer title={t("experience")}>
+            {work.map(({ descriptionItemsCount }, index) => (
+              <AboutSectionContainerItem
+                key={index + Math.random()}
+                descriptionItems={generateTranslationKeys(
+                  index,
+                  descriptionItemsCount,
+                  t,
+                )}
+                title={t(`work.${index}.title`)}
+                company={t(`work.${index}.company`)}
+                timeSpan={t(`work.${index}.timeSpan`)}
+              />
+            ))}
+          </AboutSectionContainer>
+
+          <AboutSectionContainer title={t("education")}>
+            {school.map(({ descriptionItemsCount }, index) => (
+              <AboutSectionContainerItem
+                key={index + Math.random()}
+                descriptionItems={generateTranslationKeys(
+                  index,
+                  descriptionItemsCount,
+                  t,
+                )}
+                title={t(`work.${index}.title`)}
+                company={t(`work.${index}.company`)}
+                timeSpan={t(`work.${index}.timeSpan`)}
+              />
+            ))}
           </AboutSectionContainer>
         </div>
       </div>

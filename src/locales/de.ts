@@ -214,8 +214,194 @@ export default {
       "Entdecken Sie unsere vielfältige Palette von Projekten, die Daten für wirkungsvolle Lösungen nutzen.",
   },
   about: {
-    title: "Experte für Data Science & ML-Ingenieur",
+    title: "Experte für Künstliche Intelligenz & Systementwicklung",
     description:
       "Erfahren Sie mehr über unsere Mission, Vision und das Team hinter unserem Erfolg.",
+    location: "Deutschland",
+    education: "Bildung",
+    experience: "Erfahrung",
+    work: [
+      {
+        title: "Senior Data Scientist",
+        company: "MAN Energy Solutions, Oberhausen",
+        timeSpan: "04.2023 – Heute",
+        descriptionItems: [
+          "Entwicklung, Deployment und Wartung skalierbarer ML-Modelle und Analytics-Lösungen für Turbomaschinen (Predictive Maintenance)",
+          "Überführung zahlreicher Modelle erfolgreich in produktive Umgebungen",
+          "Transformation von Zeitreihen-Sensordaten in geschäftsrelevante Erkenntnisse durch Machine-Learning- und regelbasierte Modelle",
+          "Optimierung der Analytics-Entwicklungsumgebung (Tools und Services) zur Unterstützung neuer Releases",
+          "Zusammenarbeit mit Management und Fachbereichen zur Unterstützung strategischer Entscheidungen durch datenbasierte Insights",
+          "Durchführung von Schulungen und Workshops zur Förderung einer datengetriebenen Kultur in der After-Sales-Abteilung (PrimeServ)",
+        ],
+      },
+      {
+        title: "Referent Data Science & KI",
+        company: "AOK Rheinland/Hamburg, Düsseldorf",
+        timeSpan: "01.2021 – 03.2023",
+        descriptionItems: [
+          "Aufbau und Umsetzung von Advanced-Analytics-Lösungen im Gesundheitswesen",
+          "Aufbereitung großer, komplexer Datenbestände (strukturiert & unstrukturiert)",
+          "Entwicklung innovativer ML-Modelle mit modernen Machine- und Deep-Learning-Verfahren",
+          "Implementierung einer Process-Mining-Lösung zur Analyse und Optimierung von Geschäftsprozessen",
+          "Beratung der Fachabteilungen bei datengetriebenen Ansätzen und KI-Projekten",
+        ],
+      },
+      {
+        title: "Freelance Trainer & Data Science Consultant",
+        company: "Upwork",
+        timeSpan: "06.2020 – 12.2022",
+        descriptionItems: [
+          "Beratung von Mandanten zu Advanced-Analytics-Themen",
+          "Entwicklung von Machine-Learning- und Deep-Learning-Algorithmen (inkl. NLP-Lösungen)",
+          "Erstellung von KPI-Dashboards mit Microsoft Power BI",
+          "Schulung von Kunden in R und Python (Programmierung und Datenanalyse)",
+          "Freiberufliche Umsetzung paralleler Projekte zu Festanstellungen",
+        ],
+      },
+      {
+        title: "Senior Consultant Data Science",
+        company: "Ernst & Young GmbH, Düsseldorf",
+        timeSpan: "03.2017 – 12.2020",
+        descriptionItems: [
+          "Beratung von Mandanten zu Advanced-Analytics- und KI-Themen",
+          "Durchführung explorativer und präditiver Datenanalysen (strukturierte & unstrukturierte Daten)",
+          "Entwicklung innovativer Predictive- und Descriptive-Analytics-Lösungen mit modernen Methoden",
+          "Einsatz von Process Mining zur Prozessoptimierung beim Klienten",
+          "Konzeption und Implementierung eines BI-Tools für Process-Mining-KPIs",
+        ],
+      },
+      {
+        title: "Associate IT Consultant",
+        company: "MSG Systems AG, Essen",
+        timeSpan: "09.2016 – 02.2017",
+        descriptionItems: [
+          "Entwicklung analytischer Methoden zur datenbasierten Problemlösung",
+          "Erstellung statistischer Analysen und Ableitung geschäftsrelevanter Kennzahlen",
+          "Datenbeschaffung und -aufbereitung mit SAS, SQL und Excel",
+        ],
+      },
+      {
+        title: "Praktikant Predictive Analytics (Consumer Experience)",
+        company: "Deutsche Post Consult GmbH, Bonn",
+        timeSpan: "03.2016 – 07.2016",
+        descriptionItems: [
+          "Entwicklung und Validierung statistischer Analyseverfahren",
+          "Ad-hoc-Auswertungen und Übersetzung von Metriken in relevante Kennzahlen",
+        ],
+      },
+      {
+        title: "Praktikant Business Intelligence (Database Management)",
+        company: "Deutsche Post AG, Bonn",
+        timeSpan: "09.2015 – 02.2016",
+        descriptionItems: [
+          "Erstellung von Reports und Statistiken mit SAS und Excel",
+          "Durchführung von Ad-hoc-Analysen mit SAS",
+        ],
+      },
+      {
+        title: "Wissenschaftliche Hilfskraft (Lehrstuhl Statistik für Ingenieure)",
+        company: "Technische Universität Dortmund, Dortmund",
+        timeSpan: "02.2015 – 12.2015",
+        descriptionItems: [
+          "Forschung zu Klassifikation mittels Depth-Depth-Plots mit Körperschalldaten",
+          "Statistische Analyse und Simulation mit R und Matlab",
+          "Vergleich klassischer Klassifikatoren (RandomForest, Diskriminanzanalyse, etc.)",
+          "Unterstützung des Lehrstuhls (Klausuren, Übungen, Betreuung)",
+        ],
+      },
+      {
+        title: "Praktikant Datenanalyse",
+        company: "Innofact AG, Düsseldorf",
+        timeSpan: "10.2014 – 12.2014",
+        descriptionItems: [
+          "Aufbereitung von Datensätzen",
+          "Statistische Auswertungen mit R und SPSS",
+          "Präsentation multivariater Analysen",
+        ],
+      },
+      {
+        title: "Tutor Analysis I & II",
+        company: "TU Dortmund, Fakultät Statistik",
+        timeSpan: "04.2013 – 02.2014",
+        descriptionItems: [
+          "Leitung von Übungsgruppen",
+          "Korrektur und Aufsicht von Klausuren",
+          "Beantwortung studentischer Fragen zu Übungen",
+        ],
+      },
+    ],
+    school: [
+      {
+        title: "Master Data Science",
+        company: "Technische Universität Dortmund, Dortmund",
+        timeSpan: "10.2012 – 02.2016",
+        descriptionItems: [
+          "Schwerpunkte: Statistische Lernverfahren, Stochastische Prozesse",
+          "Preis für besten Abschluss internationaler Studierender (2016)",
+        ],
+      },
+      {
+        title: "Master 1 Mathematik (Nebenfach: Angewandte Statistik)",
+        company: "Université de Yaoundé I, Kamerun",
+        timeSpan: "10.2009 – 07.2010",
+        descriptionItems: [
+          "Vertiefung in angewandter Statistik und mathematischer Modellierung",
+        ],
+      },
+      {
+        title: "Bachelor Mathematik (Nebenfach: Wahrscheinlichkeitstheorie)",
+        company: "Université de Yaoundé I, Kamerun",
+        timeSpan: "10.2006 – 07.2009",
+        descriptionItems: [
+          "Grundlagen in Wahrscheinlichkeitstheorie und mathematischer Statistik",
+        ],
+      },
+      {
+        title: "Gymnasium (Abitur)",
+        company: "Lycée de Nkol-Eton, Yaoundé",
+        timeSpan: "09.1992 – 07.2006",
+        descriptionItems: ["Schwerpunkt: Mathematik und wissenschaftliche Physik"],
+      },
+      {
+        title: "Business English (B2)",
+        company: "Volkshochschule, Oberhausen",
+        timeSpan: "09.2018 – 05.2019",
+        descriptionItems: ["Vertiefung der Kommunikation in Business-Kontexten"],
+      },
+      {
+        title: "Deutschkurs (C2)",
+        company: "AStA TU Dortmund",
+        timeSpan: "05.2025 – 06.2025",
+        descriptionItems: ["Erfolgreiche Teilnahme an Deutschkurs auf C2-Niveau"],
+      },
+      {
+        title: "Deutschkurs (B1)",
+        company: "Goethe-Institut, Kamerun",
+        timeSpan: "03.2010 – 09.2010",
+        descriptionItems: ["Grundlagen der deutschen Sprache auf B1-Niveau"],
+      },
+      {
+        title: "Large Language Model Operations (LLMOps)",
+        company: "Duke University, Online",
+        timeSpan: "07.2025 – Heute",
+        descriptionItems: ["Weiterbildung zu LLMOps und MLOps für generative KI"],
+      },
+      {
+        title: "Generative AI for Data Scientists",
+        company: "IBM / Coursera, Online",
+        timeSpan: "05.2025 – 06.2025",
+        descriptionItems: [
+          "Fortbildung zu generativer KI und deren praktischer Anwendung",
+        ],
+      },
+      {
+        title: "Microsoft Artificial Intelligence Certification",
+        company: "Microsoft",
+        timeSpan: "09.2018 – 05.2019",
+        descriptionItems: [
+          "Schwerpunkte: Deep Learning, Reinforcement Learning, Natural Language Processing",
+        ],
+      },
+    ],
   },
 } as const;

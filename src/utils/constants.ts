@@ -386,6 +386,33 @@ const constants = {
       },
     ],
   },
+
+  about: {
+    work: [
+      { descriptionItemsCount: 6 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 3 },
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 4 },
+      { descriptionItemsCount: 3 },
+      { descriptionItemsCount: 3 },
+    ],
+    school: [
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+    ],
+  },
 };
 
 export default constants;
