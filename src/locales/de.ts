@@ -189,15 +189,29 @@ export default {
   },
 
   contact: {
-    title: "Let's Connect",
-    description: "Ready to transform your data challenges into opportunities?",
-    email: "support@example.com",
-    phone: "+1 (555) 123-4567",
+    title: "Kontakt aufnehmen",
+    description: "Bereit, Ihre Datenherausforderungen in Chancen zu verwandeln?",
+    socialsTitle: "Kontakt aufnehmen",
+    availability: {
+      title: "Verfügbarkeit",
+      one: "Verfügbar für Beratungsprojekte, technische Beratungsrollen und langfristige Kooperationen.",
+      two: "Remote-Arbeit und Vor-Ort-Einsätze sind innerhalb Deutschlands, der EU und da die Welt ein globales Dorf ist, sind die Möglichkeiten endlos.",
+    },
+    domains: {
+      oneTitle: "Machine Learning Lösungen",
+      oneDescription:
+        "End-to-End-Maschinelllern-Lösungen, die auf Ihre Geschäftsanforderungen zugeschnitten sind.",
+      twoTitle: "KI Beratung",
+      twoDescription:
+        "Strategische Beratung zur Implementierung von KI-Lösungen in Ihrer Organisation.",
+      threeTitle: "Technische Beratung",
+      threeDescription: "Expertise in Dateninfrastruktur und ML-Operationen.",
+    },
   },
   projects: {
-    title: "Our Projects",
+    title: "Unsere Projekte",
     description:
-      "Explore our diverse range of projects that leverage data for impactful solutions.",
+      "Entdecken Sie unsere vielfältige Palette von Projekten, die Daten für wirkungsvolle Lösungen nutzen.",
   },
   about: {
     title: "Data Science Expert & ML Engineer",

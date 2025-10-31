@@ -17,7 +17,7 @@ import { CardWrapperProps } from "@/interfaces/wrappers.interface";
 function CardWrapper({ children, className }: CardWrapperProps) {
   return (
     <div
-      className={`transform rounded-lg bg-white p-3 shadow-lg shadow-gray-400/30 transition-all duration-300 ease-in hover:scale-105 hover:shadow-lg sm:p-6 ${className}`}
+      className={`transform rounded-lg bg-white p-3 shadow-lg shadow-gray-400/30 transition-transform duration-200 ease-linear hover:shadow-lg sm:p-6 md:hover:scale-110 ${className}`}
     >
       {children}
     </div>
