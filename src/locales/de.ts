@@ -214,10 +214,16 @@ export default {
       "Entdecken Sie unsere vielfältige Palette von Projekten, die Daten für wirkungsvolle Lösungen nutzen.",
   },
   about: {
-    title: "Experte für Künstliche Intelligenz & Systementwicklung",
+    title: "M.Sc in Data Science",
     description:
-      "Erfahren Sie mehr über unsere Mission, Vision und das Team hinter unserem Erfolg.",
+      "Erfahrener Data Scientist mit Schwerpunkt Künstliche Intelligenz, MLOps und datengetriebene Systementwicklung. Mehr als 8 Jahre Erfahrung in der Integration und Anbindung komplexer Datenquellen, in sicherheitskritischen Projekten und der Leitung interdisziplinärer Teams. Nachweisbare Erfolge in der Entwicklung und produktiven Umsetzung skalierbarer KI- und Datenanalyse-Lösungen in Industrie, Gesundheitswesen und Beratung. Fundierte Kenntnisse in Linux, Webtechnologien, IT-Sicherheit, modernen ML-Frameworks und Cloud-Plattformen.",
     location: "Deutschland",
+    language: "Sprachenkenntnisse",
+    languages: {
+      french: "Französisch (Muttersprache)",
+      german: "Deutsch (Fließend)",
+      english: "Englisch (Fließend)",
+    },
     education: "Bildung",
     experience: "Erfahrung",
     work: [

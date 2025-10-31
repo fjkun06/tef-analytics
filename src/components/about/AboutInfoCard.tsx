@@ -25,9 +25,8 @@ async function AboutInfoCard() {
         <span className="font-light">Franck</span> Tankouan
       </h2>
       <h3 className="text-base font-light text-white italic sm:text-xl md:text-2xl">
-        M.Sc in Data Science
+        {t("title")}
       </h3>
-      <span className="text-sm text-white sm:text-lg md:text-xl">{t("title")}</span>
       <span className="flex w-full gap-3 text-xs max-[510px]:flex-wrap sm:text-sm">
         <span className="flex w-1/2 items-center justify-start gap-2 text-white max-[510px]:w-full">
           <IconEnvelope className="!h-3 !w-3 sm:!h-5 sm:!w-5" /> francktankouan@yahoo.de

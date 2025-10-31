@@ -412,6 +412,36 @@ const constants = {
       { descriptionItemsCount: 1 },
       { descriptionItemsCount: 1 },
     ],
+    technicalSkills: {
+      Program: [
+        { title: "R, R-Studio", percentage: 90 },
+        { title: "Python, Anaconda", percentage: 90 },
+        { title: "SAS (EG, Base)", percentage: 70 },
+      ],
+      Frameworks: [
+        { title: "Scikit-learn, TensorFlow, PyTorch", percentage: 70 },
+        { title: "SpaCy, HuggingFace", percentage: 70 },
+      ],
+      Cloud: [
+        { title: "Microsoft Azure (Azure ML, Fabric, DevOps)", percentage: 90 },
+        { title: "AWS", percentage: 70 },
+      ],
+      MLOps: [
+        {
+          title: "Docker, MLflow, Git/GitLab (CI/CD), FastAPI, Linux (Shell)",
+          percentage: 70,
+        },
+      ],
+      Datenbanken: [
+        { title: "MS SQL Server, MySQL; MongoDB, Elasticsearch", percentage: 70 },
+      ],
+      BigData: [{ title: "Hadoop, PySpark, Databricks", percentage: 70 }],
+      BITools: [
+        { title: "Power BI, R-Shiny", percentage: 90 },
+        { title: "Tableau", percentage: 70 },
+      ],
+      Others: [{ title: "LaTeX, ProcessGold", percentage: 90 }],
+    },
   },
 };
 

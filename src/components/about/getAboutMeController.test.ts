@@ -5,14 +5,43 @@ jest.mock("@/locales/server", () => ({
 }));
 
 const mockAboutData = {
-  work: [{ descriptionItemsCount: 2 }],
-  school: [{ descriptionItemsCount: 3 }],
+  experience: [
+    {
+      title: "experience",
+      data: [
+        {
+          title: "work.0.title",
+          company: "work.0.company",
+          timeSpan: "work.0.timeSpan",
+          descriptionItems: ["work.0.descriptionItems.0"],
+        },
+      ],
+    },
+    {
+      title: "education",
+      data: [
+        {
+          title: "school.0.title",
+          company: "school.0.company",
+          timeSpan: "school.0.timeSpan",
+          descriptionItems: ["school.0.descriptionItems.0"],
+        },
+      ],
+    },
+  ],
+  technicalSkills: Object.entries({
+    Program: [{ title: "R, R-Studio", percentage: 90 }],
+  }),
+  languages: ["languages.french", "languages.german", "languages.english"],
 };
 
 jest.mock("@/utils/constants", () => ({
   about: {
-    work: [{ descriptionItemsCount: 2 }],
-    school: [{ descriptionItemsCount: 3 }],
+    work: [{ descriptionItemsCount: 1 }],
+    school: [{ descriptionItemsCount: 1 }],
+    technicalSkills: {
+      Program: [{ title: "R, R-Studio", percentage: 90 }],
+    },
   },
 }));
 

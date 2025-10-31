@@ -217,13 +217,19 @@ export default {
       "Explorez notre gamme diversifiée de projets qui tirent parti des données pour des solutions percutantes.",
   },
   about: {
-    title: "Expert en intelligence artificielle et développement de systèmes",
+    title: "Master en science des données",
     description:
-      "En savoir plus sur notre mission, notre vision et l'équipe derrière notre succès.",
+      "Data scientist expérimenté spécialisé dans l'intelligence artificielle, le MLOps et le développement de systèmes basés sur les données. Plus de 8 ans d'expérience dans l'intégration et la connexion de sources de données complexes, dans des projets critiques en matière de sécurité et dans la gestion d'équipes interdisciplinaires. Succès avérés dans le développement et la mise en œuvre productive de solutions d'IA et d'analyse de données évolutives dans l'industrie, la santé et le conseil. Connaissances approfondies de Linux, des technologies web, de la sécurité informatique, des frameworks ML modernes et des plateformes cloud.",
+
     education: "Éducation",
     experience: "Expérience",
     location: "Allemagne",
-
+    language: "Langues",
+    languages: {
+      french: "Français (langue maternelle)",
+      german: "Allemand (courant)",
+      english: "Anglais (courant)",
+    },
     work: [
       {
         title: "Data scientist senior",
@@ -353,9 +359,9 @@ export default {
 
     school: [
       {
-        titre: "Master Data Science",
-        entreprise: "Université technique de Dortmund, Dortmund",
-        durée: "10.2012 – 02.2016",
+        title: "Master Data Science",
+        company: "Université technique de Dortmund, Dortmund",
+        timeSpan: "10.2012 – 02.2016",
 
         descriptionItems: [
           "Domaines d'étude : méthodes d'apprentissage statistique, processus stochastiques",

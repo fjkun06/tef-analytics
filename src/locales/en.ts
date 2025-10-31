@@ -214,11 +214,18 @@ export default {
       "Explore our diverse range of projects that leverage data for impactful solutions.",
   },
   about: {
-    title: "Expert in artificial intelligence & system development",
-    description: "Learn more about our mission, vision, and the team behind our success.",
+    title: "M.Sc in Data Science",
+    description:
+      "Experienced data scientist specializing in artificial intelligence, MLOps, and data-driven system development. More than 8 years of experience in integrating and connecting complex data sources, in security-critical projects, and in leading interdisciplinary teams. Proven track record in developing and implementing scalable AI and data analysis solutions in industry, healthcare, and consulting. In-depth knowledge of Linux, web technologies, IT security, modern ML frameworks, and cloud platforms.",
     location: "Germany",
     education: "Education",
     experience: "Experience",
+    language: "Languages",
+    languages: {
+      french: "French (Native)",
+      german: "German (Fluent)",
+      english: "English (Fluent)",
+    },
     work: [
       {
         title: "Senior Data Scientist",
