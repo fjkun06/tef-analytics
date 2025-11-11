@@ -92,3 +92,12 @@ export type ContactLinkItemProps = {
   icon: React.ReactNode;
   title: string;
 };
+
+export type ContactInputProps = React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+> & {
+  isRequired?: boolean;
+  isTextArea?: boolean;
+  labelKey: string;
+};
