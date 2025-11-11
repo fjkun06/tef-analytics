@@ -192,6 +192,29 @@ export default {
     title: "Kontakt aufnehmen",
     description: "Bereit, Ihre Datenherausforderungen in Chancen zu verwandeln?",
     socialsTitle: "Kontakt aufnehmen",
+    form: {
+      email: "E-Mail-Adresse",
+      emailRequiredMessage: "Eine E-Mail-Adresse ist erforderlich.",
+      emailInvalidMessage: "Ungültige E-Mail-Adresse.",
+      name: "Name",
+      message: "Nachricht",
+      messageRequiredMessage: "Eine Nachricht ist erforderlich.",
+      submit: "Senden",
+      submitting: "Wird gesendet...",
+      submitSuccessMessage:
+        "Ihre Nachricht wurde erfolgreich gesendet!\n\nWeiterleitung zur Startseite...",
+      submitErrorMessage:
+        "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      subject: "Betreff",
+      tel: "Telefonnummer",
+      validTelRequiredMessage: "Geben Sie eine gültige Telefonnummer ein.",
+      heading: "Haben Sie Fragen? Kontaktieren Sie uns!",
+      addressOne: "Adresse in Deutschland",
+      extraOne: "Wir freuen uns auf Ihre Kontaktanfrage.",
+      extraTwo: "Es gilt unsere Datenschutzerklärung.",
+      requiredFieldsError:
+        "Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.",
+    },
     availability: {
       title: "Verfügbarkeit",
       one: "Verfügbar für Beratungsprojekte, technische Beratungsrollen und langfristige Kooperationen.",

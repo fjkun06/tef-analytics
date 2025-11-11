@@ -195,6 +195,29 @@ export default {
     title: "Contact",
     description: "Prêt à transformer vos défis liés aux données en opportunités ?",
     socialsTitle: "Entrer en contact",
+    form: {
+      email: "Email",
+      emailRequiredMessage: "L'email est requis.",
+      emailInvalidMessage: "Adresse email invalide.",
+      name: "Nom",
+      message: "Message",
+      messageRequiredMessage: "Un message est requis.",
+      submit: "Envoyer",
+      submitting: "Envoi en cours...",
+      submitSuccessMessage:
+        "Votre message a été envoyé avec succès !\n\nRedirection vers la page d'accueil...",
+      submitErrorMessage:
+        "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+      subject: "Sujet",
+      tel: "Numéro de téléphone",
+      validTelRequiredMessage: "Entrez un numéro de téléphone valide.",
+      heading: "Avez-vous des questions ? Contactez-nous!",
+      addressOne: "Adresse en Allemagne",
+      extraOne: "Merci de nous contacter.",
+      extraTwo: "Notre politique de confidentialité s'applique.",
+      requiredFieldsError:
+        "Une ou plusieurs erreurs dans les champs requis. Veuillez vérifier et réessayer.",
+    },
     availability: {
       title: "Disponibilité",
       one: "Disponible pour des projets de conseil, des rôles de conseil technique et des collaborations à long terme.",

@@ -443,6 +443,48 @@ const constants = {
       Others: [{ title: "LaTeX, ProcessGold", percentage: 90 }],
     },
   },
+
+  contactFormItems: (t: any) => [
+    {
+      labelKey: t("name"),
+      schemaName: "name",
+    },
+    {
+      labelKey: t("email"),
+      schemaName: "email",
+      isRequired: true,
+      validation: {
+        required: t("emailRequiredMessage"),
+        pattern: {
+          value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          message: t("emailInvalidMessage"),
+        },
+      },
+    },
+    {
+      labelKey: t("tel"),
+      schemaName: "tel",
+      validation: {
+        pattern: {
+          value: /^\+?[0-9\s\-()]{7,20}$/,
+          message: t("validTelRequiredMessage"),
+        },
+      },
+    },
+    {
+      schemaName: "subject",
+      labelKey: t("subject"),
+    },
+    {
+      labelKey: t("message"),
+      schemaName: "message",
+      isRequired: true,
+      isTextArea: true,
+      validation: {
+        required: t("messageRequiredMessage"),
+      },
+    },
+  ],
 };
 
 export default constants;

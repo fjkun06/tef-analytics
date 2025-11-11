@@ -22,7 +22,7 @@ import strings from "@/utils/strings";
 export default function Footer(): React.ReactElement {
   return (
     <footer className="w-full bg-white dark:bg-slate-900 dark:bg-[url(/bg-white.svg)]">
-      <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-7xl px-4 pt-16 pb-12 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Social media links section */}
           <SocialLinks />

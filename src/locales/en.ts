@@ -192,6 +192,28 @@ export default {
     title: "Let's Connect",
     description: "Ready to transform your data challenges into opportunities?",
     socialsTitle: "Get in Touch",
+    form: {
+      email: "Email",
+      emailRequiredMessage: "Email is required.",
+      emailInvalidMessage: "Invalid email address.",
+      name: "Name",
+      message: "Message",
+      messageRequiredMessage: "Message is required.",
+      submit: "Submit",
+      submitting: "Submitting...",
+      submitSuccessMessage:
+        "Your message has been sent successfully!\n\nRedirecting to Home page...",
+      submitErrorMessage: "There was an error sending your message. Please try again.",
+      subject: "Subject",
+      tel: "Phone number",
+      validTelRequiredMessage: "Enter a valid phone number.",
+      heading: "Do you have any questions? Contact us!",
+      addressOne: "Address in Germany",
+      extraOne: "We look forward to hearing from you.",
+      extraTwo: "Our privacy policy applies.",
+      requiredFieldsError:
+        "One or more fields have an error. Please check and try again.",
+    },
     availability: {
       title: "Availability",
       one: "Available for consulting projects, technical advisory roles, and long-term collaborations.",

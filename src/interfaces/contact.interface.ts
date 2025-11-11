@@ -5,6 +5,8 @@
 
 import React from "react";
 
+import { FieldError, RegisterOptions, UseFormRegister } from "react-hook-form";
+
 /**
  * Props for the ContactAndProjectWrapper component.
  * Provides a styled container for contact and project pages.
@@ -92,3 +94,26 @@ export type ContactLinkItemProps = {
   icon: React.ReactNode;
   title: string;
 };
+
+export type ContactFormValues = {
+  name: string;
+  tel: string;
+  subject: string;
+  email: string;
+  message: string;
+};
+
+export type ContactInputProps = React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+> & {
+  isRequired?: boolean;
+  isTextArea?: boolean;
+  labelKey: string;
+  error?: FieldError | undefined;
+  register: UseFormRegister<ContactFormValues>;
+  validation?: RegisterOptions<ContactFormValues, keyof ContactFormValues>;
+  schemaName: keyof ContactFormValues;
+};
+
+export type SchemaKey = keyof ContactFormValues;

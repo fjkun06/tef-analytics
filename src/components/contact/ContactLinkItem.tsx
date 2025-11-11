@@ -26,10 +26,10 @@ function ContactLinkItem({
   title,
 }: ContactLinkItemProps): React.ReactElement {
   return (
-    <div className="flex items-center justify-start gap-4">
+    <div className="contact-socials-item flex items-center justify-start gap-4">
       <ContactIconBubble icon={icon} />
-      <span className="item-start flex flex-col [&>*]:m-0 [&>*]:text-gray-800">
-        <BasicText text={title} className="!text-left" />
+      <span className="item-start flex flex-col *:m-0 [&>*]:text-gray-800">
+        <BasicText text={title} className="text-left!" />
         <a
           href={href}
           className="text-sm transition-colors duration-200 hover:text-blue-600"

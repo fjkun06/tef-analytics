@@ -2,11 +2,11 @@ import {
   ContactDomainCard,
   PageHeader,
   ContactLinkItem,
-  ContactSectionContainerItem,
   ContactAndProjectWrapper,
   ContactSectionContainer,
 } from "@/components";
-import { availability, domains, socials } from "@/utils/contact.page.constants";
+import ContactForm from "@/components/contact/ContactForm";
+import { domains, socials } from "@/utils/contact.page.constants";
 
 export default function Contact() {
   return (
@@ -17,16 +17,14 @@ export default function Contact() {
 
       <div className="flex w-full flex-col gap-10">
         <ContactSectionContainer headingKey="socialsTitle">
-          <div className="grid w-full grid-cols-2 gap-7 max-md:flex max-md:flex-col">
+          <div className="contact-socials grid w-[99%] grid-cols-2 gap-7 max-md:flex max-md:flex-col">
             {socials.map((social) => (
               <ContactLinkItem key={social.title} {...social} />
             ))}
           </div>
         </ContactSectionContainer>
-        <ContactSectionContainer headingKey="availability.title">
-          {availability.map((item) => (
-            <ContactSectionContainerItem key={item.descriptionKey} {...item} />
-          ))}
+        <ContactSectionContainer headingKey="form.heading">
+          <ContactForm />
         </ContactSectionContainer>
       </div>
 

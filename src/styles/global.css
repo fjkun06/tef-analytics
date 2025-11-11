@@ -76,6 +76,32 @@ body {
   background-size: 40px 40px;
 }
 
+@media (width <= 420px) {
+  .contact-socials {
+    width: 100%;
+    gap: 28px;
+    .contact-socials-item:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+@media (420px < width <= 768px) {
+  .contact-socials {
+    width: 70%;
+    gap: 28px;
+    .contact-socials-item:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+@media (width >= 768px) {
+  .contact-socials {
+    column-gap: 100px;
+    .contact-socials-item {
+      justify-self: center;
+    }
+  }
+}
 @media (width <= 640px) {
   .contact-bg {
     background-image:
