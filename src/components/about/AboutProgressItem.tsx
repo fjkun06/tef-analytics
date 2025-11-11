@@ -32,12 +32,12 @@ export default function AboutProgressItem({
   return (
     <motion.div className="flex w-full flex-col gap-1">
       <span className="flex w-full justify-between">
-        <span className="text-sm text-gray-800">{title}</span>
-        <span className="text-sm text-blue-600">{percentage}%</span>
+        <span className="text-xs text-gray-800">{title}</span>
+        <span className="text-xs text-blue-600">{percentage}%</span>
       </span>
-      <div className="h-2.5 w-full rounded-full bg-gray-200 dark:bg-[#e5e7eb]">
+      <div className="h-1.5 w-full rounded-full bg-gray-200 dark:bg-gray-400">
         <motion.div
-          className="h-2.5 w-full rounded-full bg-blue-600"
+          className="h-1.5 w-full rounded-full bg-blue-600"
           style={{ width: `${percentage}%` }}
           initial={{ width: `${0}%` }}
           animate={{ width: `${percentage}%` }}
@@ -47,7 +47,7 @@ export default function AboutProgressItem({
             damping: 25,
             mass: 1.5,
             duration: 1,
-            delay: (delay ?? 0) + 1,
+            delay: (delay ?? 0) + 0.25,
           }}
         />
       </div>
