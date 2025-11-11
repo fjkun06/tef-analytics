@@ -6,14 +6,18 @@ export default function ContactInput({
   isRequired,
   isTextArea,
   labelKey,
+  error,
+  register,
+  validation,
+  schemaName,
   ...inputProps
 }: ContactInputProps) {
   const styles =
-    " border border-gray-600 bg-gray-700 px-3 py-[10px] text-base text-white placeholder-gray-400 caret-gray-400 focus:outline-blue-500 dark:border-gray-600 dark:bg-gray-50 dark:text-gray-900 dark:caret-slate-900 dark:focus:outline-slate-900";
+    " border border-gray-600 bg-gray-700 px-3 transition-colors py-[10px] text-base text-white placeholder-gray-400 caret-gray-400 focus:outline-blue-500 dark:border-gray-600 dark:bg-gray-50 dark:text-gray-900 dark:caret-slate-900 dark:focus:outline-slate-900";
   return (
     <label
       htmlFor={`input-${labelKey}`}
-      className="flex w-full max-w-[362px] flex-col gap-px max-[400px]:w-full [&>*]:text-[15px]"
+      className="flex w-full max-w-[362px] flex-col gap-px *:text-[15px] max-[400px]:w-full"
     >
       <span className="block text-sm font-semibold text-white capitalize dark:text-gray-900">
         {`${labelKey}${isRequired ? " *" : ""}`}
@@ -22,17 +26,20 @@ export default function ContactInput({
       {isTextArea ? (
         <textarea
           id="Notes"
-          className={`w-full resize-y border shadow-sm sm:text-sm${styles}`}
+          className={`w-full resize-y border shadow-sm sm:text-sm${styles} ${error ? "border-red-500!" : ""}`}
           rows={4}
+          {...register(schemaName, validation)}
         />
       ) : (
         <input
           type="text"
           id={`input-${labelKey}`}
-          className={`block h-11 w-full${styles}`}
+          className={`block h-11 w-full${styles} ${error ? "border-red-500!" : ""}`}
+          {...register(schemaName, validation)}
           {...inputProps}
         />
       )}
+      {error && <span className="mt-1 text-xs! text-red-500">{error.message}</span>}
     </label>
   );
 }
