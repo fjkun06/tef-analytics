@@ -25,7 +25,7 @@ async function ContactSectionContainer({
   const t2 = (key: any) => t(key);
 
   return (
-    <div className="relative flex w-full overflow-hidden rounded-2xl shadow-[0_5px_20px_#18204833] backdrop-blur-lg max-md:shadow-[0_5px_20px_#18204812]">
+    <section className="relative flex w-full overflow-hidden rounded-2xl shadow-[0_5px_20px_#18204833] backdrop-blur-lg max-md:shadow-[0_5px_20px_#18204812]">
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -35,13 +35,13 @@ async function ContactSectionContainer({
           backgroundSize: "20px 20px",
         }}
       />
-      <div className="z-1 flex w-full flex-col items-start gap-5 p-6 sm:p-8">
-        <BasicHeading text={t2(headingKey)} large />
-        <div className="flex w-full flex-col items-start gap-4 max-[430px]:gap-8">
+      <div className="z-1 flex w-full flex-col items-center gap-5 p-6 sm:p-8">
+        <BasicHeading text={t2(headingKey)} large className="text-center" />
+        <div className="flex w-full flex-col items-center gap-4 max-[430px]:gap-8">
           {children}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

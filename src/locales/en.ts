@@ -209,6 +209,8 @@ export default {
       addressOne: "Address in Germany",
       extraOne: "We look forward to hearing from you.",
       extraTwo: "Our privacy policy applies.",
+      requiredFieldsError:
+        "One or more fields have an error. Please check and try again.",
     },
     availability: {
       title: "Availability",

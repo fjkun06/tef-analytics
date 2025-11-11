@@ -20,7 +20,14 @@ export default function useContactFormController() {
     register,
     reset,
     handleSubmit,
-    formState: { errors, isSubmitting, isLoading, isValid, isSubmitSuccessful },
+    formState: {
+      errors,
+      isSubmitting,
+      isLoading,
+      isValid,
+      isSubmitSuccessful,
+      isSubmitted,
+    },
   } = useForm<ContactFormValues>({
     defaultValues,
   });
@@ -47,6 +54,9 @@ export default function useContactFormController() {
     address: t("addressOne"),
     contact: t("extraOne"),
     privacy: t("extraTwo"),
+    requiredFieldsError: t("requiredFieldsError"),
+    submitSuccessMessage: t("submitSuccessMessage"),
+    submitErrorMessage: t("submitErrorMessage"),
   };
 
   return {
@@ -56,10 +66,10 @@ export default function useContactFormController() {
     onSubmit,
     errors,
     isSubmitting,
+    isSubmitted,
     isLoading,
     isValid,
     isSubmitSuccessful,
-    t,
     contactFormItems: constants.contactFormItems(t),
     contactFormStrings,
   };

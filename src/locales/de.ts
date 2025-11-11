@@ -194,13 +194,13 @@ export default {
     socialsTitle: "Kontakt aufnehmen",
     form: {
       email: "E-Mail-Adresse",
-      emailRequiredMessage: "Email ist erforderlich.",
+      emailRequiredMessage: "Eine E-Mail-Adresse ist erforderlich.",
       emailInvalidMessage: "Ungültige E-Mail-Adresse.",
       name: "Name",
       message: "Nachricht",
       messageRequiredMessage: "Eine Nachricht ist erforderlich.",
       submit: "Senden",
-      submitting: "Senden läuft...",
+      submitting: "Wird gesendet...",
       submitSuccessMessage: "Ihre Nachricht wurde erfolgreich gesendet!",
       submitErrorMessage:
         "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
@@ -210,6 +210,8 @@ export default {
       addressOne: "Adresse in Deutschland",
       extraOne: "Wir freuen uns auf Ihre Kontaktanfrage.",
       extraTwo: "Es gilt unsere Datenschutzerklärung.",
+      requiredFieldsError:
+        "Ein oder mehrere Felder weisen einen Fehler auf. Bitte überprüfe das und versuche es erneut.",
     },
     availability: {
       title: "Verfügbarkeit",

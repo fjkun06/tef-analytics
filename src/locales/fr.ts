@@ -213,6 +213,8 @@ export default {
       addressOne: "Adresse en Allemagne",
       extraOne: "Merci de nous contacter.",
       extraTwo: "Notre politique de confidentialité s'applique.",
+      requiredFieldsError:
+        "Une ou plusieurs erreurs dans les champs requis. Veuillez vérifier et réessayer.",
     },
     availability: {
       title: "Disponibilité",
