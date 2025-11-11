@@ -3,7 +3,7 @@ import React from "react";
 export default function IconSpinner() {
   return (
     <svg
-      className="mr-1 -ml-1 size-5 animate-spin text-white"
+      className="mr-1 -ml-1 size-5 animate-spin text-slate-900"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

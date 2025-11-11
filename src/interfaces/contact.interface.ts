@@ -96,8 +96,9 @@ export type ContactLinkItemProps = {
 };
 
 export type ContactFormValues = {
-  firstName: string;
-  lastName: string;
+  name: string;
+  tel: string;
+  subject: string;
   email: string;
   message: string;
 };
@@ -114,3 +115,5 @@ export type ContactInputProps = React.DetailedHTMLProps<
   validation?: RegisterOptions<ContactFormValues, keyof ContactFormValues>;
   schemaName: keyof ContactFormValues;
 };
+
+export type SchemaKey = keyof ContactFormValues;

@@ -193,11 +193,17 @@ export default {
     description: "Bereit, Ihre Datenherausforderungen in Chancen zu verwandeln?",
     socialsTitle: "Kontakt aufnehmen",
     form: {
-      email: "E-Mail Adresse",
+      email: "E-Mail-Adresse",
+      emailRequiredMessage: "Email ist erforderlich.",
+      emailInvalidMessage: "Ungültige E-Mail-Adresse.",
       name: "Name",
       message: "Nachricht",
+      messageRequiredMessage: "Eine Nachricht ist erforderlich.",
       submit: "Senden",
       submitting: "Senden läuft...",
+      submitSuccessMessage: "Ihre Nachricht wurde erfolgreich gesendet!",
+      submitErrorMessage:
+        "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
       subject: "Betreff",
       tel: "Telefonnummer",
       heading: "Haben Sie Fragen? Kontaktieren Sie uns!",

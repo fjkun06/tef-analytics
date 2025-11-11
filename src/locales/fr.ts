@@ -197,10 +197,16 @@ export default {
     socialsTitle: "Entrer en contact",
     form: {
       email: "Email",
+      emailRequiredMessage: "L'email est requis.",
+      emailInvalidMessage: "Adresse email invalide.",
       name: "Nom",
       message: "Message",
+      messageRequiredMessage: "Un message est requis.",
       submit: "Envoyer",
       submitting: "Envoi en cours...",
+      submitSuccessMessage: "Votre message a été envoyé avec succès !",
+      submitErrorMessage:
+        "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
       subject: "Sujet",
       tel: "Numéro de téléphone",
       heading: "Avez-vous des questions ? Contactez-nous!",

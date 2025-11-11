@@ -29,7 +29,7 @@ async function AboutInfoCard() {
       </h3>
       <span className="flex w-full gap-3 text-xs max-[510px]:flex-wrap sm:text-sm">
         <span className="flex w-1/2 items-center justify-start gap-2 text-white max-[510px]:w-full">
-          <IconEnvelope className="!h-3 !w-3 sm:!h-5 sm:!w-5" /> francktankouan@yahoo.de
+          <IconEnvelope className="h-3! w-3! sm:h-5! sm:w-5!" /> francktankouan@yahoo.de
         </span>
         <span className="flex w-1/2 items-center justify-start gap-2 text-white max-[510px]:w-full">
           <IconLocation /> Oberhausen, {t("location")}
