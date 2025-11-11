@@ -201,10 +201,12 @@ export default {
       messageRequiredMessage: "Message is required.",
       submit: "Submit",
       submitting: "Submitting...",
-      submitSuccessMessage: "Your message has been sent successfully!",
+      submitSuccessMessage:
+        "Your message has been sent successfully!\n\nRedirecting to Home page...",
       submitErrorMessage: "There was an error sending your message. Please try again.",
       subject: "Subject",
       tel: "Phone number",
+      validTelRequiredMessage: "Enter a valid phone number.",
       heading: "Do you have any questions? Contact us!",
       addressOne: "Address in Germany",
       extraOne: "We look forward to hearing from you.",

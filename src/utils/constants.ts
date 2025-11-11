@@ -464,6 +464,12 @@ const constants = {
     {
       labelKey: t("tel"),
       schemaName: "tel",
+      validation: {
+        pattern: {
+          value: /^\+?[0-9\s\-()]{7,20}$/,
+          message: t("validTelRequiredMessage"),
+        },
+      },
     },
     {
       schemaName: "subject",

@@ -204,11 +204,13 @@ export default {
       messageRequiredMessage: "Un message est requis.",
       submit: "Envoyer",
       submitting: "Envoi en cours...",
-      submitSuccessMessage: "Votre message a été envoyé avec succès !",
+      submitSuccessMessage:
+        "Votre message a été envoyé avec succès !\n\nRedirection vers la page d'accueil...",
       submitErrorMessage:
         "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
       subject: "Sujet",
       tel: "Numéro de téléphone",
+      validTelRequiredMessage: "Entrez un numéro de téléphone valide.",
       heading: "Avez-vous des questions ? Contactez-nous!",
       addressOne: "Adresse en Allemagne",
       extraOne: "Merci de nous contacter.",

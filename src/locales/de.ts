@@ -201,11 +201,13 @@ export default {
       messageRequiredMessage: "Eine Nachricht ist erforderlich.",
       submit: "Senden",
       submitting: "Wird gesendet...",
-      submitSuccessMessage: "Ihre Nachricht wurde erfolgreich gesendet!",
+      submitSuccessMessage:
+        "Ihre Nachricht wurde erfolgreich gesendet!\n\nWeiterleitung zur Startseite...",
       submitErrorMessage:
         "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
       subject: "Betreff",
       tel: "Telefonnummer",
+      validTelRequiredMessage: "Geben Sie eine gültige Telefonnummer ein.",
       heading: "Haben Sie Fragen? Kontaktieren Sie uns!",
       addressOne: "Adresse in Deutschland",
       extraOne: "Wir freuen uns auf Ihre Kontaktanfrage.",
