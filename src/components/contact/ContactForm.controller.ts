@@ -1,3 +1,34 @@
+/**
+ * useContactFormController
+ *
+ * Custom hook that manages contact form state, validation, submission, and user feedback.
+ * Handles form registration with React Hook Form, processes form submission via API,
+ * displays success/error toasts, and redirects users after successful submission.
+ * Provides translated strings and form configuration data.
+ *
+ * @returns {Object} Hook result object containing:
+ *   - register: React Hook Form register function for field registration
+ *   - handleSubmit: Form submission handler from React Hook Form
+ *   - onSubmit: Async function that processes form data submission
+ *   - contactFormItems: Array of form field configurations from constants
+ *   - errors: Form validation errors object
+ *   - isSubmitting: Boolean indicating if form is currently being submitted
+ *   - contactFormStrings: Object containing translated UI strings
+ *   - isSubmitSuccessful: Boolean indicating if form was submitted successfully
+ *   - hasErrors: Boolean indicating if there are any validation errors
+ *
+ * @example
+ * ```tsx
+ * const {
+ *   register,
+ *   handleSubmit,
+ *   onSubmit,
+ *   errors,
+ *   isSubmitting,
+ *   contactFormStrings
+ * } = useContactFormController();
+ * ```
+ */
 "use client";
 import { useEffect } from "react";
 

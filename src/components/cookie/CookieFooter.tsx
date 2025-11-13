@@ -37,10 +37,7 @@ export default async function CookieFooter(): Promise<React.ReactElement> {
           translationKey="sixTitle"
           scope="cookie.footerSection"
         />
-        <p>
-          {t("sixDescription")}
-          Email: an@arsenentiwa.com
-        </p>
+        <p>{t("sixDescription")} Email: francktankouan@yahoo.de</p>
       </section>
     </>
   );

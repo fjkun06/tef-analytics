@@ -104,7 +104,7 @@ export default {
     email: "Preferred method of contact: Email",
     lastUpdated: "Last updated on: December 21, 2024",
     threeOne: "Professional Title: Data Scientist",
-    threeTwo: "Awarded by: Technical University of Munich",
+    threeTwo: "Awarded by: Technical University of Dortmund",
     threeThree: "Country where title was awarded: Germany",
     four: "As a service provider, we are responsible for our own content on these pages according to § 7 paragraph 1 TMG. However, according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
     five: " Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
@@ -155,7 +155,7 @@ export default {
     topSection: {
       oneTitle: "Introduction",
       oneDescription:
-        'This Cookie Policy explains how Dr. Arsene Ntiwa ("we," "our," or "us") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies as described in this policy.',
+        'This Cookie Policy explains how Msc. Franck Tankouan ("we," "our," or "us") uses cookies and similar technologies on our website. By using our website, you consent to the use of cookies as described in this policy.',
       twoTitle: "What Are Cookies?",
       twoDescription:
         "Cookies are small text files that are stored on your device when you visit a website. They help make websites work more efficiently and provide information to website owners.",
@@ -433,4 +433,6 @@ export default {
       },
     ],
   },
+  toggleTheme: "Toggle theme",
+  toggleThemeArieaLabel: "Toggle light/dark mode",
 } as const;

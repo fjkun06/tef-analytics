@@ -1,3 +1,35 @@
+/**
+ * ContactInput
+ *
+ * Client component that renders form input fields for the contact form.
+ * Supports both regular input fields and textarea elements with validation,
+ * error states, and responsive styling. Integrates with React Hook Form
+ * for registration and validation handling.
+ *
+ * @param {ContactInputProps} props - Component props
+ * @param {boolean} [props.isRequired] - Whether the field is required (adds asterisk to label)
+ * @param {boolean} [props.isTextArea] - Whether to render as textarea instead of input
+ * @param {string} props.labelKey - Label text for the input field
+ * @param {FieldError} [props.error] - Validation error object from React Hook Form
+ * @param {UseFormRegister} props.register - React Hook Form register function
+ * @param {RegisterOptions} [props.validation] - Validation rules for the field
+ * @param {SchemaKey} props.schemaName - Schema field name for form registration
+ * @param {...HTMLInputElement} props.inputProps - Additional HTML input attributes
+ *
+ * @returns {React.ReactElement} Form input/textarea with label and error display
+ *
+ * @example
+ * ```tsx
+ * <ContactInput
+ *   labelKey="Name"
+ *   schemaName="name"
+ *   isRequired={true}
+ *   register={register}
+ *   error={errors.name}
+ *   validation={{ required: "Name is required" }}
+ * />
+ * ```
+ */
 import React from "react";
 
 import { ContactInputProps } from "@/interfaces/contact.interface";

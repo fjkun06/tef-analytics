@@ -1,3 +1,18 @@
+/**
+ * ContactForm
+ *
+ * Client component that renders a complete contact form with address information
+ * and form fields. Uses React Hook Form for validation and submission handling,
+ * displays toast notifications for success/error states, and includes contact
+ * information alongside the form inputs.
+ *
+ * @returns {React.ReactElement} Complete contact form with address info and input fields
+ *
+ * @example
+ * ```tsx
+ * <ContactForm />
+ * ```
+ */
 "use client";
 import { Toaster } from "react-hot-toast";
 

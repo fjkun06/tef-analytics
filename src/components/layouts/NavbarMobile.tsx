@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 
 import { LanguageSwitch } from "../LanguageSwitch";
 import NavLink from "../NavLink";
+import ThemeSwitcher from "../ThemeSwitcher";
 import useDynamicHeight from "@/hooks/useDynamicHeight";
 import { NavbarProps } from "@/interfaces/navbar.interface";
 import { hrefToNavKey } from "@/utils/functions/hrefToNavKey";
@@ -31,7 +32,7 @@ function NavbarMobile({
       ref={contentRef}
       data-testid="navbar-mobile"
       className={
-        "transform overflow-hidden transition-all duration-500 ease-in-out lg:hidden"
+        "transform overflow-hidden transition duration-500 ease-linear lg:hidden"
       }
       style={{
         maxHeight: isMobileOpen ? `${height + 300}px` : "0px",
@@ -48,6 +49,8 @@ function NavbarMobile({
             {t(hrefToNavKey(item.href))}
           </NavLink>
         ))}
+
+        <ThemeSwitcher />
 
         {/* Language switscher dropdown*/}
         <Suspense>

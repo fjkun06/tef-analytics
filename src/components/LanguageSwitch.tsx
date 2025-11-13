@@ -33,7 +33,7 @@ export function LanguageSwitch() {
     <div
       data-testid="language-switch"
       className={
-        "relative transition-all duration-500 ease-in-out max-lg:overflow-hidden"
+        "relative ease-in-out max-lg:overflow-hidden max-lg:transition-all max-lg:duration-500"
       }
       ref={mergeRefs(ref, contentRef)}
       style={{
