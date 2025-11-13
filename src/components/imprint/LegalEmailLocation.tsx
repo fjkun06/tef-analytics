@@ -14,7 +14,7 @@ function LegalEmailLocation({ location }: { location: string }): React.ReactElem
     <p>
       Franck Tankouan
       <br />
-      Email: an@arsenentiwa.com
+      Email: francktankouan@yahoo.de
       <br />
       <span>{location}</span>
     </p>

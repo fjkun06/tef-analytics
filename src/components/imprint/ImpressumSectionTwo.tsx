@@ -21,7 +21,7 @@ async function ImpressumSectionTwo(): Promise<React.ReactElement> {
       />
 
       <p>
-        Email: an@arsenentiwa.com
+        Email: francktankouan@yahoo.de
         <br />
         {t("email")}
       </p>

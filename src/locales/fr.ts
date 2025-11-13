@@ -105,7 +105,7 @@ export default {
     location: "Location: Allemagne",
     lastUpdated: "Dernière mise à jour: le 21 décembre 2024",
     threeOne: "Titre professionnel : Data Scientist",
-    threeTwo: "Décerné par : Université technique de Munich",
+    threeTwo: "Décerné par : Université technique de Dortmund",
     threeThree: "Pays où le titre a été décerné : Allemagne",
     four: "En tant que fournisseur de services, nous sommes responsables de notre propre contenu sur ces pages. Cependant, nous ne sommes pas tenus de surveiller les informations de tiers transmises ou stockées ou d'examiner les circonstances qui indiquent une activité illégale.",
     five: "Notre offre contient des liens vers des sites Web externes de tiers, sur lesquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune responsabilité pour ces contenus externes. Le fournisseur ou l'opérateur respectif des pages est toujours responsable du contenu des pages liées.",
@@ -158,7 +158,7 @@ export default {
     topSection: {
       oneTitle: "Introduction",
       oneDescription:
-        'Cette politique de cookies explique comment Dr. Arsene Ntiwa ("nous", "notre" ou "nos") utilise des cookies et des technologies similaires sur notre site Web. En utilisant notre site Web, vous consentez à l\'utilisation de cookies comme décrit dans cette politique.',
+        'Cette politique de cookies explique comment Msc. Franck Tankouan ("nous", "notre" ou "nos") utilise des cookies et des technologies similaires sur notre site Web. En utilisant notre site Web, vous consentez à l\'utilisation de cookies comme décrit dans cette politique.',
       twoTitle: "Qu'est-ce que les cookies ?",
       twoDescription:
         "Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil lorsque vous visitez un site Web. Ils aident à rendre les sites Web plus efficaces et fournissent des informations aux propriétaires de sites Web.",

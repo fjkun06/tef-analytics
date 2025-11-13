@@ -104,7 +104,7 @@ export default {
     location: "Standort: Deutschland",
     lastUpdated: "Zuletzt aktualisiert: 21. Dezember 2024",
     threeOne: "Berufsbezeichnung: Data Scientist",
-    threeTwo: "Verliehen durch: Technische Universität München",
+    threeTwo: "Verliehen durch: Technische Universität Dortmund",
     threeThree: "Land der Verleihung: Deutschland",
     four: "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
     five: "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
@@ -155,7 +155,7 @@ export default {
     topSection: {
       oneTitle: "Einführung",
       oneDescription:
-        'Diese Cookie-Richtlinie erklärt, wie Dr. Arsene Ntiwa ("wir", "unser" oder "uns") Cookies und ähnliche Technologien auf unserer Website verwendet. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu, wie in dieser Richtlinie beschrieben.',
+        'Diese Cookie-Richtlinie erklärt, wie Msc. Franck Tankouan ("wir", "unser" oder "uns") Cookies und ähnliche Technologien auf unserer Website verwendet. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu, wie in dieser Richtlinie beschrieben.',
       twoTitle: "Was sind Cookies?",
       twoDescription:
         "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie helfen, Websites effizienter zu gestalten und Informationen an die Website-Betreiber bereitzustellen.",

@@ -18,7 +18,7 @@ export default async function PrivacyFooter() {
         <p>
           {t("sixDescription")}
           <br />
-          Email: an@arsenentiwa.com
+          Email: francktankouan@yahoo.de
         </p>
       </section>
       <section>
