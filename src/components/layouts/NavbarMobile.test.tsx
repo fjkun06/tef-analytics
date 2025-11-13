@@ -8,6 +8,7 @@ jest.mock("@/locales/client", () => ({
   ),
   useChangeLocale: jest.fn(),
   useCurrentLocale: jest.fn(),
+  useI18n: jest.fn(() => jest.fn((key: string) => key)),
 }));
 
 let isOpen = true;

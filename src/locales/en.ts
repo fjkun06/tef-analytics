@@ -433,4 +433,6 @@ export default {
       },
     ],
   },
+  toggleTheme: "Toggle theme",
+  toggleThemeArieaLabel: "Toggle light/dark mode",
 } as const;

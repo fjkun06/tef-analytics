@@ -5,6 +5,7 @@ import IconClose from "../icons/IconClose";
 import IconMenu from "../icons/IconMenu";
 import { LanguageSwitch } from "../LanguageSwitch";
 import NavLink from "../NavLink";
+import ThemeSwitcher from "../ThemeSwitcher";
 import { NavbarProps } from "@/interfaces/navbar.interface";
 import { hrefToNavKey } from "@/utils/functions/hrefToNavKey";
 
@@ -41,6 +42,7 @@ function NavbarDesktop({
                 {t(hrefToNavKey(item.href))}
               </NavLink>
             ))}
+            <ThemeSwitcher />
             <Suspense>
               <LanguageSwitch />
             </Suspense>

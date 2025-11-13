@@ -460,4 +460,6 @@ export default {
       },
     ],
   },
+  toggleTheme: "Basculer le thème",
+  toggleThemeArieaLabel: "Basculer le mode clair/sombre",
 } as const;

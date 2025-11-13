@@ -40,7 +40,7 @@ function LanguageSwtichButton({
       aria-expanded={open}
       aria-haspopup="menu"
       onClick={() => setOpen((s) => !s)}
-      className="flex w-full cursor-pointer items-center justify-between gap-2 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 transition hover:opacity-90 lg:inline-flex lg:w-auto dark:bg-slate-800 dark:text-slate-200"
+      className="flex w-full cursor-pointer items-center justify-between gap-2 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 transition hover:opacity-90 lg:inline-flex lg:w-auto dark:bg-slate-800 dark:text-slate-200 dark:focus-visible:outline-2 dark:focus-visible:outline-white"
     >
       <span className="sr-only">Change language</span>
       <span className="inline-flex items-center gap-2">

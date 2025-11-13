@@ -433,4 +433,6 @@ export default {
       },
     ],
   },
+  toggleTheme: "Farbmodus wechseln",
+  toggleThemeArieaLabel: "Wechseln Sie den Hell-/Dunkelmodus",
 } as const;

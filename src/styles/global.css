@@ -2,10 +2,13 @@
 
 @import "tailwindcss";
 @import "tailwindcss/preflight.css" layer(base);
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --icon-fill: hsl(210 10% 30%);
+  --icon-fill-hover: hsl(210 10% 15%);
 }
 
 @layer base {
