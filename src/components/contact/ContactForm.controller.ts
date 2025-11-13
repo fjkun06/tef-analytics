@@ -23,7 +23,7 @@ export default function useContactFormController() {
     register,
     reset,
     handleSubmit,
-    formState: { errors, isSubmitting, isValid, isSubmitSuccessful, submitCount },
+    formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<ContactFormValues>({
     defaultValues,
   });
@@ -67,16 +67,13 @@ export default function useContactFormController() {
   }, [isSubmitSuccessful]);
 
   const onSubmit = async (data: ContactFormValues) => {
-    if (isValid) {
-      await postData(data);
-    }
+    await postData(data);
   };
 
   return {
     register,
     handleSubmit,
     onSubmit,
-    submitCount,
     contactFormItems: constants.contactFormItems(t),
     errors,
     isSubmitting,

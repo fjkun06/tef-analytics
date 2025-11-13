@@ -11,7 +11,6 @@ export default function ContactForm() {
     register,
     handleSubmit,
     onSubmit,
-    submitCount,
     contactFormItems,
     errors,
     isSubmitting,
@@ -29,7 +28,7 @@ export default function ContactForm() {
           <span className="text-base! font-bold text-wrap lg:text-lg">
             {contactFormStrings.address}
           </span>
-          <span className="">Königstrasse {submitCount} 30</span>
+          <span className="">Königstrasse 30</span>
           <span className="">46149 Oberhausen</span>
           <span className="">
             Telefon: <span className="font-extrabold">015772116756</span>

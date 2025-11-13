@@ -472,8 +472,8 @@ const constants = {
       },
     },
     {
-      schemaName: "subject",
       labelKey: t("subject"),
+      schemaName: "subject",
     },
     {
       labelKey: t("message"),
