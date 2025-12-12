@@ -18,16 +18,17 @@ export type AboutSideSectionContainerProps = {
  * @property timeSpan - Duration or date range (e.g., "2020-2024")
  * @property descriptionItems - Optional array of description bullet points
  * @property company - Optional company or institution name
- * @property hasThesis - Whether this item includes a thesis/dissertation
- * @property thesisUrl - Optional URL link to thesis document
+ * @property hasThesisOrCertificate - Whether this item includes a thesis/dissertation or certificate
+ * @property thesisOrCertificateUrl - Optional URL link to thesis or certificate document
  */
 export type AAboutSectionContainerItemProps = {
   title: string;
   timeSpan: string;
   descriptionItems?: string[];
   company?: string;
-  hasThesis?: boolean;
-  thesisUrl?: string;
+  hasThesisOrCertificate?: boolean;
+  thesisOrCertificateUrl?: string;
+  thesisOrCertificateText?: string;
 };
 
 /**

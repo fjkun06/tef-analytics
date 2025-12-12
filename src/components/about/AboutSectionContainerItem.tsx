@@ -38,21 +38,24 @@ export default function AboutSectionContainerItem({
   title,
   company,
   timeSpan,
-  hasThesis,
-  thesisUrl,
+  hasThesisOrCertificate,
+  thesisOrCertificateUrl,
+  thesisOrCertificateText,
 }: AAboutSectionContainerItemProps): React.ReactElement {
   return (
-    <li className="relative -ms-1.5 flex items-start gap-4 before:absolute before:ml-[6px] before:h-full before:w-[1px] before:rounded-full before:bg-blue-200">
+    <li className="relative -ms-1.5 flex items-start gap-4 before:absolute before:ml-1.5 before:h-full before:w-px before:rounded-full before:bg-blue-200">
       <span className="z-1 size-3 shrink-0 rounded-full bg-blue-600" />
 
       <div className="-mt-2 flex w-full flex-col gap-2">
         <h3 className="flex flex-col gap-1 text-lg font-bold text-gray-900">
           <span className="">{title}</span>
-          <time className="text-sm/none font-medium text-blue-600">{timeSpan}</time>
+          <time className="text-sm/none font-medium text-blue-600 capitalize">
+            {timeSpan}
+          </time>
           {company && (
             <BasicText
               text={company}
-              className="!mt-0 !text-start !text-sm font-normal !text-gray-600"
+              className="mt-0! text-start! text-sm! font-normal text-gray-600!"
             />
           )}
         </h3>
@@ -64,14 +67,14 @@ export default function AboutSectionContainerItem({
           <ProjectCardBodySectionListGroup listItems={descriptionItems} isAboutMeItem />
         )}
 
-        {hasThesis && thesisUrl && (
+        {hasThesisOrCertificate && thesisOrCertificateUrl && (
           <a
-            href={thesisUrl}
+            href={thesisOrCertificateUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-sm text-blue-700 transition-colors hover:text-blue-500"
           >
-            View Thesis →{/* //must be teed too */}
+            {thesisOrCertificateText ?? "View Thesis"} →{/* //must be teed too */}
           </a>
         )}
       </div>

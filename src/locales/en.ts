@@ -242,6 +242,8 @@ export default {
     location: "Germany",
     education: "Education",
     experience: "Experience",
+    certificatesTitle: "Certificates",
+    viewCertificate: "View Certificate",
     language: "Languages",
     languages: {
       french: "French (Native)",
@@ -370,7 +372,7 @@ export default {
         ],
       },
       {
-        title: "Master 1 Mathematics (minor: Applied Statistics)",
+        title: "Master 1 Mathematics",
         company: "University of Yaoundé I, Cameroon",
         timeSpan: "10.2009 – 07.2010",
         descriptionItems: [
@@ -378,57 +380,95 @@ export default {
         ],
       },
       {
-        title: "Bachelor's Degree in Mathematics (Minor: Probability Theory)",
+        title: "Bachelor's Degree in Mathematics",
         company: "Université de Yaoundé I, Cameroon",
         timeSpan: "10.2006 – 07.2009",
         descriptionItems: [
           "Fundamentals of probability theory and mathematical statistics",
         ],
       },
+    ],
+    certificates: [
       {
-        title: "High School (Abitur)",
-        company: "Lycée de Nkol-Eton, Yaoundé",
-        timeSpan: "09.1992 – 07.2006",
-        descriptionItems: ["Focus: Mathematics and Scientific Physics"],
-      },
-      {
-        title: "Business English (B2)",
-        company: "Volkshochschule, Oberhausen",
-        timeSpan: "09.2018 – 05.2019",
-        descriptionItems: ["Advanced communication in business contexts"],
-      },
-      {
-        title: "German course (C2)",
-        company: "AStA TU Dortmund",
-        timeSpan: "05.2025 – 06.2025",
-        descriptionItems: ["Successful participation in German course at C2 level"],
-      },
-      {
-        title: "German course (B1)",
-        company: "Goethe-Institut, Cameroon",
-        timeSpan: "03.2010 – 09.2010",
-        descriptionItems: ["Basics of the German language at B1 level"],
-      },
-      {
-        title: "Large Language Model Operations (LLMOps)",
-        company: "Duke University, Online",
-        timeSpan: "07.2025 – Present",
-        descriptionItems: ["Further training in LLMOps and MLOps for generative AI"],
-      },
-      {
-        title: "Generative AI for Data Scientists",
-        company: "IBM / Coursera, Online",
-        timeSpan: "05.2025 – 06.2025",
+        title: "Microsoft Certified: Fabric Analytics Engineer Associate",
+        timeSpan: "July 2025",
         descriptionItems: [
-          "Advanced training on generative AI and its practical application",
+          "Design and build semantic models using Microsoft Fabric",
+          "Develop data transformation pipelines using Data Factory and Spark",
+          "Optimize data models for performance, governance, and enterprise analytics",
         ],
       },
       {
-        title: "Microsoft Artificial Intelligence Certification",
-        company: "Microsoft",
-        timeSpan: "09.2018 – 05.2019",
+        title: "Generative AI for Data Scientists",
+        timeSpan: "June 2025",
         descriptionItems: [
-          "Focus areas: deep learning, reinforcement learning, natural language processing",
+          "Train and fine-tune large language models for applied use cases",
+          "Implement prompt engineering and evaluation strategies",
+          "Integrate generative AI models into data science workflows",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/3460d7f2-073d-480c-b06e-d0f86d2400de",
+      },
+      {
+        title: "Microsoft Certified: Power BI Data Analyst Associate",
+        timeSpan: "February 2025",
+        descriptionItems: [
+          "Create and optimize data models in Power BI",
+          "Build interactive dashboards and visual analytics",
+          "Implement DAX for calculations and business logic",
+        ],
+        thesisOrCertificateUrl:
+          "https://learn.microsoft.com/de-de/users/francktankouan-5168/credentials/e71011fa1ec1565d",
+      },
+      {
+        title: "SAS Viya Programming Badge",
+        timeSpan: "June 2022",
+        descriptionItems: [
+          "Write SAS programs for data manipulation and analytics in Viya",
+          "Perform statistical modeling using CAS actions",
+          "Manage data pipelines and distributed computing workflows",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/95c04712-82b6-48fa-9c84-04e233dc2766",
+      },
+      {
+        title: "Professional Scrum Master Certified",
+        timeSpan: "July 2020",
+        descriptionItems: [
+          "Facilitate Scrum ceremonies and remove team impediments",
+          "Apply Scrum principles to improve team velocity and delivery",
+          "Coach teams and stakeholders on Agile frameworks",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/953afff1-85c6-4720-a63f-47662e4c2bf5",
+      },
+      {
+        title: "EY Analytics Data Science (Gold Badge)",
+        timeSpan: "December 2019",
+        descriptionItems: [
+          "Develop machine learning models using Python and SQL",
+          "Apply statistical methods for business and operational analytics",
+          "Communicate insights through dashboards and executive summaries",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/80c728f6-1c2c-43ca-8519-569c67f2c581",
+      },
+      {
+        title: "Microsoft Certified Professional in Artificial Intelligence",
+        timeSpan: "May 2019",
+        descriptionItems: [
+          "Build AI solutions using Azure Cognitive Services",
+          "Implement machine learning workflows and model deployment",
+          "Apply AI ethics, fairness, and responsible AI principles",
+        ],
+      },
+      {
+        title: "3rd Place – IHACK.RUHR Innogy Hackathon Challenge",
+        timeSpan: "March 2018",
+        descriptionItems: [
+          "Developed a functional prototype under time constraints",
+          "Collaborated in a cross-functional team to solve real business cases",
+          "Presented the final solution to technical and non-technical judges",
         ],
       },
     ],

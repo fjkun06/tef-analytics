@@ -1,11 +1,12 @@
 /*eslint-disable */
+import { AboutArrayDomain } from "@/components/about/getAboutMeController";
 import returnTranslatedListItems from "./returnTranslatedListItems";
 
 const generateTranslationKeys = (
   parentIndexCount: number,
   descriptionItemsCount: number,
   t: (key: any) => string,
-  domain: "work" | "school" = "work",
+  domain: AboutArrayDomain = "work",
 ): string[] => {
   const mappedArray = Array.from({ length: descriptionItemsCount }).map(
     (_, index) => `${domain}.${parentIndexCount}.descriptionItems.${index}`,

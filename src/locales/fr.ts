@@ -246,6 +246,8 @@ export default {
 
     education: "Éducation",
     experience: "Expérience",
+    certificatesTitle: "Certificats",
+    viewCertificate: "Voir le certificat",
     location: "Allemagne",
     language: "Langues",
     languages: {
@@ -392,7 +394,7 @@ export default {
         ],
       },
       {
-        title: "Master 1 Mathématiques (matière secondaire : statistiques appliquées)",
+        title: "Master 1 Mathématiques",
         company: "Université de Yaoundé I, Cameroun",
         timeSpan: "10.2009 – 07.2010",
         descriptionItems: [
@@ -400,62 +402,99 @@ export default {
         ],
       },
       {
-        title: "Licence en mathématiques (matière secondaire : théorie des probabilités)",
+        title: "Licence en mathématiques",
         company: "Université de Yaoundé I, Cameroun",
         timeSpan: "10.2006 – 07.2009",
         descriptionItems: [
           "Bases de la théorie des probabilités et des statistiques mathématiques",
         ],
       },
+    ],
+    certificates: [
       {
-        title: "Lycée (baccalauréat)",
-        company: "Lycée de Nkol-Eton, Yaoundé",
-        timeSpan: "09.1992 – 07.2006",
-        descriptionItems: ["Spécialisation : mathématiques et physique scientifique"],
+        title: " Certifié Microsoft : Ingénieur associé en analyse de structure ",
+        timeSpan: " Juillet 2025 ",
+        descriptionItems: [
+          " Concevoir et construire des modèles sémantiques en utilisant Microsoft Fabric ",
+          " Développer des pipelines de transformation de données avec Data Factory et Spark ",
+          " Optimiser les modèles de données pour la performance, la gouvernance et l'analytique d'entreprise ",
+        ],
       },
 
       {
-        title: "Anglais des affaires (B2)",
-        company: "Université populaire, Oberhausen",
-        timeSpan: "09.2018 – 05.2019",
+        title: " IA générative pour les scientifiques des données ",
+        timeSpan: " Juin 2025 ",
         descriptionItems: [
-          "Approfondissement de la communication dans des contextes professionnels",
+          " Former et affiner de grands modèles linguistiques pour des cas d'utilisation appliqués ",
+          " Mettre en œuvre des stratégies d'ingénierie et d'évaluation rapides ",
+          " Intégrer des modèles d'IA générative dans les workflows de science des données ",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/3460d7f2-073d-480c-b06e-d0f86d2400de",
+      },
+
+      {
+        title: " Certifié Microsoft : Power BI Data Analyst Associate ",
+        timeSpan: " Février 2025 ",
+        descriptionItems: [
+          " Créer et optimiser des modèles de données dans Power BI ",
+          " Construire des tableaux de bord interactifs et des analyses visuelles ",
+          " Mettre en œuvre DAX pour les calculs et la logique métier ",
+        ],
+        thesisOrCertificateUrl:
+          "https://learn.microsoft.com/de-de/users/francktankouan-5168/credentials/e71011fa1ec1565d",
+      },
+
+      {
+        title: " SAS Viya Programming Badge ",
+        timeSpan: " Juin 2022 ",
+        descriptionItems: [
+          " Écrire des programmes SAS pour la manipulation et l'analyse des données dans Viya ",
+          " Effectuer des modélisations statistiques à l'aide d'actions CAS ",
+          " Gérer les pipelines de données et les workflows informatiques distribués ",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/95c04712-82b6-48fa-9c84-04e233dc2766",
+      },
+      {
+        title: " Certification Professional Scrum Master ",
+        timeSpan: " Juillet 2020",
+        descriptionItems: [
+          " Faciliter les cérémonies Scrum et éliminer les obstacles rencontrés par l'équipe ",
+          " Appliquer les principes Scrum pour améliorer la vélocité et la livraison de l'équipe ",
+          " Encadrer les équipes et les parties prenantes sur les cadres Agile ",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/953afff1-85c6-4720-a63f-47662e4c2bf5",
+      },
+      {
+        title: " EY Analytics Data Science (badge Or) ",
+        timeSpan: " Décembre 2019 ",
+        descriptionItems: [
+          " Développer des modèles d'apprentissage automatique à l'aide de Python et SQL ",
+          " Appliquer des méthodes statistiques pour l'analyse commerciale et opérationnelle ",
+          " Communiquer des informations via des tableaux de bord et des résumés exécutifs ",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/80c728f6-1c2c-43ca-8519-569c67f2c581",
+      },
+      {
+        title: " Microsoft Certified Professional in Artificial Intelligence ",
+        timeSpan: " mai 2019 ",
+        descriptionItems: [
+          " Créer des solutions d'IA à l'aide d'Azure Cognitive Services ",
+          " Mettre en œuvre des workflows d'apprentissage automatique et le déploiement de modèles ",
+          " Appliquer les principes d'éthique, d'équité et de responsabilité en matière d'IA ",
         ],
       },
+
       {
-        title: "Cours d'allemand (C2)",
-        company: "AStA TU Dortmund",
-        timeSpan: "05.2025 – 06.2025",
-        descriptionItems: ["Participation réussie à un cours d'allemand de niveau C2"],
-      },
-      {
-        title: "Cours d'allemand (B1)",
-        company: "Goethe-Institut, Cameroun",
-        timeSpan: "03.2010 – 09.2010",
-        descriptionItems: ["Bases de la langue allemande au niveau B1"],
-      },
-      {
-        title: "Large Language Model Operations (LLMOps)",
-        company: "Duke University, en ligne",
-        timeSpan: "07.2025 – aujourd'hui",
+        title: " 3e place – IHACK.RUHR Innogy Hackathon Challenge ",
+        timeSpan: " Mars 2018 ",
         descriptionItems: [
-          "Formation continue sur les LLMOps et les MLOps pour l'IA générative",
-        ],
-      },
-      {
-        title: "IA générative pour les scientifiques des données",
-        company: "IBM / Coursera, en ligne",
-        timeSpan: "05.2025 – 06.2025",
-        descriptionItems: [
-          "Formation continue sur l'IA générative et ses applications pratiques",
-        ],
-      },
-      {
-        title: "Certification Microsoft en intelligence artificielle",
-        company: "Microsoft",
-        timeSpan: "09.2018 – 05.2019",
-        descriptionItems: [
-          "Thèmes principaux : apprentissage profond, apprentissage par renforcement, traitement du langage naturel",
+          " Développement d'un prototype fonctionnel dans des délais serrés ",
+          " Collaboration au sein d'une équipe interfonctionnelle pour résoudre des cas d'affaires réels ",
+          " Présentation de la solution finale à des juges techniques et non techniques ",
         ],
       },
     ],

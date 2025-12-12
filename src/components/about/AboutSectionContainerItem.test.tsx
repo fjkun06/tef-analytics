@@ -9,8 +9,8 @@ describe("AboutSectionContainerItem", () => {
         title="About"
         descriptionItems={["Item 1", "Item 2"]}
         timeSpan="2020-2024"
-        hasThesis
-        thesisUrl="/thesis.pdf"
+        hasThesisOrCertificate
+        thesisOrCertificateUrl="/thesis.pdf"
       />,
     );
 

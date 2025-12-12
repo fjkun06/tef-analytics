@@ -249,6 +249,8 @@ export default {
     },
     education: "Bildung",
     experience: "Erfahrung",
+    certificatesTitle: "Zertifikate",
+    viewCertificate: "Zertifikat ansehen",
     work: [
       {
         title: "Senior Data Scientist",
@@ -370,7 +372,7 @@ export default {
         ],
       },
       {
-        title: "Master 1 Mathematik (Nebenfach: Angewandte Statistik)",
+        title: "Master 1 Mathematik",
         company: "Université de Yaoundé I, Kamerun",
         timeSpan: "10.2009 – 07.2010",
         descriptionItems: [
@@ -378,57 +380,99 @@ export default {
         ],
       },
       {
-        title: "Bachelor Mathematik (Nebenfach: Wahrscheinlichkeitstheorie)",
+        title: "Bachelor Mathematik",
         company: "Université de Yaoundé I, Kamerun",
         timeSpan: "10.2006 – 07.2009",
         descriptionItems: [
           "Grundlagen in Wahrscheinlichkeitstheorie und mathematischer Statistik",
         ],
       },
+    ],
+    certificates: [
       {
-        title: "Gymnasium (Abitur)",
-        company: "Lycée de Nkol-Eton, Yaoundé",
-        timeSpan: "09.1992 – 07.2006",
-        descriptionItems: ["Schwerpunkt: Mathematik und wissenschaftliche Physik"],
-      },
-      {
-        title: "Business English (B2)",
-        company: "Volkshochschule, Oberhausen",
-        timeSpan: "09.2018 – 05.2019",
-        descriptionItems: ["Vertiefung der Kommunikation in Business-Kontexten"],
-      },
-      {
-        title: "Deutschkurs (C2)",
-        company: "AStA TU Dortmund",
-        timeSpan: "05.2025 – 06.2025",
-        descriptionItems: ["Erfolgreiche Teilnahme an Deutschkurs auf C2-Niveau"],
-      },
-      {
-        title: "Deutschkurs (B1)",
-        company: "Goethe-Institut, Kamerun",
-        timeSpan: "03.2010 – 09.2010",
-        descriptionItems: ["Grundlagen der deutschen Sprache auf B1-Niveau"],
-      },
-      {
-        title: "Large Language Model Operations (LLMOps)",
-        company: "Duke University, Online",
-        timeSpan: "07.2025 – Heute",
-        descriptionItems: ["Weiterbildung zu LLMOps und MLOps für generative KI"],
-      },
-      {
-        title: "Generative AI for Data Scientists",
-        company: "IBM / Coursera, Online",
-        timeSpan: "05.2025 – 06.2025",
+        title: "Microsoft Certified: Fabric Analytics Engineer Associate",
+        timeSpan: "Juli 2025",
         descriptionItems: [
-          "Fortbildung zu generativer KI und deren praktischer Anwendung",
+          "Entwerfen und Erstellen semantischer Modelle mit Microsoft Fabric",
+          "Entwickeln von Datenumwandlungspipelines mit Data Factory und Spark",
+          "Optimieren von Datenmodellen für Leistung, Governance und Unternehmensanalysen",
         ],
       },
+
       {
-        title: "Microsoft Artificial Intelligence Certification",
-        company: "Microsoft",
-        timeSpan: "09.2018 – 05.2019",
+        title: "Generative KI für Datenwissenschaftler",
+        timeSpan: "Juin 2025",
         descriptionItems: [
-          "Schwerpunkte: Deep Learning, Reinforcement Learning, Natural Language Processing",
+          "Trainieren und Feinabstimmen großer Sprachmodelle für angewandte Anwendungsfälle",
+          "Implementieren von Prompt-Engineering- und Bewertungsstrategien",
+          "Integrieren generativer KI-Modelle in Data-Science-Workflows",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/3460d7f2-073d-480c-b06e-d0f86d2400de",
+      },
+
+      {
+        title: "Microsoft Certified: Power BI Data Analyst Associate",
+        timeSpan: "Februar 2025",
+        descriptionItems: [
+          "Erstellen und Optimieren von Datenmodellen in Power BI",
+          "Erstellen interaktiver Dashboards und visueller Analysen",
+          "Implementieren von DAX für Berechnungen und Geschäftslogik",
+        ],
+        thesisOrCertificateUrl:
+          "https://learn.microsoft.com/de-de/users/francktankouan-5168/credentials/e71011fa1ec1565d",
+      },
+
+      {
+        title: "SAS Viya Programming Badge",
+        timeSpan: "Juni 2022",
+        descriptionItems: [
+          "SAS-Programme für die Datenbearbeitung und -analyse in Viya schreiben",
+          "Statistische Modellierung mit CAS-Aktionen durchführen",
+          "Datenpipelines und verteilte Computing-Workflows verwalten",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/95c04712-82b6-48fa-9c84-04e233dc2766",
+      },
+      {
+        title: "Professional Scrum Master Certified",
+        timeSpan: " Juli 2020",
+        descriptionItems: [
+          "Scrum-Zeremonien moderieren und Hindernisse für Teams beseitigen",
+          "Scrum-Prinzipien anwenden, um die Geschwindigkeit und Leistungsfähigkeit von Teams zu verbessern",
+          "Teams und Stakeholder in Bezug auf agile Frameworks coachen",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/953afff1-85c6-4720-a63f-47662e4c2bf5",
+      },
+      {
+        title: "EY Analytics Data Science (Gold-Abzeichen)",
+        timeSpan: "Dezember 2019",
+        descriptionItems: [
+          "Entwicklung von Machine-Learning-Modellen mit Python und SQL",
+          "Anwendung statistischer Methoden für Geschäfts- und Betriebsanalysen",
+          "Kommunikation von Erkenntnissen über Dashboards und Zusammenfassungen",
+        ],
+        thesisOrCertificateUrl:
+          "https://www.credly.com/badges/80c728f6-1c2c-43ca-8519-569c67f2c581",
+      },
+      {
+        title: "Microsoft Certified Professional in Artificial Intelligence",
+        timeSpan: "Mai 2019",
+        descriptionItems: [
+          "Entwickeln Sie KI-Lösungen mit Azure Cognitive Services",
+          "Implementieren Sie Workflows für maschinelles Lernen und die Bereitstellung von Modellen",
+          "Wenden Sie KI-Ethik, Fairness und Prinzipien für verantwortungsbewusste KI an",
+        ],
+      },
+
+      {
+        title: "3. Platz – IHACK.RUHR Innogy Hackathon Challenge",
+        timeSpan: "März 2018",
+        descriptionItems: [
+          "Entwicklung eines funktionsfähigen Prototyps unter Zeitdruck",
+          "Zusammenarbeit in einem funktionsübergreifenden Team zur Lösung realer Geschäftsfälle",
+          "Präsentation der endgültigen Lösung vor technischen und nicht-technischen Juroren",
         ],
       },
     ],
