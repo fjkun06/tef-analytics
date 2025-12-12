@@ -1,4 +1,4 @@
-export { default as Projectcard } from "./Projectcard";
+export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectCardBody } from "./ProjectCardBody";
 export { default as ProjectCardBodySectionListGroup } from "./ProjectCardBodySectionListGroup";
 export { default as ProjectCardPillsGroup } from "./ProjectCardPillsGroup";

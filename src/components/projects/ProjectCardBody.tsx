@@ -15,7 +15,7 @@
  */
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 import ProjectCardSection from "./ProjectCardSection";
 import useDynamicHeight from "@/hooks/useDynamicHeight";
@@ -24,21 +24,14 @@ import { ProjectCardBodyDataProps } from "@/interfaces/projects.interface";
 export default function ProjectCardBody({
   shortDescription,
   projectCardBodySections,
+  isProjectCardBodyOpen,
 }: ProjectCardBodyDataProps): React.ReactElement {
-  const [isProjectCardBodyOpen, setIsProjectCardBodyOpen] = useState(false);
-
-  const toggleSetIsProjectCardBodyOpen = () => {
-    setIsProjectCardBodyOpen((prev) => !prev);
-  };
-
   //use hook to dynamically set max height as open state is toggled
   const { contentRef, height } = useDynamicHeight(isProjectCardBodyOpen);
 
   return (
     <div
       className={"flex w-full max-w-md flex-col gap-4 transition-all"}
-      onMouseEnter={toggleSetIsProjectCardBodyOpen}
-      onMouseLeave={toggleSetIsProjectCardBodyOpen}
       data-testid="project-card-body"
     >
       <p className="text-xs font-bold text-gray-600 sm:text-sm">{shortDescription}</p>

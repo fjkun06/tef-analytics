@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen, waitFor } from "@testing-library/react";
 
 import ProjectCardBody from "./ProjectCardBody";
 import ClientTranslationProvider from "../ClientTranslationProvider";
@@ -10,6 +10,7 @@ describe("ProjectCardBody", () => {
         <ClientTranslationProvider locale={"en"}>
           <ProjectCardBody
             shortDescription="Test Description"
+            isProjectCardBodyOpen={false}
             projectCardBodySections={[
               {
                 title: "Description",
@@ -34,16 +35,5 @@ describe("ProjectCardBody", () => {
   });
   it("should render correctly", async () => {
     await waitFor(() => expect(screen.getByText("Test Description")).toBeInTheDocument());
-  });
-  it("should expand on hover correctly", async () => {
-    await waitFor(() => {
-      expect(screen.getByTestId("project-card-body-content").style.maxHeight).toBe("0px");
-
-      fireEvent.mouseEnter(screen.getByTestId("project-card-body"));
-
-      expect(screen.getByTestId("project-card-body-content").style.maxHeight).toBe(
-        "100px",
-      );
-    });
   });
 });

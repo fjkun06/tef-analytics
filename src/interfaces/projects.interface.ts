@@ -116,4 +116,15 @@ export type ProjectCardBodyProps = {
 export type ProjectCardBodyDataProps = {
   shortDescription: string;
   projectCardBodySections: ProjectCardSectionProps[];
+  isProjectCardBodyOpen: boolean;
+};
+
+export type ProjectCardContainerProps = {
+  technologyTitle: string;
+  projectCardBodySections: ProjectCardSectionProps[];
+  categories: string[];
+  technologies: string[];
+  projectTimeSpan: string;
+  shortDescription: string;
+  title: string;
 };

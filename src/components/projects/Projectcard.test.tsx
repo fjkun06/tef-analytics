@@ -1,6 +1,6 @@
-import { act, render, screen } from "@testing-library/react";
+import { act, render, screen, fireEvent, waitFor } from "@testing-library/react";
 
-import Projectcard from "./Projectcard";
+import Projectcard from "./ProjectCard";
 
 jest.mock("@/locales/server", () => ({
   getScopedI18n: jest
@@ -26,11 +26,24 @@ jest.mock("@/utils/constants", () => ({
 }));
 
 describe("Projectcard", () => {
-  it("should render correctly", async () => {
+  beforeEach(async () => {
     const element = await Projectcard({ index: 0 });
 
     await act(() => render(element));
-
+  });
+  it("should render correctly", async () => {
     expect(screen.getByTestId("project-card")).toBeInTheDocument();
+  });
+
+  it("should expand on hover correctly", async () => {
+    await waitFor(() => {
+      expect(screen.getByTestId("project-card-body-content").style.maxHeight).toBe("0px");
+
+      fireEvent.mouseEnter(screen.getByTestId("project-card-body"));
+
+      expect(screen.getByTestId("project-card-body-content").style.maxHeight).toBe(
+        "100px",
+      );
+    });
   });
 });
