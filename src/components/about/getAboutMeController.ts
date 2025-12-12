@@ -31,6 +31,7 @@ export default async function getAboutMeController() {
             ),
           };
 
+          // Adding the urls to certificates which have one
           const { company, ...certificateKeys } = translationKeys;
           return domain === "certificates"
             ? {
