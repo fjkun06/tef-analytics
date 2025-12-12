@@ -44,8 +44,8 @@ async function Projectcard({ index }: { index: number }) {
     >
       <div className="flex w-full flex-col gap-2">
         <div className="flex flex-wrap justify-start gap-2">
-          {categories.map((category) => (
-            <SkillPill key={category} className="!text-xs sm:!text-sm" label={category} />
+          {categories.map((category, index) => (
+            <SkillPill key={index} className="text-xs! sm:text-sm!" label={category} />
           ))}
         </div>
         <BasicHeading

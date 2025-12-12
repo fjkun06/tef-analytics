@@ -404,6 +404,8 @@ const constants = {
       { descriptionItemsCount: 2 },
       { descriptionItemsCount: 1 },
       { descriptionItemsCount: 1 },
+    ],
+    certificates: [
       { descriptionItemsCount: 1 },
       { descriptionItemsCount: 1 },
       { descriptionItemsCount: 1 },
