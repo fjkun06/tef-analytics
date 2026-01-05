@@ -1,11 +1,6 @@
 import { FooterAboutTranslationKeys } from "@/interfaces/footer.interface";
 
 const constants = {
-  locales: [
-    { code: "en" as const, label: "English", icon: "🇬🇧" },
-    { code: "de" as const, label: "Deutsch", icon: "🇩🇪" },
-    { code: "fr" as const, label: "français", icon: "🇫🇷" },
-  ],
   navItems: [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -13,11 +8,333 @@ const constants = {
     { name: "Contact", href: "/contact" },
   ],
   aboutLinks: [
-    { href: "#", label: "about.companyHistory" },
-    { href: "#", label: "about.meetTeam" },
-    { href: "#", label: "about.employeeHandbook" },
-    { href: "#", label: "about.careers" },
+    { href: "/privacy", label: "about.privacy" },
+    { href: "/cookies", label: "about.cookie" },
+    { href: "/imprint", label: "about.imprint" },
   ] as { href: string; label: FooterAboutTranslationKeys }[],
+  domainDetails: [
+    {
+      domain: "experience",
+      icon: "IconTrend",
+      detailNumber: 10,
+    },
+    {
+      domain: "projects",
+      icon: "IconCode",
+      detailNumber: 15,
+    },
+    {
+      domain: "technologies",
+      icon: "IconDatabase",
+      detailNumber: 15,
+    },
+    {
+      domain: "impact",
+      icon: "IconWeb",
+      detailNumber: 6,
+    },
+  ],
+
+  mainProjects: [
+    {
+      year: 2024,
+      icon: "IconRobot",
+      translationKey: "project1",
+      skills: ["Python", "TensorFlow", "NLP", "Flask"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2018,
+      icon: "IconShield",
+      translationKey: "project2",
+      skills: ["Python", "Machine Learning", "AWS", "Docker"],
+      achievmentsCount: 1,
+    },
+    {
+      year: 2017,
+      icon: "IconTrend",
+      translationKey: "project3",
+      skills: ["R", "SQL", "R Shiny", "Statistical Modeling"],
+      achievmentsCount: 1,
+    },
+  ],
+  skills: [
+    "Machine Learning",
+    "Deep Learning & AI",
+    "Cloud Computing",
+    "Data visualisation",
+    "Business Intelligence",
+    "Statistical modelling",
+    "Reporting",
+    "LLM",
+    "Analytics",
+    "MLOps",
+    "Data Analysis",
+    "LLMOps",
+    "Data Cleaning",
+  ],
+  callToActions: ["about", "projects", "contact"],
+  impressum: {
+    lowerHalf: [
+      {
+        index: 4,
+        titleTranslationKey: "liabilityForContent",
+      },
+      {
+        index: 5,
+        titleTranslationKey: "liabilityForLinks",
+      },
+      {
+        index: 6,
+        titleTranslationKey: "copyright",
+      },
+    ],
+  },
+  privacy: {
+    bodySections: [
+      {
+        index: 3,
+        titleKey: "threeTitle",
+        subtitleKey: "threeSubtitle",
+        listItems: [
+          "threePointOne",
+          "threePointTwo",
+          "threePointThree",
+          "threePointFour",
+        ],
+      },
+      {
+        index: 4,
+        titleKey: "fourTitle",
+        subtitleKey: "fourSubtitle",
+        listItems: ["fourPointOne", "fourPointTwo", "fourPointThree", "fourPointFour"],
+      },
+      {
+        index: 5,
+        titleKey: "fiveTitle",
+        subtitleKey: "fiveSubtitle",
+        listItems: [
+          "fivePointOne",
+          "fivePointTwo",
+          "fivePointThree",
+          "fivePointFour",
+          "fivePointFive",
+          "fivePointSix",
+          "fivePointSeven",
+        ],
+      },
+    ],
+  },
+
+  cookies: {
+    headerSections: [
+      {
+        titleKey: "oneTitle",
+        descriptionKey: "oneDescription",
+      },
+      {
+        titleKey: "twoTitle",
+        descriptionKey: "twoDescription",
+      },
+    ],
+    bodySections: [
+      {
+        titleKey: "threePointOneTitle",
+        descriptionKey: "threePointOneSubtitle",
+      },
+      {
+        titleKey: "threePointTwoTitle",
+        descriptionKey: "threePointTwoSubtitle",
+      },
+      {
+        titleKey: "threePointThreeTitle",
+        descriptionKey: "threePointThreeSubtitle",
+      },
+    ],
+    footerSections: [
+      {
+        titleKey: "fourTitle",
+        descriptionKey: "fourSubtitle",
+        ClassName: "mt-2 text-slate-500 italic",
+      },
+      {
+        titleKey: "fiveTitle",
+        descriptionKey: "fiveSubtitle",
+        ClassName: "",
+      },
+    ],
+  },
+
+  projects: {
+    projectCardData: [
+      {
+        categories: Array(4).fill(null),
+        technologies: [
+          "Python",
+          "PyTorch",
+          "Flask",
+          "DVC",
+          "Docker",
+          "Git",
+          "GitHub",
+          "VS Code",
+          "PowerShell",
+        ],
+        descriptionItems: Array(4).fill(null),
+        practicalWorkItems: Array(6).fill(null),
+        achievementItems: Array(3).fill(null),
+      },
+      {
+        categories: Array(4).fill(null),
+        technologies: [
+          "Python",
+          "LightGBM",
+          "FastAPI",
+          "MLflow",
+          "Pandas",
+          "NumPy",
+          "Pytest",
+          "Jupyter Notebook",
+          "Git",
+        ],
+        descriptionItems: Array(4).fill(null),
+        practicalWorkItems: Array(5).fill(null),
+        achievementItems: Array(3).fill(null),
+      },
+      {
+        categories: Array(4).fill(null),
+        technologies: [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "SQL",
+          "Jupyter Notebook",
+          "Matplotlib",
+          "Seaborn",
+          "Git",
+          "VS Code",
+        ],
+        descriptionItems: Array(4).fill(null),
+        practicalWorkItems: Array(5).fill(null),
+        achievementItems: Array(3).fill(null),
+      },
+      {
+        categories: Array(3).fill(null),
+        technologies: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Reacty",
+          "TypeScripty",
+          "Tailwind CSSy",
+        ],
+        descriptionItems: Array(4).fill(null),
+        achievementItems: Array(3).fill(null),
+        practicalWorkItems: Array(3).fill(null),
+      },
+    ],
+  },
+
+  about: {
+    work: [
+      { descriptionItemsCount: 6 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 5 },
+      { descriptionItemsCount: 3 },
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 4 },
+      { descriptionItemsCount: 3 },
+      { descriptionItemsCount: 3 },
+    ],
+    school: [
+      { descriptionItemsCount: 2 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+    ],
+    certificates: [
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+      { descriptionItemsCount: 1 },
+    ],
+    technicalSkills: {
+      Program: [
+        { title: "R, R-Studio", percentage: 90 },
+        { title: "Python, Anaconda", percentage: 90 },
+        { title: "SAS (EG, Base)", percentage: 70 },
+      ],
+      Frameworks: [
+        { title: "Scikit-learn, TensorFlow, PyTorch", percentage: 70 },
+        { title: "SpaCy, HuggingFace", percentage: 70 },
+      ],
+      Cloud: [
+        { title: "Microsoft Azure (Azure ML, Fabric, DevOps)", percentage: 90 },
+        { title: "AWS", percentage: 70 },
+      ],
+      MLOps: [
+        {
+          title: "Docker, MLflow, Git/GitLab (CI/CD), FastAPI, Linux (Shell)",
+          percentage: 70,
+        },
+      ],
+      Datenbanken: [
+        { title: "MS SQL Server, MySQL; MongoDB, Elasticsearch", percentage: 70 },
+      ],
+      BigData: [{ title: "Hadoop, PySpark, Databricks", percentage: 70 }],
+      BITools: [
+        { title: "Power BI, R-Shiny", percentage: 90 },
+        { title: "Tableau", percentage: 70 },
+      ],
+      Others: [{ title: "LaTeX, ProcessGold", percentage: 90 }],
+    },
+  },
+
+  contactFormItems: (t: any) => [
+    {
+      labelKey: t("name"),
+      schemaName: "name",
+    },
+    {
+      labelKey: t("email"),
+      schemaName: "email",
+      isRequired: true,
+      validation: {
+        required: t("emailRequiredMessage"),
+        pattern: {
+          value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          message: t("emailInvalidMessage"),
+        },
+      },
+    },
+    {
+      labelKey: t("tel"),
+      schemaName: "tel",
+      validation: {
+        pattern: {
+          value: /^\+?[0-9\s\-()]{7,20}$/,
+          message: t("validTelRequiredMessage"),
+        },
+      },
+    },
+    {
+      labelKey: t("subject"),
+      schemaName: "subject",
+    },
+    {
+      labelKey: t("message"),
+      schemaName: "message",
+      isRequired: true,
+      isTextArea: true,
+      validation: {
+        required: t("messageRequiredMessage"),
+      },
+    },
+  ],
 };
 
 export default constants;

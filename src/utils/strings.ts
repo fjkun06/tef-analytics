@@ -1,5 +1,5 @@
 const strings = {
-  appName: "Tef Analytics",
+  appName: "TEF Analytics",
 };
 
 export default strings;

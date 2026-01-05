@@ -29,11 +29,17 @@ const customJestConfig = {
   // Collect coverage information
   collectCoverage: true,
   collectCoverageFrom: [
+    // "app/**/*.{js,ts,jsx,tsx}",
     "src/components/**/*.{js,ts,jsx,tsx}",
     "!src/components/icons/*.{js,ts,jsx,tsx}",
+    "!src/components/cards/*.{js,ts}",
+    "!src/components/index.{js,jsx,ts,tsx}",
+    "!src/components/*/index.{js,ts,jsx,tsx}",
     "src/pages/**/*.{js,ts,jsx,tsx}",
     "!src/utils/**/*.{js,ts,jsx,tsx}",
     "src/utils/functions/*.{js,ts,jsx,tsx}",
+    "src/hooks/*.{js,ts,jsx,tsx}",
+    "!src/utils/functions/index.{js,ts,jsx,tsx}",
     "!src/pages/_app.{js,ts,jsx,tsx}",
     "!src/pages/_document.{js,ts,jsx,tsx}",
     "!**/node_modules/**",

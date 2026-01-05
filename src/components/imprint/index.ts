@@ -1,0 +1,9 @@
+export { default as ImpressumContent } from "./ImpressumContent";
+export { default as ImpressumContentContainer } from "./ImpressumContentContainer";
+export { default as ImpressumSectionOne } from "./ImpressumSectionOne";
+export { default as ImpressumSectionTwo } from "./ImpressumSectionTwo";
+export { default as ImpressumSectionThree } from "./ImpressumSectionThree";
+export { default as LastUpdated } from "./LastUpdated";
+export { default as LegalHeading } from "./LegalHeading";
+export { default as LegalSectionHeading } from "./LegalSectionHeading";
+export { default as LegalEmailLocation } from "./LegalEmailLocation";

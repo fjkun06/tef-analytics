@@ -1,18 +1,38 @@
-import { getI18n, getScopedI18n, getCurrentLocale } from "@/locales/server";
+import {
+  ContactDomainCard,
+  PageHeader,
+  ContactLinkItem,
+  ContactAndProjectWrapper,
+  ContactSectionContainer,
+} from "@/components";
+import ContactForm from "@/components/contact/ContactForm";
+import { domains, socials } from "@/utils/contact.page.constants";
 
-export default async function Contact() {
-  const t = await getI18n();
-  const t2 = await getScopedI18n("hello");
-  const currentLocale = getCurrentLocale();
-
+export default function Contact() {
   return (
-    <div>
-      <p>
-        Current locale:
-        <span>{currentLocale}</span>
-      </p>
-      <p>Hello: {t("hello.world2")}</p>
-      <p>Scoped hello: {t2("world", { param: "Scoped Paul" })}</p>
-    </div>
+    <ContactAndProjectWrapper>
+      <div className="w-full">
+        <PageHeader scope="contact" />
+      </div>
+
+      <div className="flex w-full flex-col gap-10">
+        <ContactSectionContainer headingKey="socialsTitle">
+          <div className="contact-socials grid w-[99%] grid-cols-2 gap-7 max-md:flex max-md:flex-col">
+            {socials.map((social) => (
+              <ContactLinkItem key={social.title} {...social} />
+            ))}
+          </div>
+        </ContactSectionContainer>
+        <ContactSectionContainer headingKey="form.heading">
+          <ContactForm />
+        </ContactSectionContainer>
+      </div>
+
+      <div className="flex w-full justify-between gap-4 max-md:flex-wrap">
+        {domains.map((domain) => (
+          <ContactDomainCard key={domain.titleKey} {...domain} />
+        ))}
+      </div>
+    </ContactAndProjectWrapper>
   );
 }
