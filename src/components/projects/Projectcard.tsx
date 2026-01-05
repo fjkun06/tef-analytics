@@ -26,7 +26,7 @@ import ProjectCardSection from "./ProjectCardSection";
 import BasicHeading from "@/components/BasicHeading";
 import { SkillPill } from "@/components/buttons";
 
-async function Projectcard({ index }: { index: number }) {
+async function ProjectCard({ index }: { index: number }) {
   const {
     technologyTitle,
     projectCardBodySections,
@@ -68,4 +68,4 @@ async function Projectcard({ index }: { index: number }) {
   );
 }
 
-export default Projectcard;
+export default ProjectCard;

@@ -27,47 +27,58 @@
 import { ProjectCardSectionProps } from "@/interfaces/projects.interface";
 import { getScopedI18n } from "@/locales/server";
 import constants from "@/utils/constants";
-import returnTranslatedListItems from "@/utils/functions/returnTranslatedListItems";
+import generateProjectCardTranslationKeys from "@/utils/functions/generateProjectCardTranslationKeys";
 
 export default async function getProjectCardController(index: number) {
   const t = await getScopedI18n("projects");
+  const tCard = await getScopedI18n("projects.cards");
   const t2 = (key: any) => t(key);
+  const t1 = (key: any) => tCard(key);
+  const cardDetails = constants.projects.projectCardData[index];
 
-  const categories = returnTranslatedListItems(
-    constants.projects.projectCardData[index].categories,
-    t2,
-  );
-  const technologies = returnTranslatedListItems(
-    constants.projects.projectCardData[index].technologies,
-    t2,
-  );
+  console.log(Array(4).fill(null));
 
-  const descriptionItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].descriptionItems,
-    t2,
+  const categories = generateProjectCardTranslationKeys(
+    index,
+    cardDetails.categories.length,
+    t1,
+    "categories",
   );
-  const achievementItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].achievementItems,
-    t2,
+  // const categories = returnTranslatedListItems(cardDetails.categories, t2);
+  const technologies = cardDetails.technologies;
+
+  const descriptionItems = generateProjectCardTranslationKeys(
+    index,
+    cardDetails.descriptionItems.length,
+    t1,
+    "descriptionItems",
   );
-  const practicalWorkItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].practicalWorkItems,
-    t2,
+  const achievementItems = generateProjectCardTranslationKeys(
+    index,
+    cardDetails.achievementItems.length,
+    t1,
+    "achievementItems",
+  );
+  const practicalWorkItems = generateProjectCardTranslationKeys(
+    index,
+    cardDetails.practicalWorkItems.length,
+    t1,
+    "practicalWorkItems",
   );
 
   const projectCardBodySections = [
     {
-      title: t2("Description"),
+      title: t("descriptionTitle"),
       type: "list",
       listItems: descriptionItems,
     },
     {
-      title: t2("Practical Work"),
+      title: t("practicalWorkTitle"),
       type: "list",
       listItems: practicalWorkItems,
     },
     {
-      title: t2("Key Achievements"),
+      title: t("achievementTitle"),
       type: "pills",
       technologies: achievementItems,
     },
@@ -77,8 +88,8 @@ export default async function getProjectCardController(index: number) {
     projectCardBodySections,
     categories,
     technologies,
-    projectTimeSpan: constants.projects.projectCardData[index].projectTimeSpan,
-    shortDescription: t2(constants.projects.projectCardData[index].shortDescription),
-    title: t2(constants.projects.projectCardData[index].title),
+    projectTimeSpan: t2(`cards.${index}.projectTimeSpan`),
+    shortDescription: t2(`cards.${index}.shortDescription`),
+    title: t2(`cards.${index}.title`),
   };
 }

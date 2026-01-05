@@ -8,17 +8,17 @@ import { SocialLinksProps } from "@/interfaces/footer.interface";
 
 const socialLinks = [
   {
-    href: "#",
+    href: "https://github.com/thefranckt",
     label: "Code",
     icon: <IconXing className="size-6" />,
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/in/franck-tankouan-2a9a2ab3/",
     label: "LinkedIn",
     icon: <IconLinkedIn className="size-6" />,
   },
   {
-    href: "#",
+    href: "https://www.xing.com/profile/Franck_Tankouan/web_profiles",
     label: "X",
     icon: <IconX className="size-6" />,
   },
