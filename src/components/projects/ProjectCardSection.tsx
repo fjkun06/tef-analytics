@@ -14,6 +14,7 @@
 import React from "react";
 
 import ProjectCardBodySectionListGroup from "./ProjectCardBodySectionListGroup";
+import ProjectCardBodySectionListSubListGroup from "./ProjectCardBodySectionListSubListGroup";
 import ProjectCardPillsGroup from "./ProjectCardPillsGroup";
 import BasicHeading from "@/components/BasicHeading";
 import { ProjectCardSectionProps } from "@/interfaces/projects.interface";
@@ -34,6 +35,10 @@ function ProjectCardSection({
 
       {props.type === "pills" && (
         <ProjectCardPillsGroup technologies={props.technologies} />
+      )}
+
+      {props.type === "sublist" && (
+        <ProjectCardBodySectionListSubListGroup listItems={props.listItems} />
       )}
     </div>
   );

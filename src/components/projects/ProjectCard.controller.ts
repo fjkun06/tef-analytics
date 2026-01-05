@@ -28,32 +28,43 @@ import { ProjectCardSectionProps } from "@/interfaces/projects.interface";
 import { getScopedI18n } from "@/locales/server";
 import constants from "@/utils/constants";
 import returnTranslatedListItems from "@/utils/functions/returnTranslatedListItems";
+import returnTranslatedSubListItems from "@/utils/functions/returnTranslatedSubListItems";
 
 export default async function getProjectCardController(index: number) {
   const t = await getScopedI18n("projects");
   const t2 = (key: any) => t(key);
+  const cardData = constants.projects.projectCardData[index];
 
-  const categories = returnTranslatedListItems(
-    constants.projects.projectCardData[index].categories,
-    t2,
-  );
-  const technologies = returnTranslatedListItems(
-    constants.projects.projectCardData[index].technologies,
-    t2,
-  );
+  const categories = returnTranslatedListItems(cardData.categories, t2);
+  const technologies = returnTranslatedListItems(cardData.technologies, t2);
 
-  const descriptionItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].descriptionItems,
+  const descriptionItems = returnTranslatedListItems(cardData.descriptionItems, t2);
+  const achievementItems = returnTranslatedListItems(cardData.achievementItems, t2);
+  const practicalWorkItems = returnTranslatedSubListItems(
+    cardData.practicalWorkItems,
     t2,
   );
-  const achievementItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].achievementItems,
-    t2,
-  );
-  const practicalWorkItems = returnTranslatedListItems(
-    constants.projects.projectCardData[index].practicalWorkItems,
-    t2,
-  );
+  // const categories = returnTranslatedListItems(
+  //   constants.projects.projectCardData[index].categories,
+  //   t2,
+  // );
+  // const technologies = returnTranslatedListItems(
+  //   constants.projects.projectCardData[index].technologies,
+  //   t2,
+  // );
+
+  // const descriptionItems = returnTranslatedListItems(
+  //   constants.projects.projectCardData[index].descriptionItems,
+  //   t2,
+  // );
+  // const achievementItems = returnTranslatedListItems(
+  //   constants.projects.projectCardData[index].achievementItems,
+  //   t2,
+  // );
+  // const practicalWorkItems = returnTranslatedSubListItems(
+  //   constants.projects.projectCardData[0].practicalWorkItems,
+  //   t2,
+  // );
 
   const projectCardBodySections = [
     {
@@ -63,13 +74,13 @@ export default async function getProjectCardController(index: number) {
     },
     {
       title: t2("Practical Work"),
-      type: "list",
+      type: "sublist",
       listItems: practicalWorkItems,
     },
     {
       title: t2("Key Achievements"),
-      type: "pills",
-      technologies: achievementItems,
+      type: "list",
+      listItems: achievementItems,
     },
   ] as ProjectCardSectionProps[];
   return {
@@ -77,8 +88,11 @@ export default async function getProjectCardController(index: number) {
     projectCardBodySections,
     categories,
     technologies,
-    projectTimeSpan: constants.projects.projectCardData[index].projectTimeSpan,
-    shortDescription: t2(constants.projects.projectCardData[index].shortDescription),
-    title: t2(constants.projects.projectCardData[index].title),
+    projectTimeSpan: cardData.projectTimeSpan,
+    shortDescription: t2(cardData.shortDescription),
+    title: t2(cardData.title),
+    // projectTimeSpan: constants.projects.projectCardData[index].projectTimeSpan,
+    // shortDescription: t2(constants.projects.projectCardData[index].shortDescription),
+    // title: t2(constants.projects.projectCardData[index].title),
   };
 }

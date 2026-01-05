@@ -19,7 +19,25 @@ jest.mock("@/utils/constants", () => ({
         technologies: ["Tech 1", "Tech 2"],
         descriptionItems: ["Description item 1", "Description item 2"],
         achievementItems: ["Achievement item 1", "Achievement item 2"],
-        practicalWorkItems: ["Practical work item 1", "Practical work item 2"],
+        practicalWorkItems: [
+          {
+            title: "Practical Work Title 1",
+            descriptionItems: [
+              "Nutzung eines Kaggle-Datensatzes (≈140k Artikel, Zeitraum 2016–07/2017).",
+              "Konsolidierung der Metadaten (Quelle, Datum, Autor:innen, Titel, Text).",
+              "Text-Cleaning (Encoding, Sonderzeichen, Lowercasing, Stopwörter, einfache Normalisierung).",
+            ],
+          },
+
+          {
+            title: "Practical Work Title 2",
+            descriptionItems: [
+              "Nutzung eines Kaggle-Datensatzes (≈140k Artikel, Zeitraum 2016–07/2017).",
+              "Konsolidierung der Metadaten (Quelle, Datum, Autor:innen, Titel, Text).",
+              "Text-Cleaning (Encoding, Sonderzeichen, Lowercasing, Stopwörter, einfache Normalisierung).",
+            ],
+          },
+        ],
       },
     ],
   },

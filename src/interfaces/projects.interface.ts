@@ -50,6 +50,15 @@ export type ProjectCardSectionPillsProps = {
   technologies: string[];
   type: "pills";
 };
+export type PracticalWorkItem = {
+  title: string;
+  descriptionItems: string[];
+};
+
+export type ProjectCardBodySectionListSubListGroupProps = {
+  listItems: PracticalWorkItem[];
+  type: "sublist";
+};
 
 /**
  * ProjectCardSectionProps
@@ -58,6 +67,7 @@ export type ProjectCardSectionPillsProps = {
 
 type ProjectCardSectionMainProps =
   | ProjectCardSectionListProps
+  | ProjectCardBodySectionListSubListGroupProps
   | ProjectCardSectionPillsProps;
 export type ProjectCardSectionProps = ProjectCardSectionMainProps & {
   title: string;

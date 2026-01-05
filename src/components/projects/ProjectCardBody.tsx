@@ -47,17 +47,27 @@ export default function ProjectCardBody({
           section.type === "pills" ? (
             <ProjectCardSection
               key={section.title}
-              title={section.title}
-              type={section.type}
-              technologies={section.technologies!}
+              // title={section.title}
+              // type={section.type}
+              // technologies={section.technologies!}
+              {...section}
               className="max-md:mb-6"
+            />
+          ) : section.type === "list" ? (
+            <ProjectCardSection
+              key={section.title}
+              // title={section.title}
+              // type={section.type as "list"}
+              //   listItems={section.listItems!}
+              {...section}
             />
           ) : (
             <ProjectCardSection
               key={section.title}
-              title={section.title}
-              type={section.type as "list"}
-              listItems={section.listItems!}
+              // title={section.title}
+              // type={section.type as "sublist"}
+              // listItems={section.listItems!}
+              {...section}
             />
           ),
         )}
