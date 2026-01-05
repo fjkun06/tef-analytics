@@ -1,6 +1,6 @@
 import { act, render, screen } from "@testing-library/react";
 
-import Projectcard from "./Projectcard";
+import ProjectCard from "./ProjectCard";
 
 jest.mock("@/locales/server", () => ({
   getScopedI18n: jest
@@ -25,9 +25,9 @@ jest.mock("@/utils/constants", () => ({
   },
 }));
 
-describe("Projectcard", () => {
+describe("ProjectCard", () => {
   it("should render correctly", async () => {
-    const element = await Projectcard({ index: 0 });
+    const element = await ProjectCard({ index: 0 });
 
     await act(() => render(element));
 

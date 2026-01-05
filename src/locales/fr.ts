@@ -238,6 +238,127 @@ export default {
     title: "Projets",
     description:
       "Explorez notre gamme diversifiée de projets qui tirent parti des données pour des solutions percutantes.",
+    technologyTitle: "Technologies",
+    descriptionTitle: "Description",
+    practicalWorkTitle: "Travail Pratique",
+    achievementTitle: "Réalisations Clés",
+    cards: [
+      {
+        title: "Classification d'images de cellules de paludisme",
+        projectTimeSpan: "11/2024 - 11/2025",
+        shortDescription:
+          "Pipeline d'apprentissage profond de qualité production pour la classification automatisée d'images de cellules de paludisme avec expériences reproductibles et services d'inférence déployables.",
+        categories: [
+          "Vision par ordinateur",
+          "Apprentissage profond",
+          "IA médicale",
+          "Classification d'images",
+        ],
+        descriptionItems: [
+          "Développé un pipeline d'apprentissage profond prêt pour la production pour la classification d'images de cellules de paludisme",
+          "Optimisé la gestion des données et la reproductibilité des expériences en utilisant DVC et Git",
+          "Déployé des API REST pour l'inférence en temps réel et les prédictions par lots",
+          "Assuré la maintenabilité et la scalabilité grâce à une architecture modulaire et à la documentation",
+        ],
+        practicalWorkItems: [
+          "Conçu une architecture de package Python modulaire",
+          "Implémenté l'apprentissage par transfert avec ResNet18",
+          "Automatisé le versioning des données avec DVC",
+          "Construit une interface de ligne de commande professionnelle",
+          "Développé une API REST Flask containerisée",
+          "Rédigé des tests unitaires et appliqué la qualité du code",
+          "Maintenu une documentation technique claire",
+        ],
+        achievementItems: [
+          "96,3% de précision",
+          "Pipeline reproductible",
+          "Prêt pour la production",
+        ],
+      },
+      {
+        title: "Prédiction du temps de livraison Flaschen Depot",
+        projectTimeSpan: "—",
+        shortDescription:
+          "Solution d'apprentissage automatique de bout en bout pour prédire les temps de service de livraison avec entraînement automatisé, évaluation et API prêtes pour la production.",
+        categories: [
+          "Apprentissage automatique",
+          "MLOps",
+          "Prédiction temporelle",
+          "Science des données",
+        ],
+        descriptionItems: [
+          "Conçu une solution ML de bout en bout pour prédire les temps de service de livraison",
+          "Construit un backend FastAPI prêt pour la production avec des endpoints de surveillance",
+          "Automatisé les flux de travail d'entraînement, d'évaluation et de déploiement de modèles",
+          "Focus sur la reproductibilité, la maintenabilité et le déploiement en conditions réelles",
+        ],
+        practicalWorkItems: [
+          "Construit un pipeline de données modulaire pour le chargement et l'ingénierie des fonctionnalités",
+          "Entraîné un modèle de régression LightGBM pour la prédiction du temps de service",
+          "Suivi des expériences et modèles en utilisant MLflow",
+          "Développé des endpoints REST FastAPI pour les prédictions et métriques",
+          "Implémenté des tests API automatisés pour la fiabilité",
+        ],
+        achievementItems: [
+          "Haute précision du modèle",
+          "MLOps automatisé",
+          "Prêt pour la production",
+        ],
+      },
+      {
+        title: "Pipeline ETL et analytique UNICEF",
+        projectTimeSpan: "—",
+        shortDescription:
+          "Pipeline ETL et analytique évolutif pour traiter, analyser et visualiser les données de dons et de campagnes pour des insights exploitables.",
+        categories: [
+          "Ingénierie des données",
+          "ETL",
+          "Analytique de données",
+          "Visualisation",
+        ],
+        descriptionItems: [
+          "Développé un pipeline ETL et analytique dans le cadre d'un défi technique UNICEF",
+          "Traité et analysé les jeux de données de dons et de campagnes",
+          "Focus sur la clarté, la reproductibilité et la scalabilité",
+          "Permis des insights basés sur les données pour les activités de collecte de fonds",
+        ],
+        practicalWorkItems: [
+          "Implémenté des scripts d'ingestion et de prétraitement des données",
+          "Construit des routines robustes de nettoyage et de transformation des données",
+          "Effectué une analyse exploratoire des données sur les données de dons",
+          "Créé des visualisations claires pour la communication des insights",
+          "Compilé des rapports d'analyse reproductibles dans des Jupyter Notebooks",
+        ],
+        achievementItems: [
+          "ETL automatisé",
+          "Insights exploitables",
+          "Reporting professionnel",
+        ],
+      },
+      {
+        title: "Maintenance prédictive pour équipements industriels",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Système de maintenance prédictive utilisant l'apprentissage automatique pour optimiser la performance des équipements industriels et réduire les temps d'arrêt.",
+        categories: ["Maintenance prédictive", "Analytique prédictive", "Industrie 4.0"],
+        descriptionItems: [
+          "Assistance dans la sélection d'outils d'analytique prédictive",
+          "Conception et implémentation de modèles prédictifs avec R et SAS",
+          "Fourniture d'expertise en analytique prédictive",
+          "Support au développement et déploiement de la plateforme",
+        ],
+        achievementItems: [
+          "Modélisation prédictive",
+          "Optimisation des poids",
+          "Prévision des volumes",
+        ],
+        practicalWorkItems: [
+          "Construction d'un système d'évaluation de factures en temps réel",
+          "Optimisation du traitement des données API",
+          "Implémentation d'algorithmes ML pour la détection de fraude",
+        ],
+      },
+    ],
   },
   about: {
     title: "Master en science des données",

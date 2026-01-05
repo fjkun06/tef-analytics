@@ -235,6 +235,117 @@ export default {
     title: "Ausgewählte Projekte",
     description:
       "Entdecken Sie unsere vielfältige Palette von Projekten, die Daten für wirkungsvolle Lösungen nutzen.",
+    technologyTitle: "Technologien",
+    descriptionTitle: "Beschreibung",
+    practicalWorkTitle: "Praktische Arbeit",
+    achievementTitle: "Wichtige Erfolge",
+    cards: [
+      {
+        title: "Malaria-Zellbild-Klassifikation",
+        projectTimeSpan: "11/2024 - 11/2025",
+        shortDescription:
+          "Produktionsreife Deep-Learning-Pipeline für automatisierte Malaria-Zellbild-Klassifikation mit reproduzierbaren Experimenten und einsatzfähigen Inferenzdiensten.",
+        categories: [
+          "Computer Vision",
+          "Deep Learning",
+          "Medizinische KI",
+          "Bildklassifikation",
+        ],
+        descriptionItems: [
+          "Entwicklung einer produktionsreifen Deep-Learning-Pipeline für Malaria-Zellbild-Klassifikation",
+          "Optimierte Datenverwaltung und Experimentierbarkeit mit DVC und Git",
+          "Bereitstellung von REST-APIs für Echtzeit-Inferenz und Batch-Vorhersagen",
+          "Gewährleistung von Wartbarkeit und Skalierbarkeit durch modulare Architektur und Dokumentation",
+        ],
+        practicalWorkItems: [
+          "Entwurf einer modularen Python-Paket-Architektur",
+          "Implementierung von Transfer Learning mit ResNet18",
+          "Automatisierte Datenversionierung mit DVC",
+          "Erstellung einer professionellen Befehlszeilen-Schnittstelle",
+          "Entwicklung einer containerisierten Flask REST-API",
+          "Erstellung von Unit-Tests und Durchsetzung der Code-Qualität",
+          "Pflege klarer technischer Dokumentation",
+        ],
+        achievementItems: [
+          "96,3% Genauigkeit",
+          "Reproduzierbare Pipeline",
+          "Produktionsreif",
+        ],
+      },
+      {
+        title: "Flaschen Depot Lieferzeit-Vorhersage",
+        projectTimeSpan: "—",
+        shortDescription:
+          "End-to-End-Machine-Learning-Lösung zur Vorhersage von Lieferservice-Zeiten mit automatisiertem Training, Evaluierung und produktionsreifen APIs.",
+        categories: ["Machine Learning", "MLOps", "Zeitvorhersage", "Data Science"],
+        descriptionItems: [
+          "Entwurf einer End-to-End-ML-Lösung zur Vorhersage von Lieferservice-Zeiten",
+          "Erstellung eines produktionsreifen FastAPI-Backends mit Überwachungs-Endpunkten",
+          "Automatisierte Modell-Training-, Evaluierungs- und Deployment-Workflows",
+          "Fokus auf Reproduzierbarkeit, Wartbarkeit und realen Einsatz",
+        ],
+        practicalWorkItems: [
+          "Erstellung einer modularen Datenpipeline für Laden und Feature-Engineering",
+          "Training eines LightGBM-Regressionsmodells für Service-Zeit-Vorhersage",
+          "Verfolgung von Experimenten und Modellen mit MLflow",
+          "Entwicklung von FastAPI REST-Endpunkten für Vorhersagen und Metriken",
+          "Implementierung automatisierter API-Tests für Zuverlässigkeit",
+        ],
+        achievementItems: [
+          "Hohe Modell-Genauigkeit",
+          "Automatisierte MLOps",
+          "Produktionsreif",
+        ],
+      },
+      {
+        title: "UNICEF ETL & Analytics Pipeline",
+        projectTimeSpan: "—",
+        shortDescription:
+          "Skalierbare ETL- und Analytics-Pipeline zur Verarbeitung, Analyse und Visualisierung von Spenden- und Kampagnendaten für umsetzbare Erkenntnisse.",
+        categories: ["Data Engineering", "ETL", "Datenanalyse", "Visualisierung"],
+        descriptionItems: [
+          "Entwicklung einer ETL- und Analytics-Pipeline als Teil einer UNICEF-technischen Herausforderung",
+          "Verarbeitung und Analyse von Spenden- und Kampagnendatensätzen",
+          "Fokus auf Klarheit, Reproduzierbarkeit und Skalierbarkeit",
+          "Ermöglichung datengetriebener Erkenntnisse für Fundraising-Aktivitäten",
+        ],
+        practicalWorkItems: [
+          "Implementierung von Daten-Ingestion- und Vorverarbeitungs-Skripten",
+          "Erstellung robuster Datenreinigungs- und Transformationsroutinen",
+          "Durchführung explorativer Datenanalyse auf Spendendaten",
+          "Erstellung klarer Visualisierungen zur Erkenntniskommunikation",
+          "Zusammenstellung reproduzierbarer Analyseberichte in Jupyter Notebooks",
+        ],
+        achievementItems: [
+          "Automatisierte ETL",
+          "Umsetzbare Erkenntnisse",
+          "Professionelle Berichterstattung",
+        ],
+      },
+      {
+        title: "Prädiktive Wartung für Industrieanlagen",
+        projectTimeSpan: "04/2022 - 06/2022",
+        shortDescription:
+          "Maßgeschneidertes LLM, feinabgestimmt auf juristische Domäne mit RAG-verstärkter Dokumentenverarbeitungs-Pipeline.",
+        categories: ["Prädiktive Wartung", "Vorhersagend", "Wartung"],
+        descriptionItems: [
+          "Unterstützung bei der Auswahl prädiktiver Analyse-Tools",
+          "Entwurf und Implementierung prädiktiver Modelle mit R und SAS",
+          "Bereitstellung von Expertise in prädiktiver Analytik",
+          "Unterstützung bei Plattformentwicklung und -deployment",
+        ],
+        achievementItems: [
+          "Prädiktive Modellierung",
+          "Gewichtsoptimierung",
+          "Volumenprognose",
+        ],
+        practicalWorkItems: [
+          "Erstellung eines Echtzeit-Rechnungsbewertungssystems",
+          "Optimierung der API-Datenverarbeitung",
+          "Implementierung von ML-Algorithmen zur Betrugserkennung",
+        ],
+      },
+    ],
   },
   about: {
     title: "M.Sc in Data Science",
